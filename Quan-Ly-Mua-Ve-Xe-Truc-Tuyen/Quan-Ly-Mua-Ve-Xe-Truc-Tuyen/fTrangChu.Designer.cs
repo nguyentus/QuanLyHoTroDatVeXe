@@ -32,20 +32,25 @@
             this.pNoiDung = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.btDatVe = new System.Windows.Forms.PictureBox();
-            this.btQLCD = new System.Windows.Forms.PictureBox();
-            this.btQLKH = new System.Windows.Forms.PictureBox();
-            this.btDangXuat = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btChuyenDi = new System.Windows.Forms.PictureBox();
+            this.btXe = new System.Windows.Forms.PictureBox();
+            this.btBaoCao = new System.Windows.Forms.PictureBox();
+            this.btKhachHang = new System.Windows.Forms.PictureBox();
             this.pMenu = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.btThoat = new System.Windows.Forms.PictureBox();
             this.pNoiDung.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btDatVe)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btQLCD)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btQLKH)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btDangXuat)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btChuyenDi)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btXe)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btBaoCao)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btKhachHang)).BeginInit();
             this.pMenu.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btThoat)).BeginInit();
             this.SuspendLayout();
             // 
             // pNoiDung
@@ -73,91 +78,156 @@
             this.btDatVe.Image = ((System.Drawing.Image)(resources.GetObject("btDatVe.Image")));
             this.btDatVe.Location = new System.Drawing.Point(2, 2);
             this.btDatVe.Name = "btDatVe";
-            this.btDatVe.Size = new System.Drawing.Size(165, 52);
+            this.btDatVe.Size = new System.Drawing.Size(166, 52);
             this.btDatVe.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btDatVe.TabIndex = 0;
             this.btDatVe.TabStop = false;
             this.btDatVe.Click += new System.EventHandler(this.BtDatVe_Click);
             // 
-            // btQLCD
+            // btChuyenDi
             // 
-            this.btQLCD.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btQLCD.Image = ((System.Drawing.Image)(resources.GetObject("btQLCD.Image")));
-            this.btQLCD.Location = new System.Drawing.Point(168, 2);
-            this.btQLCD.Name = "btQLCD";
-            this.btQLCD.Size = new System.Drawing.Size(165, 52);
-            this.btQLCD.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btQLCD.TabIndex = 0;
-            this.btQLCD.TabStop = false;
-            this.btQLCD.Click += new System.EventHandler(this.BtQLCD_Click);
+            this.btChuyenDi.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btChuyenDi.Image = ((System.Drawing.Image)(resources.GetObject("btChuyenDi.Image")));
+            this.btChuyenDi.Location = new System.Drawing.Point(166, 2);
+            this.btChuyenDi.Name = "btChuyenDi";
+            this.btChuyenDi.Size = new System.Drawing.Size(166, 52);
+            this.btChuyenDi.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btChuyenDi.TabIndex = 0;
+            this.btChuyenDi.TabStop = false;
+            this.btChuyenDi.Click += new System.EventHandler(this.BtQLCD_Click);
             // 
-            // btQLKH
+            // btXe
             // 
-            this.btQLKH.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btQLKH.Image = ((System.Drawing.Image)(resources.GetObject("btQLKH.Image")));
-            this.btQLKH.Location = new System.Drawing.Point(334, 2);
-            this.btQLKH.Name = "btQLKH";
-            this.btQLKH.Size = new System.Drawing.Size(165, 52);
-            this.btQLKH.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btQLKH.TabIndex = 0;
-            this.btQLKH.TabStop = false;
-            this.btQLKH.Click += new System.EventHandler(this.BtQLKH_Click);
+            this.btXe.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btXe.Image = ((System.Drawing.Image)(resources.GetObject("btXe.Image")));
+            this.btXe.Location = new System.Drawing.Point(331, 2);
+            this.btXe.Name = "btXe";
+            this.btXe.Size = new System.Drawing.Size(165, 52);
+            this.btXe.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btXe.TabIndex = 0;
+            this.btXe.TabStop = false;
+            this.btXe.Click += new System.EventHandler(this.BtQLKH_Click);
             // 
-            // btDangXuat
+            // btBaoCao
             // 
-            this.btDangXuat.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btDangXuat.Image = ((System.Drawing.Image)(resources.GetObject("btDangXuat.Image")));
-            this.btDangXuat.Location = new System.Drawing.Point(500, 2);
-            this.btDangXuat.Name = "btDangXuat";
-            this.btDangXuat.Size = new System.Drawing.Size(165, 52);
-            this.btDangXuat.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btDangXuat.TabIndex = 0;
-            this.btDangXuat.TabStop = false;
-            this.btDangXuat.Click += new System.EventHandler(this.BtDangXuat_Click);
+            this.btBaoCao.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btBaoCao.Image = ((System.Drawing.Image)(resources.GetObject("btBaoCao.Image")));
+            this.btBaoCao.Location = new System.Drawing.Point(659, 2);
+            this.btBaoCao.Name = "btBaoCao";
+            this.btBaoCao.Size = new System.Drawing.Size(165, 52);
+            this.btBaoCao.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btBaoCao.TabIndex = 0;
+            this.btBaoCao.TabStop = false;
+            this.btBaoCao.Click += new System.EventHandler(this.BtDangXuat_Click);
             // 
-            // pictureBox1
+            // btKhachHang
             // 
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(666, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(165, 52);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.BtDangXuat_Click);
+            this.btKhachHang.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btKhachHang.Image = ((System.Drawing.Image)(resources.GetObject("btKhachHang.Image")));
+            this.btKhachHang.Location = new System.Drawing.Point(495, 2);
+            this.btKhachHang.Name = "btKhachHang";
+            this.btKhachHang.Size = new System.Drawing.Size(165, 52);
+            this.btKhachHang.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btKhachHang.TabIndex = 0;
+            this.btKhachHang.TabStop = false;
+            this.btKhachHang.Click += new System.EventHandler(this.BtDangXuat_Click);
             // 
             // pMenu
             // 
-            this.pMenu.BackColor = System.Drawing.Color.Gainsboro;
-            this.pMenu.Controls.Add(this.pictureBox2);
-            this.pMenu.Controls.Add(this.pictureBox1);
-            this.pMenu.Controls.Add(this.btDangXuat);
-            this.pMenu.Controls.Add(this.btQLKH);
-            this.pMenu.Controls.Add(this.btQLCD);
+            this.pMenu.BackColor = System.Drawing.Color.Transparent;
+            this.pMenu.Controls.Add(this.label6);
+            this.pMenu.Controls.Add(this.label5);
+            this.pMenu.Controls.Add(this.label4);
+            this.pMenu.Controls.Add(this.label3);
+            this.pMenu.Controls.Add(this.label2);
+            this.pMenu.Controls.Add(this.btThoat);
+            this.pMenu.Controls.Add(this.btKhachHang);
+            this.pMenu.Controls.Add(this.btBaoCao);
+            this.pMenu.Controls.Add(this.btXe);
+            this.pMenu.Controls.Add(this.btChuyenDi);
             this.pMenu.Controls.Add(this.btDatVe);
             this.pMenu.Location = new System.Drawing.Point(4, 1);
             this.pMenu.Name = "pMenu";
             this.pMenu.Size = new System.Drawing.Size(879, 57);
             this.pMenu.TabIndex = 0;
             // 
-            // pictureBox2
+            // label6
             // 
-            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(832, 2);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(43, 52);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.BtDangXuat_Click);
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
+            this.label6.Font = new System.Drawing.Font("Tahoma", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(728, 23);
+            this.label6.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(90, 13);
+            this.label6.TabIndex = 5;
+            this.label6.Text = "Báo cáo thống kê";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
+            this.label5.Font = new System.Drawing.Font("Tahoma", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(552, 23);
+            this.label5.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(107, 13);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "Quản Lý Khách Hàng";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
+            this.label4.Font = new System.Drawing.Font("Tahoma", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(403, 23);
+            this.label4.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(62, 13);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "Quản Lý Xe";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
+            this.label3.Font = new System.Drawing.Font("Tahoma", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(217, 23);
+            this.label3.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(100, 13);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Quản Lý Chuyến Đi";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
+            this.label2.Font = new System.Drawing.Font("Tahoma", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(70, 23);
+            this.label2.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(55, 13);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Đặt vé xe";
+            // 
+            // btThoat
+            // 
+            this.btThoat.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btThoat.Image = ((System.Drawing.Image)(resources.GetObject("btThoat.Image")));
+            this.btThoat.Location = new System.Drawing.Point(824, 2);
+            this.btThoat.Name = "btThoat";
+            this.btThoat.Size = new System.Drawing.Size(50, 52);
+            this.btThoat.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btThoat.TabIndex = 0;
+            this.btThoat.TabStop = false;
+            this.btThoat.Click += new System.EventHandler(this.BtDangXuat_Click);
             // 
             // fTrangChu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(882, 548);
+            this.ClientSize = new System.Drawing.Size(884, 546);
             this.Controls.Add(this.pNoiDung);
             this.Controls.Add(this.pMenu);
             this.Name = "fTrangChu";
@@ -166,12 +236,13 @@
             this.pNoiDung.ResumeLayout(false);
             this.pNoiDung.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btDatVe)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btQLCD)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btQLKH)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btDangXuat)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btChuyenDi)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btXe)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btBaoCao)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btKhachHang)).EndInit();
             this.pMenu.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.pMenu.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btThoat)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -180,11 +251,16 @@
         private System.Windows.Forms.Panel pNoiDung;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox btDatVe;
-        private System.Windows.Forms.PictureBox btQLCD;
-        private System.Windows.Forms.PictureBox btQLKH;
-        private System.Windows.Forms.PictureBox btDangXuat;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox btChuyenDi;
+        private System.Windows.Forms.PictureBox btXe;
+        private System.Windows.Forms.PictureBox btBaoCao;
+        private System.Windows.Forms.PictureBox btKhachHang;
         private System.Windows.Forms.Panel pMenu;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox btThoat;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
     }
 }

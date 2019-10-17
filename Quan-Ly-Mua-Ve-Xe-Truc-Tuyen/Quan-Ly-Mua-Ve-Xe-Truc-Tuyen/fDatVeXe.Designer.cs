@@ -30,6 +30,19 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fDatVeXe));
             this.pNoiDung = new System.Windows.Forms.Panel();
+            this.pMenu = new System.Windows.Forms.Panel();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.btThoat = new System.Windows.Forms.PictureBox();
+            this.btKhachHang = new System.Windows.Forms.PictureBox();
+            this.btBaoCao = new System.Windows.Forms.PictureBox();
+            this.btXe = new System.Windows.Forms.PictureBox();
+            this.btChuyenDi = new System.Windows.Forms.PictureBox();
+            this.btDatVe = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.pGhe = new System.Windows.Forms.Panel();
             this.label16 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
@@ -61,13 +74,14 @@
             this.ghe8 = new System.Windows.Forms.PictureBox();
             this.ghe5 = new System.Windows.Forms.PictureBox();
             this.ghe2 = new System.Windows.Forms.PictureBox();
-            this.pMenu = new System.Windows.Forms.Panel();
-            this.btDangXuat = new System.Windows.Forms.PictureBox();
-            this.btQLKH = new System.Windows.Forms.PictureBox();
-            this.btQLCD = new System.Windows.Forms.PictureBox();
-            this.btDatVe = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.pNoiDung.SuspendLayout();
+            this.pMenu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btThoat)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btKhachHang)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btBaoCao)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btXe)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btChuyenDi)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btDatVe)).BeginInit();
             this.pGhe.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ghe13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ghe10)).BeginInit();
@@ -84,21 +98,171 @@
             ((System.ComponentModel.ISupportInitialize)(this.ghe8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ghe5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ghe2)).BeginInit();
-            this.pMenu.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btDangXuat)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btQLKH)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btQLCD)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btDatVe)).BeginInit();
             this.SuspendLayout();
             // 
             // pNoiDung
             // 
             this.pNoiDung.Controls.Add(this.label1);
             this.pNoiDung.Controls.Add(this.pGhe);
-            this.pNoiDung.Location = new System.Drawing.Point(3, 65);
+            this.pNoiDung.Location = new System.Drawing.Point(4, 61);
             this.pNoiDung.Name = "pNoiDung";
-            this.pNoiDung.Size = new System.Drawing.Size(738, 455);
+            this.pNoiDung.Size = new System.Drawing.Size(876, 486);
             this.pNoiDung.TabIndex = 1;
+            // 
+            // pMenu
+            // 
+            this.pMenu.BackColor = System.Drawing.Color.Transparent;
+            this.pMenu.Controls.Add(this.label17);
+            this.pMenu.Controls.Add(this.label18);
+            this.pMenu.Controls.Add(this.label19);
+            this.pMenu.Controls.Add(this.label20);
+            this.pMenu.Controls.Add(this.label21);
+            this.pMenu.Controls.Add(this.btThoat);
+            this.pMenu.Controls.Add(this.btKhachHang);
+            this.pMenu.Controls.Add(this.btBaoCao);
+            this.pMenu.Controls.Add(this.btXe);
+            this.pMenu.Controls.Add(this.btChuyenDi);
+            this.pMenu.Controls.Add(this.btDatVe);
+            this.pMenu.Location = new System.Drawing.Point(4, 1);
+            this.pMenu.Name = "pMenu";
+            this.pMenu.Size = new System.Drawing.Size(879, 57);
+            this.pMenu.TabIndex = 3;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
+            this.label17.Font = new System.Drawing.Font("Tahoma", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(728, 23);
+            this.label17.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(90, 13);
+            this.label17.TabIndex = 5;
+            this.label17.Text = "Báo cáo thống kê";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
+            this.label18.Font = new System.Drawing.Font("Tahoma", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(552, 23);
+            this.label18.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(107, 13);
+            this.label18.TabIndex = 4;
+            this.label18.Text = "Quản Lý Khách Hàng";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
+            this.label19.Font = new System.Drawing.Font("Tahoma", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(403, 23);
+            this.label19.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(62, 13);
+            this.label19.TabIndex = 3;
+            this.label19.Text = "Quản Lý Xe";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
+            this.label20.Font = new System.Drawing.Font("Tahoma", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(217, 23);
+            this.label20.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(100, 13);
+            this.label20.TabIndex = 2;
+            this.label20.Text = "Quản Lý Chuyến Đi";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
+            this.label21.Font = new System.Drawing.Font("Tahoma", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(70, 23);
+            this.label21.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(55, 13);
+            this.label21.TabIndex = 1;
+            this.label21.Text = "Đặt vé xe";
+            // 
+            // btThoat
+            // 
+            this.btThoat.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btThoat.Image = ((System.Drawing.Image)(resources.GetObject("btThoat.Image")));
+            this.btThoat.Location = new System.Drawing.Point(824, 2);
+            this.btThoat.Name = "btThoat";
+            this.btThoat.Size = new System.Drawing.Size(50, 52);
+            this.btThoat.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btThoat.TabIndex = 0;
+            this.btThoat.TabStop = false;
+            // 
+            // btKhachHang
+            // 
+            this.btKhachHang.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btKhachHang.Image = ((System.Drawing.Image)(resources.GetObject("btKhachHang.Image")));
+            this.btKhachHang.Location = new System.Drawing.Point(495, 2);
+            this.btKhachHang.Name = "btKhachHang";
+            this.btKhachHang.Size = new System.Drawing.Size(165, 52);
+            this.btKhachHang.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btKhachHang.TabIndex = 0;
+            this.btKhachHang.TabStop = false;
+            // 
+            // btBaoCao
+            // 
+            this.btBaoCao.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btBaoCao.Image = ((System.Drawing.Image)(resources.GetObject("btBaoCao.Image")));
+            this.btBaoCao.Location = new System.Drawing.Point(659, 2);
+            this.btBaoCao.Name = "btBaoCao";
+            this.btBaoCao.Size = new System.Drawing.Size(165, 52);
+            this.btBaoCao.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btBaoCao.TabIndex = 0;
+            this.btBaoCao.TabStop = false;
+            // 
+            // btXe
+            // 
+            this.btXe.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btXe.Image = ((System.Drawing.Image)(resources.GetObject("btXe.Image")));
+            this.btXe.Location = new System.Drawing.Point(331, 2);
+            this.btXe.Name = "btXe";
+            this.btXe.Size = new System.Drawing.Size(165, 52);
+            this.btXe.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btXe.TabIndex = 0;
+            this.btXe.TabStop = false;
+            // 
+            // btChuyenDi
+            // 
+            this.btChuyenDi.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btChuyenDi.Image = ((System.Drawing.Image)(resources.GetObject("btChuyenDi.Image")));
+            this.btChuyenDi.Location = new System.Drawing.Point(166, 2);
+            this.btChuyenDi.Name = "btChuyenDi";
+            this.btChuyenDi.Size = new System.Drawing.Size(166, 52);
+            this.btChuyenDi.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btChuyenDi.TabIndex = 0;
+            this.btChuyenDi.TabStop = false;
+            // 
+            // btDatVe
+            // 
+            this.btDatVe.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btDatVe.Image = ((System.Drawing.Image)(resources.GetObject("btDatVe.Image")));
+            this.btDatVe.Location = new System.Drawing.Point(2, 2);
+            this.btDatVe.Name = "btDatVe";
+            this.btDatVe.Size = new System.Drawing.Size(166, 52);
+            this.btDatVe.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btDatVe.TabIndex = 0;
+            this.btDatVe.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Tahoma", 9.75F);
+            this.label1.Location = new System.Drawing.Point(8, 12);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(95, 16);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Chọn ghế ngồi:";
             // 
             // pGhe
             // 
@@ -453,87 +617,26 @@
             this.ghe2.TabStop = false;
             this.ghe2.Click += new System.EventHandler(this.Ghe2_Click);
             // 
-            // pMenu
-            // 
-            this.pMenu.BackColor = System.Drawing.Color.Gainsboro;
-            this.pMenu.Controls.Add(this.btDangXuat);
-            this.pMenu.Controls.Add(this.btQLKH);
-            this.pMenu.Controls.Add(this.btQLCD);
-            this.pMenu.Controls.Add(this.btDatVe);
-            this.pMenu.Location = new System.Drawing.Point(3, 0);
-            this.pMenu.Name = "pMenu";
-            this.pMenu.Size = new System.Drawing.Size(738, 59);
-            this.pMenu.TabIndex = 2;
-            // 
-            // btDangXuat
-            // 
-            this.btDangXuat.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btDangXuat.Image = ((System.Drawing.Image)(resources.GetObject("btDangXuat.Image")));
-            this.btDangXuat.Location = new System.Drawing.Point(554, 3);
-            this.btDangXuat.Name = "btDangXuat";
-            this.btDangXuat.Size = new System.Drawing.Size(176, 52);
-            this.btDangXuat.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btDangXuat.TabIndex = 0;
-            this.btDangXuat.TabStop = false;
-            this.btDangXuat.Click += new System.EventHandler(this.BtDangXuat_Click);
-            // 
-            // btQLKH
-            // 
-            this.btQLKH.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btQLKH.Image = ((System.Drawing.Image)(resources.GetObject("btQLKH.Image")));
-            this.btQLKH.Location = new System.Drawing.Point(372, 3);
-            this.btQLKH.Name = "btQLKH";
-            this.btQLKH.Size = new System.Drawing.Size(176, 52);
-            this.btQLKH.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btQLKH.TabIndex = 0;
-            this.btQLKH.TabStop = false;
-            this.btQLKH.Click += new System.EventHandler(this.BtQLKH_Click);
-            // 
-            // btQLCD
-            // 
-            this.btQLCD.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btQLCD.Image = ((System.Drawing.Image)(resources.GetObject("btQLCD.Image")));
-            this.btQLCD.Location = new System.Drawing.Point(190, 3);
-            this.btQLCD.Name = "btQLCD";
-            this.btQLCD.Size = new System.Drawing.Size(176, 52);
-            this.btQLCD.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btQLCD.TabIndex = 0;
-            this.btQLCD.TabStop = false;
-            this.btQLCD.Click += new System.EventHandler(this.BtQLCD_Click);
-            // 
-            // btDatVe
-            // 
-            this.btDatVe.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btDatVe.Image = ((System.Drawing.Image)(resources.GetObject("btDatVe.Image")));
-            this.btDatVe.Location = new System.Drawing.Point(8, 3);
-            this.btDatVe.Name = "btDatVe";
-            this.btDatVe.Size = new System.Drawing.Size(176, 52);
-            this.btDatVe.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btDatVe.TabIndex = 0;
-            this.btDatVe.TabStop = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Tahoma", 9.75F);
-            this.label1.Location = new System.Drawing.Point(8, 12);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(95, 16);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Chọn ghế ngồi:";
-            // 
             // fDatVeXe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(744, 521);
-            this.Controls.Add(this.pNoiDung);
+            this.ClientSize = new System.Drawing.Size(884, 546);
             this.Controls.Add(this.pMenu);
+            this.Controls.Add(this.pNoiDung);
             this.Name = "fDatVeXe";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "fDatVeXe";
             this.pNoiDung.ResumeLayout(false);
             this.pNoiDung.PerformLayout();
+            this.pMenu.ResumeLayout(false);
+            this.pMenu.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btThoat)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btKhachHang)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btBaoCao)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btXe)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btChuyenDi)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btDatVe)).EndInit();
             this.pGhe.ResumeLayout(false);
             this.pGhe.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ghe13)).EndInit();
@@ -551,11 +654,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.ghe8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ghe5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ghe2)).EndInit();
-            this.pMenu.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.btDangXuat)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btQLKH)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btQLCD)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btDatVe)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -563,11 +661,6 @@
         #endregion
 
         private System.Windows.Forms.Panel pNoiDung;
-        private System.Windows.Forms.Panel pMenu;
-        private System.Windows.Forms.PictureBox btDangXuat;
-        private System.Windows.Forms.PictureBox btQLKH;
-        private System.Windows.Forms.PictureBox btQLCD;
-        private System.Windows.Forms.PictureBox btDatVe;
         private System.Windows.Forms.Panel pGhe;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label15;
@@ -600,5 +693,17 @@
         private System.Windows.Forms.PictureBox ghe5;
         private System.Windows.Forms.PictureBox ghe2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel pMenu;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.PictureBox btThoat;
+        private System.Windows.Forms.PictureBox btKhachHang;
+        private System.Windows.Forms.PictureBox btBaoCao;
+        private System.Windows.Forms.PictureBox btXe;
+        private System.Windows.Forms.PictureBox btChuyenDi;
+        private System.Windows.Forms.PictureBox btDatVe;
     }
 }
