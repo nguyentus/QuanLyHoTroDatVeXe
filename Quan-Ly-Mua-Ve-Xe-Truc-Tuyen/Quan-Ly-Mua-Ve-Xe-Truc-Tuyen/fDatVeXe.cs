@@ -13,12 +13,13 @@ namespace Quan_Ly_Mua_Ve_Xe_Truc_Tuyen
     {
         public fDatVeXe()
         {
-            InitializeComponent();
+            InitializeComponent();            
         }
 
         private void Ghe1_Click(object sender, EventArgs e)
         {
             PictureBox p= (PictureBox)sender;
+            
             if (p.BackColor == Color.Gray)
             {
                 p.BackColor = Color.Gainsboro;
@@ -68,7 +69,7 @@ namespace Quan_Ly_Mua_Ve_Xe_Truc_Tuyen
 
         private void BtThoat_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Bạn muốn rời khỏi trò chơi?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            if (MessageBox.Show("Bạn muốn rời khỏi phần mềm?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 this.Close();
         }
     }
