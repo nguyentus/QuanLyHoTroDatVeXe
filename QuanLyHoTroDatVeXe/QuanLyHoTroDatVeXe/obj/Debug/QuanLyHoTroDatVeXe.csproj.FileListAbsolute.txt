@@ -1,0 +1,14 @@
+E:\_STUDY\KiemThuPhanMem\_BaiTapLon\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\bin\Debug\QuanLyHoTroDatVeXe.exe.config
+E:\_STUDY\KiemThuPhanMem\_BaiTapLon\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\bin\Debug\QuanLyHoTroDatVeXe.exe
+E:\_STUDY\KiemThuPhanMem\_BaiTapLon\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\bin\Debug\QuanLyHoTroDatVeXe.pdb
+E:\_STUDY\KiemThuPhanMem\_BaiTapLon\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\obj\Debug\QuanLyHoTroDatVeXe.csprojAssemblyReference.cache
+E:\_STUDY\KiemThuPhanMem\_BaiTapLon\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\obj\Debug\QuanLyHoTroDatVeXe.fDatVeXe.resources
+E:\_STUDY\KiemThuPhanMem\_BaiTapLon\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\obj\Debug\QuanLyHoTroDatVeXe.Properties.Resources.resources
+E:\_STUDY\KiemThuPhanMem\_BaiTapLon\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\obj\Debug\QuanLyHoTroDatVeXe.csproj.GenerateResource.cache
+E:\_STUDY\KiemThuPhanMem\_BaiTapLon\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\obj\Debug\QuanLyHoTroDatVeXe.csproj.CoreCompileInputs.cache
+E:\_STUDY\KiemThuPhanMem\_BaiTapLon\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\obj\Debug\QuanLyHoTroDatVeXe.exe
+E:\_STUDY\KiemThuPhanMem\_BaiTapLon\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\obj\Debug\QuanLyHoTroDatVeXe.pdb
+E:\_STUDY\KiemThuPhanMem\_BaiTapLon\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\obj\Debug\QuanLyHoTroDatVeXe.fQuanLyChuyenDi.resources
+E:\_STUDY\KiemThuPhanMem\_BaiTapLon\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\obj\Debug\QuanLyHoTroDatVeXe.fBaoCaoThongKe.resources
+E:\_STUDY\KiemThuPhanMem\_BaiTapLon\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\obj\Debug\QuanLyHoTroDatVeXe.fQuanLyKhachHang.resources
+E:\_STUDY\KiemThuPhanMem\_BaiTapLon\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\obj\Debug\QuanLyHoTroDatVeXe.fQuanLyXe.resources
