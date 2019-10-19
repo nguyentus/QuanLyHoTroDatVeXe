@@ -1,4 +1,4 @@
-﻿namespace QuanLyHoTroDatVeXe
+﻿namespace Quan_Ly_Mua_Ve_Xe_Truc_Tuyen
 {
     partial class fQLCD
     {

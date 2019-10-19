@@ -9,3 +9,4 @@ E:\_STUDY\KiemThuPhanMem\_BaiTapLon\QuanLyMuaVeXeTrucTuyen\QuanLyHoTroDatVeXe\Qu
 E:\_STUDY\KiemThuPhanMem\_BaiTapLon\QuanLyMuaVeXeTrucTuyen\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\obj\Debug\QuanLyHoTroDatVeXe.csproj.CoreCompileInputs.cache
 E:\_STUDY\KiemThuPhanMem\_BaiTapLon\QuanLyMuaVeXeTrucTuyen\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\obj\Debug\Quan-Ly-Mua-Ve-Xe-Truc-Tuyen.exe
 E:\_STUDY\KiemThuPhanMem\_BaiTapLon\QuanLyMuaVeXeTrucTuyen\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\obj\Debug\Quan-Ly-Mua-Ve-Xe-Truc-Tuyen.pdb
+C:\Users\HP\Desktop\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\bin\Debug\QuanLyHoTroDatVeXe.exe

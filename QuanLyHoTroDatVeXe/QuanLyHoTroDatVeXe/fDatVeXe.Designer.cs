@@ -1,4 +1,4 @@
-﻿namespace Quan_Ly_Mua_Ve_Xe_Truc_Tuyen
+﻿namespace QuanLyHoTroDatVeXe
 {
     partial class fDatVeXe
     {

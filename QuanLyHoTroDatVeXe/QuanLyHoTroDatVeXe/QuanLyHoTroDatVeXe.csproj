@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{B1FF20DA-FE26-4848-805B-1B77EF9793AC}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Quan_Ly_Mua_Ve_Xe_Truc_Tuyen</RootNamespace>
-    <AssemblyName>Quan-Ly-Mua-Ve-Xe-Truc-Tuyen</AssemblyName>
+    <RootNamespace>QuanLyHoTroDatVeXe</RootNamespace>
+    <AssemblyName>QuanLyHoTroDatVeXe</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -55,6 +55,12 @@
     </Compile>
     <Compile Include="fQLCD.Designer.cs">
       <DependentUpon>fQLCD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fQLKH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fQLKH.Designer.cs">
+      <DependentUpon>fQLKH.cs</DependentUpon>
     </Compile>
     <Compile Include="fTrangChu.cs">
       <SubType>Form</SubType>

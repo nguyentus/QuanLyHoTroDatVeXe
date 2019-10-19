@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace QuanLyHoTroDatVeXe
+namespace Quan_Ly_Mua_Ve_Xe_Truc_Tuyen
 {
     public partial class fQLCD : Form
     {
