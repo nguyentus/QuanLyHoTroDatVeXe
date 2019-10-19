@@ -72,5 +72,10 @@ namespace Quan_Ly_Mua_Ve_Xe_Truc_Tuyen
             if (MessageBox.Show("Bạn muốn rời khỏi phần mềm?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 this.Close();
         }
+
+        private void BtDatVe_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
