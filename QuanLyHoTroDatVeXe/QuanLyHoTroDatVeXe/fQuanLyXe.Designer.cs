@@ -49,10 +49,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.lb1 = new System.Windows.Forms.Label();
             this.btXoa = new System.Windows.Forms.Button();
             this.btSua = new System.Windows.Forms.Button();
             this.btThem = new System.Windows.Forms.Button();
@@ -251,10 +249,8 @@
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.textBox3);
             this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.textBox1);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.lb1);
             this.panel1.Controls.Add(this.btXoa);
             this.panel1.Controls.Add(this.btSua);
             this.panel1.Controls.Add(this.btThem);
@@ -266,7 +262,7 @@
             // textBox4
             // 
             this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(389, 132);
+            this.textBox4.Location = new System.Drawing.Point(389, 116);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(157, 22);
             this.textBox4.TabIndex = 14;
@@ -276,7 +272,7 @@
             // 
             this.label3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(315, 132);
+            this.label3.Location = new System.Drawing.Point(315, 116);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(68, 22);
             this.label3.TabIndex = 13;
@@ -286,7 +282,7 @@
             // textBox3
             // 
             this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(389, 95);
+            this.textBox3.Location = new System.Drawing.Point(389, 79);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(157, 22);
             this.textBox3.TabIndex = 12;
@@ -295,26 +291,17 @@
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(389, 59);
+            this.textBox2.Location = new System.Drawing.Point(389, 43);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(157, 22);
             this.textBox2.TabIndex = 12;
             this.textBox2.Text = "trinh hoàng yến";
             // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(389, 24);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(157, 22);
-            this.textBox1.TabIndex = 12;
-            this.textBox1.Text = "trinh hoàng yến";
-            // 
             // label2
             // 
             this.label2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(315, 95);
+            this.label2.Location = new System.Drawing.Point(315, 79);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(68, 22);
             this.label2.TabIndex = 11;
@@ -325,23 +312,12 @@
             // 
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(315, 59);
+            this.label1.Location = new System.Drawing.Point(315, 43);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(68, 22);
             this.label1.TabIndex = 11;
             this.label1.Text = "Biển số:";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lb1
-            // 
-            this.lb1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lb1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb1.Location = new System.Drawing.Point(315, 24);
-            this.lb1.Name = "lb1";
-            this.lb1.Size = new System.Drawing.Size(68, 22);
-            this.lb1.TabIndex = 11;
-            this.lb1.Text = "Mã xe:";
-            this.lb1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btXoa
             // 
@@ -415,8 +391,6 @@
         private System.Windows.Forms.DataGridView dgvXe;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btThem;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label lb1;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label2;
