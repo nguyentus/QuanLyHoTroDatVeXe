@@ -79,4 +79,6 @@ VALUES  ( '59F61792', -- bienSo - varchar(10)
           0328893485, -- sdtTaiXe - int
           N'Toyota'  -- tenXe - nvarchar(50)
           )
+GO
+SELECT * FROM dbo.Xe
 

@@ -17,15 +17,16 @@ namespace QuanLyHoTroDatVeXe
         public fQuanLyXe()
         {
             InitializeComponent();
-            Load();
-            
+            LoadDanhSachXe();
+            XeBinding();
         }
 
-        void Load()
+        #region Methods
+        void LoadDanhSachXe()
         {
             dsXe.DataSource = XeDAO.Instance.LayDsXe();
-
             dgvXe.DataSource = dsXe;
+
             dgvXe.Columns[0].HeaderText = "Biển số";
             dgvXe.Columns[0].Width = 200;
 
@@ -40,12 +41,11 @@ namespace QuanLyHoTroDatVeXe
         }
         void XeBinding()
         {
-            t.DataBindings.Add("Text", dtgvKhoa.DataSource, "maKhoa", true, DataSourceUpdateMode.Never);
-            txtTenKhoa.DataBindings.Add("text", dtgvKhoa.DataSource, "tenKhoa", true, DataSourceUpdateMode.Never);
-            txtNamThanhLap.DataBindings.Add("text", dtgvKhoa.DataSource, "ngayThanhLap", true, DataSourceUpdateMode.Never);
+            txtBienSo.DataBindings.Add("Text", dgvXe.DataSource, "bienSo", true, DataSourceUpdateMode.Never);
+            txtTenXe.DataBindings.Add("text", dgvXe.DataSource, "tenXe", true, DataSourceUpdateMode.Never);
+            txtTaiXe.DataBindings.Add("text", dgvXe.DataSource, "taiXe", true, DataSourceUpdateMode.Never);
+            txtSDT.DataBindings.Add("text", dgvXe.DataSource, "sdtTaiXe", true, DataSourceUpdateMode.Never);
         }
-
-        #region Methods
         #endregion
 
         #region Events
