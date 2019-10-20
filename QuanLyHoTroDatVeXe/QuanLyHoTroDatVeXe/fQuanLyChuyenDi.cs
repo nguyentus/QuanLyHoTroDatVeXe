@@ -49,5 +49,6 @@ namespace QuanLyHoTroDatVeXe
             if (MessageBox.Show("Bạn muốn rời khỏi phần mềm?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 this.Close();
         }
+
     }
 }

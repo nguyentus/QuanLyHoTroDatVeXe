@@ -66,11 +66,17 @@ CREATE TABLE Ve
 	soDienThoai INT,
 	maCD INT,
 	thoiGianDat DATETIME NOT NULL,
-	maNV INT NOT NULL,
 	PRIMARY KEY (maVe, soDienThoai, maCD), 
 	FOREIGN KEY (soDienThoai) REFERENCES dbo.KhachHang (soDienThoai),
 	FOREIGN KEY (maCD) REFERENCES dbo.ChuyenDi (maCD),
-	FOREIGN KEY (maNV) REFERENCES dbo.NhanVien (maNV)
 )
 GO
+
+INSERT INTO dbo.Xe
+        ( bienSo, taiXe, sdtTaiXe, tenXe )
+VALUES  ( '59F61792', -- bienSo - varchar(10)
+          N'Nguyễn Văn Lương', -- taiXe - nvarchar(50)
+          0328893485, -- sdtTaiXe - int
+          N'Toyota'  -- tenXe - nvarchar(50)
+          )
 
