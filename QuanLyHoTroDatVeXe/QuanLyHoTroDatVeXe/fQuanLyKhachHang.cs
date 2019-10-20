@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DAO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,12 +13,40 @@ namespace QuanLyHoTroDatVeXe
 {
     public partial class fQuanLyKhachHang : Form
     {
+        BindingSource dsKhachHang = new BindingSource();
         public fQuanLyKhachHang()
         {
             InitializeComponent();
+            dgvKhachHang.DataSource = dsKhachHang;
+            hienThiDanhSach();
         }
 
         #region Methods
+        void hienThiDanhSach()
+        {
+            dsKhachHang.DataSource = KhachHangDAO.Instance.layDsKhachHang();
+
+            dgvKhachHang.Columns[0].HeaderText = "Số điện thoại";
+            dgvKhachHang.Columns[0].Width = 100;
+
+            dgvKhachHang.Columns[1].HeaderText = "CMND";
+            dgvKhachHang.Columns[1].Width = 70;
+
+            dgvKhachHang.Columns[2].HeaderText = "Họ tên";
+            dgvKhachHang.Columns[2].Width = 150;
+
+            dgvKhachHang.Columns[3].HeaderText = "Giới tính";
+            dgvKhachHang.Columns[3].Width = 70;
+
+            dgvKhachHang.Columns[4].HeaderText = "Địa chỉ";
+            dgvKhachHang.Columns[4].Width = 140;
+
+            dgvKhachHang.Columns[5].HeaderText = "Email";
+            dgvKhachHang.Columns[5].Width = 140;
+
+            dgvKhachHang.Columns[6].HeaderText = "Tên đăng nhập";
+            dgvKhachHang.Columns[6].Width = 120;
+        }
         #endregion
 
         #region Events

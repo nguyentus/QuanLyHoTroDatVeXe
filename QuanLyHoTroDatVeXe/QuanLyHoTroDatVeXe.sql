@@ -15,7 +15,7 @@ GO
 CREATE TABLE ChuyenDi
 (
 	maCD INT IDENTITY(10078,1) PRIMARY KEY,
-	gioDi NVARCHAR(5) NOT NULL,
+	gioDi VARCHAR(5) NOT NULL,
 	ngayDi DATETIME NOT NULL,
 	diemDi NVARCHAR(50) NOT NULL,
 	diemDen NVARCHAR(50) NOT NULL,
@@ -85,12 +85,12 @@ GO
 CREATE PROC themChuyenDi 
 (
 	@maCD INT,
-	@gioDi NVARCHAR(5), 
+	@gioDi VARCHAR(5), 
 	@ngayDi DATETIME, 
 	@diemDi NVARCHAR(50), 
 	@diemDen NVARCHAR(50), 
 	@giaVe FLOAT, 
-	@bienSo NVARCHAR(10)
+	@bienSo VARCHAR(10)
 )
 AS
 BEGIN
@@ -104,5 +104,6 @@ themXe '59F-61792', N'Lê Quốc Hoàng', 328893485, N'KIA'
 GO
 themXe '59F-81792', N'Nguyễn Văn Lương', 184789253, N'Toyota'
 GO
-themChuyenDi 1 ,'5h30', '12-11-2013' , 'Long An', 'Tp Hồ Chí Minh', 125000, '59F-81792' 
+themChuyenDi 1,'5h30', '12-11-2013' , 'Long An', 'Tp Hồ Chí Minh', 125000, '59F-81792' 
 
+SELECT * FROM dbo.Xe

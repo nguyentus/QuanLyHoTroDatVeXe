@@ -43,18 +43,12 @@ namespace QuanLyHoTroDatVeXe
         //tạo ràng buộc giữa datagridview với các ô text
         void taoRangBuoc()
         {
-           
-
             txtBienSo.DataBindings.Add("Text", dgvXe.DataSource, "bienSo", true, DataSourceUpdateMode.Never);
             txtTenXe.DataBindings.Add("text", dgvXe.DataSource, "tenXe", true, DataSourceUpdateMode.Never);
             txtTaiXe.DataBindings.Add("text", dgvXe.DataSource, "taiXe", true, DataSourceUpdateMode.Never);
             txtSDT.DataBindings.Add("text", dgvXe.DataSource, "sdtTaiXe", true, DataSourceUpdateMode.Never);
         }
-        #endregion
-
-        #region Events
-
-        private void btThem_Click(object sender, EventArgs e)
+        void themDuLieu()
         {
             try
             {
@@ -62,7 +56,7 @@ namespace QuanLyHoTroDatVeXe
                 string taiXe = txtTaiXe.Text;
                 int sdt = int.Parse(txtSDT.Text);
                 string tenXe = txtTenXe.Text;
-                
+
                 if (bienSo == "" || taiXe == "" || tenXe == "")
                     MessageBox.Show("Bạn phải nhập đủ!", "Thêm xe", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 else
@@ -83,10 +77,18 @@ namespace QuanLyHoTroDatVeXe
                     }
                 }
             }
-            catch(Exception)
+            catch (Exception)
             {
                 MessageBox.Show("Lỗi nhập!", "Thêm xe", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+        }
+        #endregion
+
+        #region Events
+
+        private void btThem_Click(object sender, EventArgs e)
+        {
+            themDuLieu();
         }
         
         private void btXoa_Click(object sender, EventArgs e)

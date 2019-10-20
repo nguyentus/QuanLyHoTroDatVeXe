@@ -13,6 +13,7 @@ namespace DTO
         private DateTime ngayDi;
         private string gioDi, diemDi, diemDen, bienSo;
         private double giaVe;
+
         public ChuyenDi(DataRow row)
         {
             this.MaCD = (int)row["maCD"];

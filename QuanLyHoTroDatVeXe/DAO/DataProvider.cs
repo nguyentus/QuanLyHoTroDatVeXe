@@ -24,7 +24,7 @@ namespace DAO
 
         private DataProvider()
         {
-            string con = @"Data Source=NGUYENTU\SQLNT;Initial Catalog=QuanLyHoTroDatVe;Integrated Security=True";
+            string con = "Data Source=.;Initial Catalog=QuanLyHoTroDatVe;Integrated Security=True";
             connection = new SqlConnection(con);
         }
         
@@ -65,7 +65,7 @@ namespace DAO
             return tableResult;
         }
 
-        public int ExecuteNonQuery( string query, object[] parameter = null)
+        public int ExecuteNonQuery( string query)
         {
             Connect();
             int result = 0;

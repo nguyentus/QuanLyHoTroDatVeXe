@@ -64,7 +64,8 @@ namespace DAO
         //sửa thông tin
         public bool suaThongTinXe(string bienSo, string taiXe, int sdt, string tenXe)
         {
-            int result = DataProvider.Instance.ExecuteNonQuery("UPDATE dbo.Xe SET taiXe = N'" + taiXe + "', sdtTaiXe = " + sdt + ", tenXe = '" + tenXe + "' WHERE bienSo = '" + bienSo + "'");
+            int result = DataProvider.Instance.ExecuteNonQuery("UPDATE dbo.Xe SET taiXe = N'" 
+                + taiXe + "', sdtTaiXe = " + sdt + ", tenXe = N'" + tenXe + "' WHERE bienSo = '" + bienSo + "'");
             return result > 0;
         }
     }

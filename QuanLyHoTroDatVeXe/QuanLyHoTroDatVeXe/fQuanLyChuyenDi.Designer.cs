@@ -153,7 +153,7 @@
             this.dtpNgayKhoiHanh.Location = new System.Drawing.Point(200, 31);
             this.dtpNgayKhoiHanh.Name = "dtpNgayKhoiHanh";
             this.dtpNgayKhoiHanh.Size = new System.Drawing.Size(134, 20);
-            this.dtpNgayKhoiHanh.TabIndex = 4;
+            this.dtpNgayKhoiHanh.TabIndex = 1;
             // 
             // cbDiemDi
             // 
@@ -161,7 +161,7 @@
             this.cbDiemDi.Location = new System.Drawing.Point(398, 30);
             this.cbDiemDi.Name = "cbDiemDi";
             this.cbDiemDi.Size = new System.Drawing.Size(90, 21);
-            this.cbDiemDi.TabIndex = 1;
+            this.cbDiemDi.TabIndex = 2;
             // 
             // cbGioKhoiHanh
             // 
@@ -169,7 +169,7 @@
             this.cbGioKhoiHanh.Location = new System.Drawing.Point(8, 30);
             this.cbGioKhoiHanh.Name = "cbGioKhoiHanh";
             this.cbGioKhoiHanh.Size = new System.Drawing.Size(124, 21);
-            this.cbGioKhoiHanh.TabIndex = 1;
+            this.cbGioKhoiHanh.TabIndex = 0;
             this.cbGioKhoiHanh.Text = "3:00";
             // 
             // label2
@@ -335,7 +335,7 @@
             this.cbDiemDen.Location = new System.Drawing.Point(562, 30);
             this.cbDiemDen.Name = "cbDiemDen";
             this.cbDiemDen.Size = new System.Drawing.Size(101, 21);
-            this.cbDiemDen.TabIndex = 1;
+            this.cbDiemDen.TabIndex = 3;
             // 
             // pNoiDung
             // 

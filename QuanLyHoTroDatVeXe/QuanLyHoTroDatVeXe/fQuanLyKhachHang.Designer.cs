@@ -48,25 +48,25 @@
             this.btKhachHang = new System.Windows.Forms.PictureBox();
             this.btDatVe = new System.Windows.Forms.PictureBox();
             this.btThem = new System.Windows.Forms.Button();
-            this.dgvXe = new System.Windows.Forms.DataGridView();
+            this.dgvKhachHang = new System.Windows.Forms.DataGridView();
             this.pNoiDung = new System.Windows.Forms.Panel();
             this.listView1 = new System.Windows.Forms.ListView();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.txtSDT = new System.Windows.Forms.TextBox();
-            this.pMenu = new System.Windows.Forms.Panel();
+            this.cbGioiTinh = new System.Windows.Forms.ComboBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtDiaChi = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.cbGioiTinh = new System.Windows.Forms.ComboBox();
+            this.txtSDT = new System.Windows.Forms.TextBox();
+            this.pMenu = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.btThoat)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btBaoCao)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btXe)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btChuyenDi)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btKhachHang)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btDatVe)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvXe)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvKhachHang)).BeginInit();
             this.pNoiDung.SuspendLayout();
             this.panel1.SuspendLayout();
             this.pMenu.SuspendLayout();
@@ -278,17 +278,17 @@
             this.btThem.Text = "Thêm ";
             this.btThem.UseVisualStyleBackColor = true;
             // 
-            // dgvXe
+            // dgvKhachHang
             // 
-            this.dgvXe.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvXe.Location = new System.Drawing.Point(20, 201);
-            this.dgvXe.Name = "dgvXe";
-            this.dgvXe.Size = new System.Drawing.Size(835, 263);
-            this.dgvXe.TabIndex = 2;
+            this.dgvKhachHang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvKhachHang.Location = new System.Drawing.Point(20, 201);
+            this.dgvKhachHang.Name = "dgvKhachHang";
+            this.dgvKhachHang.Size = new System.Drawing.Size(835, 263);
+            this.dgvKhachHang.TabIndex = 2;
             // 
             // pNoiDung
             // 
-            this.pNoiDung.Controls.Add(this.dgvXe);
+            this.pNoiDung.Controls.Add(this.dgvKhachHang);
             this.pNoiDung.Controls.Add(this.listView1);
             this.pNoiDung.Controls.Add(this.panel1);
             this.pNoiDung.Location = new System.Drawing.Point(3, 60);
@@ -327,33 +327,13 @@
             this.panel1.Size = new System.Drawing.Size(860, 180);
             this.panel1.TabIndex = 0;
             // 
-            // txtSDT
+            // cbGioiTinh
             // 
-            this.txtSDT.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSDT.Location = new System.Drawing.Point(144, 43);
-            this.txtSDT.Name = "txtSDT";
-            this.txtSDT.Size = new System.Drawing.Size(157, 22);
-            this.txtSDT.TabIndex = 12;
-            this.txtSDT.Text = "trinh hoàng yến";
-            // 
-            // pMenu
-            // 
-            this.pMenu.BackColor = System.Drawing.Color.Transparent;
-            this.pMenu.Controls.Add(this.label6);
-            this.pMenu.Controls.Add(this.label5);
-            this.pMenu.Controls.Add(this.label4);
-            this.pMenu.Controls.Add(this.label7);
-            this.pMenu.Controls.Add(this.label8);
-            this.pMenu.Controls.Add(this.btThoat);
-            this.pMenu.Controls.Add(this.btKhachHang);
-            this.pMenu.Controls.Add(this.btBaoCao);
-            this.pMenu.Controls.Add(this.btXe);
-            this.pMenu.Controls.Add(this.btChuyenDi);
-            this.pMenu.Controls.Add(this.btDatVe);
-            this.pMenu.Location = new System.Drawing.Point(3, 0);
-            this.pMenu.Name = "pMenu";
-            this.pMenu.Size = new System.Drawing.Size(879, 57);
-            this.pMenu.TabIndex = 8;
+            this.cbGioiTinh.FormattingEnabled = true;
+            this.cbGioiTinh.Location = new System.Drawing.Point(458, 43);
+            this.cbGioiTinh.Name = "cbGioiTinh";
+            this.cbGioiTinh.Size = new System.Drawing.Size(157, 21);
+            this.cbGioiTinh.TabIndex = 19;
             // 
             // txtEmail
             // 
@@ -403,13 +383,33 @@
             this.label3.TabIndex = 15;
             this.label3.Text = "Địa chỉ:";
             // 
-            // cbGioiTinh
+            // txtSDT
             // 
-            this.cbGioiTinh.FormattingEnabled = true;
-            this.cbGioiTinh.Location = new System.Drawing.Point(458, 43);
-            this.cbGioiTinh.Name = "cbGioiTinh";
-            this.cbGioiTinh.Size = new System.Drawing.Size(157, 21);
-            this.cbGioiTinh.TabIndex = 19;
+            this.txtSDT.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSDT.Location = new System.Drawing.Point(144, 43);
+            this.txtSDT.Name = "txtSDT";
+            this.txtSDT.Size = new System.Drawing.Size(157, 22);
+            this.txtSDT.TabIndex = 12;
+            this.txtSDT.Text = "trinh hoàng yến";
+            // 
+            // pMenu
+            // 
+            this.pMenu.BackColor = System.Drawing.Color.Transparent;
+            this.pMenu.Controls.Add(this.label6);
+            this.pMenu.Controls.Add(this.label5);
+            this.pMenu.Controls.Add(this.label4);
+            this.pMenu.Controls.Add(this.label7);
+            this.pMenu.Controls.Add(this.label8);
+            this.pMenu.Controls.Add(this.btThoat);
+            this.pMenu.Controls.Add(this.btKhachHang);
+            this.pMenu.Controls.Add(this.btBaoCao);
+            this.pMenu.Controls.Add(this.btXe);
+            this.pMenu.Controls.Add(this.btChuyenDi);
+            this.pMenu.Controls.Add(this.btDatVe);
+            this.pMenu.Location = new System.Drawing.Point(3, 0);
+            this.pMenu.Name = "pMenu";
+            this.pMenu.Size = new System.Drawing.Size(879, 57);
+            this.pMenu.TabIndex = 8;
             // 
             // fQuanLyKhachHang
             // 
@@ -427,7 +427,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.btChuyenDi)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btKhachHang)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btDatVe)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvXe)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvKhachHang)).EndInit();
             this.pNoiDung.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -458,7 +458,7 @@
         private System.Windows.Forms.PictureBox btKhachHang;
         private System.Windows.Forms.PictureBox btDatVe;
         private System.Windows.Forms.Button btThem;
-        private System.Windows.Forms.DataGridView dgvXe;
+        private System.Windows.Forms.DataGridView dgvKhachHang;
         private System.Windows.Forms.Panel pNoiDung;
         private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.Panel panel1;

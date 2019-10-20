@@ -18,6 +18,8 @@ namespace QuanLyHoTroDatVeXe
             InitializeComponent();
             hienThiDanhSachChuyenDi();
         }
+
+        #region Methods
         void hienThiDanhSachChuyenDi()
         {
             dgvChuyenDi.DataSource = ChuyenDiDAO.Instance.LayDsChuyenDi();
@@ -43,6 +45,8 @@ namespace QuanLyHoTroDatVeXe
         {
                                   
         }
+        #endregion
+
         //private void BtXem_Click(object sender, EventArgs e)
         //{
         //    try
@@ -77,6 +81,8 @@ namespace QuanLyHoTroDatVeXe
         //        MessageBox.Show("Lỗi nhập!", "Thêm xe", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         //    }
         //}
+
+        #region Events
         private void BtDatVeXe_Click(object sender, EventArgs e)
         {
             fDatVeXe f = new fDatVeXe();
@@ -110,5 +116,6 @@ namespace QuanLyHoTroDatVeXe
             if (MessageBox.Show("Bạn muốn rời khỏi phần mềm?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 this.Close();
         }
+        #endregion
     }
 }
