@@ -17,7 +17,11 @@ namespace QuanLyHoTroDatVeXe
             InitializeComponent();
         }
 
-        private void A01_Click(object sender, EventArgs e)
+        #region Methods
+        #endregion
+
+        #region Events
+        private void ChonGhe_Click(object sender, EventArgs e)
         {
             PictureBox p = (PictureBox)sender;
             if (p.BackColor == Color.Gray)
@@ -65,5 +69,6 @@ namespace QuanLyHoTroDatVeXe
             if (MessageBox.Show("Bạn muốn rời khỏi phần mềm?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 this.Close();
         }
+        #endregion
     }
 }

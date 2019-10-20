@@ -128,7 +128,7 @@
             this.A13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.A13.TabIndex = 0;
             this.A13.TabStop = false;
-            this.A13.Click += new System.EventHandler(this.A01_Click);
+            this.A13.Click += new System.EventHandler(this.ChonGhe_Click);
             // 
             // A07
             // 
@@ -139,7 +139,7 @@
             this.A07.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.A07.TabIndex = 0;
             this.A07.TabStop = false;
-            this.A07.Click += new System.EventHandler(this.A01_Click);
+            this.A07.Click += new System.EventHandler(this.ChonGhe_Click);
             // 
             // A04
             // 
@@ -150,7 +150,7 @@
             this.A04.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.A04.TabIndex = 0;
             this.A04.TabStop = false;
-            this.A04.Click += new System.EventHandler(this.A01_Click);
+            this.A04.Click += new System.EventHandler(this.ChonGhe_Click);
             // 
             // A01
             // 
@@ -161,7 +161,7 @@
             this.A01.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.A01.TabIndex = 0;
             this.A01.TabStop = false;
-            this.A01.Click += new System.EventHandler(this.A01_Click);
+            this.A01.Click += new System.EventHandler(this.ChonGhe_Click);
             // 
             // A15
             // 
@@ -172,7 +172,7 @@
             this.A15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.A15.TabIndex = 0;
             this.A15.TabStop = false;
-            this.A15.Click += new System.EventHandler(this.A01_Click);
+            this.A15.Click += new System.EventHandler(this.ChonGhe_Click);
             // 
             // A12
             // 
@@ -183,7 +183,7 @@
             this.A12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.A12.TabIndex = 0;
             this.A12.TabStop = false;
-            this.A12.Click += new System.EventHandler(this.A01_Click);
+            this.A12.Click += new System.EventHandler(this.ChonGhe_Click);
             // 
             // dtpNgayDi
             // 
@@ -202,7 +202,7 @@
             this.A09.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.A09.TabIndex = 0;
             this.A09.TabStop = false;
-            this.A09.Click += new System.EventHandler(this.A01_Click);
+            this.A09.Click += new System.EventHandler(this.ChonGhe_Click);
             // 
             // label27
             // 
@@ -262,7 +262,7 @@
             this.A10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.A10.TabIndex = 0;
             this.A10.TabStop = false;
-            this.A10.Click += new System.EventHandler(this.A01_Click);
+            this.A10.Click += new System.EventHandler(this.ChonGhe_Click);
             // 
             // label1
             // 
@@ -304,7 +304,7 @@
             this.A06.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.A06.TabIndex = 0;
             this.A06.TabStop = false;
-            this.A06.Click += new System.EventHandler(this.A01_Click);
+            this.A06.Click += new System.EventHandler(this.ChonGhe_Click);
             // 
             // A14
             // 
@@ -315,7 +315,7 @@
             this.A14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.A14.TabIndex = 0;
             this.A14.TabStop = false;
-            this.A14.Click += new System.EventHandler(this.A01_Click);
+            this.A14.Click += new System.EventHandler(this.ChonGhe_Click);
             // 
             // A11
             // 
@@ -326,7 +326,7 @@
             this.A11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.A11.TabIndex = 0;
             this.A11.TabStop = false;
-            this.A11.Click += new System.EventHandler(this.A01_Click);
+            this.A11.Click += new System.EventHandler(this.ChonGhe_Click);
             // 
             // A08
             // 
@@ -337,7 +337,7 @@
             this.A08.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.A08.TabIndex = 0;
             this.A08.TabStop = false;
-            this.A08.Click += new System.EventHandler(this.A01_Click);
+            this.A08.Click += new System.EventHandler(this.ChonGhe_Click);
             // 
             // A05
             // 
@@ -348,7 +348,7 @@
             this.A05.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.A05.TabIndex = 0;
             this.A05.TabStop = false;
-            this.A05.Click += new System.EventHandler(this.A01_Click);
+            this.A05.Click += new System.EventHandler(this.ChonGhe_Click);
             // 
             // A02
             // 
@@ -359,7 +359,7 @@
             this.A02.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.A02.TabIndex = 0;
             this.A02.TabStop = false;
-            this.A02.Click += new System.EventHandler(this.A01_Click);
+            this.A02.Click += new System.EventHandler(this.ChonGhe_Click);
             // 
             // pMenu
             // 
@@ -520,7 +520,7 @@
             this.A03.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.A03.TabIndex = 0;
             this.A03.TabStop = false;
-            this.A03.Click += new System.EventHandler(this.A01_Click);
+            this.A03.Click += new System.EventHandler(this.ChonGhe_Click);
             // 
             // cbDiemDi
             // 

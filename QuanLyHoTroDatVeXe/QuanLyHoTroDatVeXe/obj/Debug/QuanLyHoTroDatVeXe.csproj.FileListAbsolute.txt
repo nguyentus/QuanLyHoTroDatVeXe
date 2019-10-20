@@ -12,3 +12,17 @@ E:\_STUDY\KiemThuPhanMem\_BaiTapLon\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\QuanLy
 E:\_STUDY\KiemThuPhanMem\_BaiTapLon\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\obj\Debug\QuanLyHoTroDatVeXe.fBaoCaoThongKe.resources
 E:\_STUDY\KiemThuPhanMem\_BaiTapLon\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\obj\Debug\QuanLyHoTroDatVeXe.fQuanLyKhachHang.resources
 E:\_STUDY\KiemThuPhanMem\_BaiTapLon\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\obj\Debug\QuanLyHoTroDatVeXe.fQuanLyXe.resources
+C:\Users\HP\Desktop\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\bin\Debug\QuanLyHoTroDatVeXe.exe.config
+C:\Users\HP\Desktop\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\bin\Debug\QuanLyHoTroDatVeXe.exe
+C:\Users\HP\Desktop\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\bin\Debug\QuanLyHoTroDatVeXe.pdb
+C:\Users\HP\Desktop\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\obj\Debug\QuanLyHoTroDatVeXe.csprojAssemblyReference.cache
+C:\Users\HP\Desktop\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\obj\Debug\QuanLyHoTroDatVeXe.fBaoCaoThongKe.resources
+C:\Users\HP\Desktop\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\obj\Debug\QuanLyHoTroDatVeXe.fDatVeXe.resources
+C:\Users\HP\Desktop\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\obj\Debug\QuanLyHoTroDatVeXe.fQuanLyChuyenDi.resources
+C:\Users\HP\Desktop\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\obj\Debug\QuanLyHoTroDatVeXe.fQuanLyKhachHang.resources
+C:\Users\HP\Desktop\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\obj\Debug\QuanLyHoTroDatVeXe.fQuanLyXe.resources
+C:\Users\HP\Desktop\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\obj\Debug\QuanLyHoTroDatVeXe.Properties.Resources.resources
+C:\Users\HP\Desktop\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\obj\Debug\QuanLyHoTroDatVeXe.csproj.GenerateResource.cache
+C:\Users\HP\Desktop\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\obj\Debug\QuanLyHoTroDatVeXe.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\obj\Debug\QuanLyHoTroDatVeXe.exe
+C:\Users\HP\Desktop\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\obj\Debug\QuanLyHoTroDatVeXe.pdb
