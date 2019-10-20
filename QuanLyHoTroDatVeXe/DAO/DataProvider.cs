@@ -56,14 +56,23 @@ namespace DAO
 
         public DataTable ExecuteQuery( string query)
         {
-
+            Connect();
             DataTable tableResult = new DataTable();
-
             SqlCommand command = new SqlCommand(query, connection);
             SqlDataAdapter adapter = new SqlDataAdapter(command);
             adapter.Fill(tableResult);
-
+            Disconnect();
             return tableResult;
+        }
+
+        public int ExecuteNonQuery( string query, object[] parameter = null)
+        {
+            Connect();
+            int result = 0;
+            SqlCommand command = new SqlCommand(query, connection);
+            result = command.ExecuteNonQuery();
+            Disconnect();
+            return result;
         }
 
     }

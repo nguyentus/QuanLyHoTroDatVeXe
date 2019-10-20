@@ -73,7 +73,7 @@
             this.listView1.HideSelection = false;
             this.listView1.Location = new System.Drawing.Point(8, 170);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(860, 257);
+            this.listView1.Size = new System.Drawing.Size(860, 304);
             this.listView1.TabIndex = 1;
             this.listView1.UseCompatibleStateImageBehavior = false;
             // 
@@ -242,7 +242,7 @@
             this.dgvXe.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvXe.Location = new System.Drawing.Point(20, 181);
             this.dgvXe.Name = "dgvXe";
-            this.dgvXe.Size = new System.Drawing.Size(835, 235);
+            this.dgvXe.Size = new System.Drawing.Size(835, 280);
             this.dgvXe.TabIndex = 2;
             // 
             // panel1
@@ -351,6 +351,7 @@
             this.btXoa.TabIndex = 6;
             this.btXoa.Text = "Xoá";
             this.btXoa.UseVisualStyleBackColor = true;
+            this.btXoa.Click += new System.EventHandler(this.btXoa_Click);
             // 
             // btSua
             // 
@@ -360,6 +361,7 @@
             this.btSua.TabIndex = 6;
             this.btSua.Text = "Sửa";
             this.btSua.UseVisualStyleBackColor = true;
+            this.btSua.Click += new System.EventHandler(this.btSua_Click);
             // 
             // btThem
             // 
@@ -369,6 +371,7 @@
             this.btThem.TabIndex = 6;
             this.btThem.Text = "Thêm ";
             this.btThem.UseVisualStyleBackColor = true;
+            this.btThem.Click += new System.EventHandler(this.btThem_Click);
             // 
             // fQuanLyXe
             // 

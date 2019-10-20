@@ -34,5 +34,38 @@ namespace DAO
             }
             return danhSach;
         }
+
+        //thêm xe vào danh sách
+        public bool themXe(string bienSo, string taiXe, int sdtTaiXe, string tenXe)
+        {
+            int result = DataProvider.Instance.ExecuteNonQuery("themXe '" + bienSo 
+                                                            + "', '" + taiXe + "' ,'" 
+                                                            + sdtTaiXe + "', '" + tenXe +"'");
+            return result > 0;
+        }
+
+        public string timXeTheoBienSo(string bienSo)
+        {
+            DataTable table = DataProvider.Instance.ExecuteQuery("SELECT * FROM dbo.Xe WHERE bienSo = '" + bienSo +"'");
+            foreach( DataRow row in table.Rows)
+            {
+                Xe xeTim = new Xe(row);
+                return xeTim.BienSo;
+            }
+            return "";
+        }
+
+        //xóa xe bằng biển số
+        public void xoaXeBangBienSo(string bienSo)
+        {
+            DataProvider.Instance.ExecuteNonQuery("DELETE dbo.Xe WHERE bienSo = '" + bienSo +"'");
+        }
+
+        //sửa thông tin
+        public bool suaThongTinXe(string bienSo, string taiXe, int sdt, string tenXe)
+        {
+            int result = DataProvider.Instance.ExecuteNonQuery("UPDATE dbo.Xe SET taiXe = N'" + taiXe + "', sdtTaiXe = " + sdt + ", tenXe = '" + tenXe + "' WHERE bienSo = '" + bienSo + "'");
+            return result > 0;
+        }
     }
 }

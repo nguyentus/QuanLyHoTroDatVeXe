@@ -24,7 +24,6 @@ CREATE TABLE ChuyenDi
 	FOREIGN KEY (bienSo) REFERENCES dbo.Xe (bienSo)
 )
 GO
-
 CREATE TABLE TaiKhoan
 (
 	tenDangNhap VARCHAR(10) PRIMARY KEY,
@@ -32,7 +31,6 @@ CREATE TABLE TaiKhoan
 	loaiTaiKhoan INT NOT NULL	--tài khoản KH: 0, nhân viên: 1
 )
 GO
-
 CREATE TABLE NhanVien
 (
 	maNV INT IDENTITY(10078,1) PRIMARY KEY,
@@ -46,7 +44,6 @@ CREATE TABLE NhanVien
 	FOREIGN KEY (tenDangNhap) REFERENCES dbo.TaiKhoan (tenDangNhap)
 )
 GO
-
 CREATE TABLE KhachHang
 (
 	soDienThoai INT PRIMARY KEY,
@@ -59,7 +56,6 @@ CREATE TABLE KhachHang
 	FOREIGN KEY (tenDangNhap) REFERENCES dbo.TaiKhoan (tenDangNhap)
 )
 GO          
-
 CREATE TABLE Ve
 (
 	maVe INT IDENTITY(1098,2),
@@ -72,13 +68,18 @@ CREATE TABLE Ve
 )
 GO
 
-INSERT INTO dbo.Xe
-        ( bienSo, taiXe, sdtTaiXe, tenXe )
-VALUES  ( '59F61792', -- bienSo - varchar(10)
-          N'Nguyễn Văn Lương', -- taiXe - nvarchar(50)
-          0328893485, -- sdtTaiXe - int
-          N'Toyota'  -- tenXe - nvarchar(50)
-          )
+--STORE  PROC
+CREATE PROC themXe (@bienSo VARCHAR(10), @taiXe NVARCHAR(50), @sdtTaiXe int, @tenXe NVARCHAR(50) )
+AS
+BEGIN
+	INSERT dbo.Xe ( bienSo, taiXe, sdtTaiXe, tenXe )
+	VALUES  ( @bienSo, @taiXe, @sdtTaiXe, @tenXe)
+END
 GO
-SELECT * FROM dbo.Xe
+
+--CSDL
+themXe '59F-61792', N'Lê Quốc Hoàng', 328893485, N'KIA'
+GO
+themXe '59F-81792', N'Nguyễn Văn Lương', 184789253, N'Toyota'
+GO
 

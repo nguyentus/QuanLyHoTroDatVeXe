@@ -17,15 +17,15 @@ namespace QuanLyHoTroDatVeXe
         public fQuanLyXe()
         {
             InitializeComponent();
-            LoadDanhSachXe();
-            XeBinding();
+            dgvXe.DataSource = dsXe;
+            hienThiDanhSachXe();
+            taoRangBuoc();
         }
 
         #region Methods
-        void LoadDanhSachXe()
-        {
+        void hienThiDanhSachXe()
+        { 
             dsXe.DataSource = XeDAO.Instance.LayDsXe();
-            dgvXe.DataSource = dsXe;
 
             dgvXe.Columns[0].HeaderText = "Biển số";
             dgvXe.Columns[0].Width = 200;
@@ -39,8 +39,12 @@ namespace QuanLyHoTroDatVeXe
             dgvXe.Columns[3].HeaderText = "Loại xe";
             dgvXe.Columns[3].Width = 200;
         }
-        void XeBinding()
+
+        //tạo ràng buộc giữa datagridview với các ô text
+        void taoRangBuoc()
         {
+           
+
             txtBienSo.DataBindings.Add("Text", dgvXe.DataSource, "bienSo", true, DataSourceUpdateMode.Never);
             txtTenXe.DataBindings.Add("text", dgvXe.DataSource, "tenXe", true, DataSourceUpdateMode.Never);
             txtTaiXe.DataBindings.Add("text", dgvXe.DataSource, "taiXe", true, DataSourceUpdateMode.Never);
@@ -49,6 +53,70 @@ namespace QuanLyHoTroDatVeXe
         #endregion
 
         #region Events
+
+        private void btThem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string bienSo = txtBienSo.Text;
+                string taiXe = txtTaiXe.Text;
+                int sdt = int.Parse(txtSDT.Text);
+                string tenXe = txtTenXe.Text;
+                
+                if (bienSo == "" || taiXe == "" || tenXe == "")
+                    MessageBox.Show("Bạn phải nhập đủ!", "Thêm xe", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                else
+                {
+                    string bienSoTim = XeDAO.Instance.timXeTheoBienSo(bienSo).ToLower();
+                    if (bienSoTim == bienSo.ToLower())
+                        MessageBox.Show("Lỗi!! Trùng biển số xe!", "Thêm xe", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    else
+                    {
+                        bool ketQua = XeDAO.Instance.themXe(bienSo, taiXe, sdt, tenXe);
+                        if (ketQua)
+                        {
+                            MessageBox.Show("Thêm thành công!", "Thêm xe", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            hienThiDanhSachXe();
+                        }
+                        else
+                            MessageBox.Show("Thêm không thành công!", "Thêm xe", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+            }
+            catch(Exception)
+            {
+                MessageBox.Show("Lỗi nhập!", "Thêm xe", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+        
+        private void btXoa_Click(object sender, EventArgs e)
+        {
+            string bienSo = txtBienSo.Text;
+            if (bienSo == "")
+                MessageBox.Show("Bạn chưa chọn xe", "Xóa xe", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            else
+            {
+                XeDAO.Instance.xoaXeBangBienSo(bienSo);
+                hienThiDanhSachXe();
+            }
+        }
+
+        private void btSua_Click(object sender, EventArgs e)
+        {
+            string bienSo = txtBienSo.Text;
+            string taiXe = txtTaiXe.Text;
+            int sdt = int.Parse(txtSDT.Text);
+            string tenXe = txtTenXe.Text;
+            bool ketQua = XeDAO.Instance.suaThongTinXe(bienSo, taiXe, sdt, tenXe);
+            if (ketQua)
+            {
+                MessageBox.Show("Sửa thành công!", "Sửa thông tin xe", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                hienThiDanhSachXe();
+            }
+            else
+                MessageBox.Show("Sửa không thành công!", "Sửa thông tin xe", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+        }
         private void BtDatVeXe_Click(object sender, EventArgs e)
         {
             fDatVeXe f = new fDatVeXe();
