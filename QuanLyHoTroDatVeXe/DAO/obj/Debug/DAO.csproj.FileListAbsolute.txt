@@ -16,3 +16,12 @@ D:\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\DAO\obj\Debug\DAO.csproj.CoreCompileInp
 D:\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\DAO\obj\Debug\DAO.csproj.CopyComplete
 D:\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\DAO\obj\Debug\DAO.dll
 D:\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\DAO\obj\Debug\DAO.pdb
+E:\_STUDY\KiemThuPhanMem\_BaiTapLon\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\DAO\bin\Debug\DAO.dll
+E:\_STUDY\KiemThuPhanMem\_BaiTapLon\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\DAO\bin\Debug\DAO.pdb
+E:\_STUDY\KiemThuPhanMem\_BaiTapLon\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\DAO\bin\Debug\DTO.dll
+E:\_STUDY\KiemThuPhanMem\_BaiTapLon\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\DAO\bin\Debug\DTO.pdb
+E:\_STUDY\KiemThuPhanMem\_BaiTapLon\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\DAO\obj\Debug\DAO.csprojAssemblyReference.cache
+E:\_STUDY\KiemThuPhanMem\_BaiTapLon\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache
+E:\_STUDY\KiemThuPhanMem\_BaiTapLon\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\DAO\obj\Debug\DAO.csproj.CopyComplete
+E:\_STUDY\KiemThuPhanMem\_BaiTapLon\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\DAO\obj\Debug\DAO.dll
+E:\_STUDY\KiemThuPhanMem\_BaiTapLon\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\DAO\obj\Debug\DAO.pdb

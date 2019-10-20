@@ -353,6 +353,7 @@
             this.dgvChuyenDi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvChuyenDi.Location = new System.Drawing.Point(8, 78);
             this.dgvChuyenDi.Name = "dgvChuyenDi";
+            this.dgvChuyenDi.RowHeadersWidth = 102;
             this.dgvChuyenDi.Size = new System.Drawing.Size(860, 357);
             this.dgvChuyenDi.TabIndex = 7;
             // 
