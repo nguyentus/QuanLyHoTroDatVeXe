@@ -49,7 +49,7 @@ CREATE TABLE KhachHang
 	soDienThoai INT PRIMARY KEY,
 	CMND int NOT NULL,
 	hoTen NVARCHAR(50) NOT NULL,
-	gioiTinh BIT,
+	gioiTinh BIT,		--0: nam, 1: nu
 	diaChi NVARCHAR(100),
 	email VARCHAR(50),
 	tenDangNhap VARCHAR(10) NOT NULL,
@@ -98,10 +98,35 @@ BEGIN
 END
 GO
 
+CREATE PROC themKH (@soDienThoai INT, @CMND int, @hoTen NVARCHAR(50), @gioiTinh BIT, @diaChi NVARCHAR(100), @email VARCHAR(50), @tenDangNhap VARCHAR(10) )
+AS
+BEGIN
+	INSERT dbo.KhachHang(soDienThoai, CMND, hoTen, gioiTinh, diaChi, email, tenDangNhap)
+	VALUES (@soDienThoai, @CMND, @hoTen, @gioiTinh, @diaChi, @email, @tenDangNhap)
+END
+GO
+
 --CSDL
 themXe '59F-61792', N'Lê Quốc Hoàng', 328893485, N'KIA'
 GO
 themXe '59F-81792', N'Nguyễn Văn Lương', 184789253, N'Toyota'
 GO
+
 themChuyenDi '5h30', '12-11-2013' , 'Long An', 'Tp Hồ Chí Minh', 125000, '59F-81792' 
+go
+
+INSERT INTO TaiKhoan (tenDangNhap, matKhau, loaiTaiKhoan) VALUES ( '0', '0', 0)
+go
+INSERT INTO TaiKhoan (tenDangNhap, matKhau, loaiTaiKhoan) VALUES ( '1', '1', 1)
+go
+
+themKH 918236031, 251123456, N'Hoàng Yến', 1, 'tp.HCM', 'yen.th@gmail.com', '1'
+go
+themKH 912839740, 251123456, N'Thanh Tú', 0, 'tp.HCM', 'tu.nt@gmail.com', '0'
+go
+
+
+
+
+
 

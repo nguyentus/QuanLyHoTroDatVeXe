@@ -52,6 +52,8 @@
             this.pNoiDung = new System.Windows.Forms.Panel();
             this.listView1 = new System.Windows.Forms.ListView();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txtTenDN = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
             this.cbGioiTinh = new System.Windows.Forms.ComboBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtDiaChi = new System.Windows.Forms.TextBox();
@@ -236,6 +238,7 @@
             this.btXoa.TabIndex = 6;
             this.btXoa.Text = "Xoá";
             this.btXoa.UseVisualStyleBackColor = true;
+            this.btXoa.Click += new System.EventHandler(this.BtXoa_Click);
             // 
             // btSua
             // 
@@ -245,6 +248,7 @@
             this.btSua.TabIndex = 6;
             this.btSua.Text = "Sửa";
             this.btSua.UseVisualStyleBackColor = true;
+            this.btSua.Click += new System.EventHandler(this.BtSua_Click);
             // 
             // btKhachHang
             // 
@@ -277,12 +281,14 @@
             this.btThem.TabIndex = 6;
             this.btThem.Text = "Thêm ";
             this.btThem.UseVisualStyleBackColor = true;
+            this.btThem.Click += new System.EventHandler(this.BtThem_Click);
             // 
             // dgvKhachHang
             // 
             this.dgvKhachHang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvKhachHang.Location = new System.Drawing.Point(20, 201);
             this.dgvKhachHang.Name = "dgvKhachHang";
+            this.dgvKhachHang.RowHeadersWidth = 102;
             this.dgvKhachHang.Size = new System.Drawing.Size(835, 263);
             this.dgvKhachHang.TabIndex = 2;
             // 
@@ -307,6 +313,8 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.txtTenDN);
+            this.panel1.Controls.Add(this.label11);
             this.panel1.Controls.Add(this.cbGioiTinh);
             this.panel1.Controls.Add(this.txtEmail);
             this.panel1.Controls.Add(this.txtDiaChi);
@@ -327,10 +335,30 @@
             this.panel1.Size = new System.Drawing.Size(860, 180);
             this.panel1.TabIndex = 0;
             // 
+            // txtTenDN
+            // 
+            this.txtTenDN.Enabled = false;
+            this.txtTenDN.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTenDN.Location = new System.Drawing.Point(458, 132);
+            this.txtTenDN.Name = "txtTenDN";
+            this.txtTenDN.Size = new System.Drawing.Size(157, 22);
+            this.txtTenDN.TabIndex = 21;
+            this.txtTenDN.Text = "Tên đăng nhập:";
+            // 
+            // label11
+            // 
+            this.label11.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(375, 129);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(77, 22);
+            this.label11.TabIndex = 20;
+            this.label11.Text = "Tên ĐN:";
+            // 
             // cbGioiTinh
             // 
             this.cbGioiTinh.FormattingEnabled = true;
-            this.cbGioiTinh.Location = new System.Drawing.Point(458, 43);
+            this.cbGioiTinh.Location = new System.Drawing.Point(458, 29);
             this.cbGioiTinh.Name = "cbGioiTinh";
             this.cbGioiTinh.Size = new System.Drawing.Size(157, 21);
             this.cbGioiTinh.TabIndex = 19;
@@ -338,7 +366,7 @@
             // txtEmail
             // 
             this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmail.Location = new System.Drawing.Point(458, 108);
+            this.txtEmail.Location = new System.Drawing.Point(458, 94);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(157, 22);
             this.txtEmail.TabIndex = 17;
@@ -347,7 +375,7 @@
             // txtDiaChi
             // 
             this.txtDiaChi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDiaChi.Location = new System.Drawing.Point(458, 74);
+            this.txtDiaChi.Location = new System.Drawing.Point(458, 60);
             this.txtDiaChi.Name = "txtDiaChi";
             this.txtDiaChi.Size = new System.Drawing.Size(157, 22);
             this.txtDiaChi.TabIndex = 18;
@@ -357,7 +385,7 @@
             // 
             this.label10.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(375, 45);
+            this.label10.Location = new System.Drawing.Point(375, 31);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(77, 22);
             this.label10.TabIndex = 13;
@@ -367,7 +395,7 @@
             // 
             this.label9.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(375, 109);
+            this.label9.Location = new System.Drawing.Point(375, 95);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(77, 22);
             this.label9.TabIndex = 14;
@@ -377,7 +405,7 @@
             // 
             this.label3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(375, 75);
+            this.label3.Location = new System.Drawing.Point(375, 61);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(77, 22);
             this.label3.TabIndex = 15;
@@ -470,5 +498,7 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox cbGioiTinh;
+        private System.Windows.Forms.TextBox txtTenDN;
+        private System.Windows.Forms.Label label11;
     }
 }

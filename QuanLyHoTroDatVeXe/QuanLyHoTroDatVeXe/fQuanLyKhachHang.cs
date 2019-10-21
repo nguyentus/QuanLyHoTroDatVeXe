@@ -27,7 +27,7 @@ namespace QuanLyHoTroDatVeXe
             dsKhachHang.DataSource = KhachHangDAO.Instance.layDsKhachHang();
 
             dgvKhachHang.Columns[0].HeaderText = "Số điện thoại";
-            dgvKhachHang.Columns[0].Width = 100;
+            dgvKhachHang.Columns[0].Width = 90;
 
             dgvKhachHang.Columns[1].HeaderText = "CMND";
             dgvKhachHang.Columns[1].Width = 70;
@@ -39,13 +39,24 @@ namespace QuanLyHoTroDatVeXe
             dgvKhachHang.Columns[3].Width = 70;
 
             dgvKhachHang.Columns[4].HeaderText = "Địa chỉ";
-            dgvKhachHang.Columns[4].Width = 140;
+            dgvKhachHang.Columns[4].Width = 120;
 
             dgvKhachHang.Columns[5].HeaderText = "Email";
             dgvKhachHang.Columns[5].Width = 140;
 
             dgvKhachHang.Columns[6].HeaderText = "Tên đăng nhập";
-            dgvKhachHang.Columns[6].Width = 120;
+            dgvKhachHang.Columns[6].Width = 100;
+        }
+        //tạo ràng buộc giữa datagridview với các ô text
+        void taoRangBuoc()
+        {
+            txtSDT.DataBindings.Add("value", dgvKhachHang.DataSource, "soDienThoai", true, DataSourceUpdateMode.Never);
+            txtHoTen.DataBindings.Add("text", dgvKhachHang.DataSource, "hoTen", true, DataSourceUpdateMode.Never);
+            txtCMND.DataBindings.Add("value", dgvKhachHang.DataSource, "CMND", true, DataSourceUpdateMode.Never);
+            cbGioiTinh.DataBindings.Add("value", dgvKhachHang.DataSource, "gioiTinh", true, DataSourceUpdateMode.Never);
+            txtDiaChi.DataBindings.Add("text", dgvKhachHang.DataSource, "diaChi", true, DataSourceUpdateMode.Never);
+            txtEmail.DataBindings.Add("text", dgvKhachHang.DataSource, "email", true, DataSourceUpdateMode.Never);
+            txtTenDN.DataBindings.Add("text", dgvKhachHang.DataSource, "tenDangNhap", true, DataSourceUpdateMode.Never);
         }
         #endregion
 
@@ -81,6 +92,20 @@ namespace QuanLyHoTroDatVeXe
         {
             if (MessageBox.Show("Bạn muốn rời khỏi phần mềm?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 this.Close();
+        }
+        private void BtThem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtSua_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtXoa_Click(object sender, EventArgs e)
+        {
+
         }
         #endregion
     }
