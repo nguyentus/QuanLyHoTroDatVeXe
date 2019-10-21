@@ -84,7 +84,6 @@ END
 GO
 CREATE PROC themChuyenDi 
 (
-	@maCD INT,
 	@gioDi VARCHAR(5), 
 	@ngayDi DATETIME, 
 	@diemDi NVARCHAR(50), 
@@ -94,8 +93,8 @@ CREATE PROC themChuyenDi
 )
 AS
 BEGIN
-	INSERT dbo.ChuyenDi(maCD, gioDi, ngayDi, diemDi, diemDen, giaVe, bienSo)
-	VALUES  (@maCD, @gioDi, @ngayDi, @diemDi, @diemDen, @giaVe, @bienSo)
+	INSERT dbo.ChuyenDi(gioDi, ngayDi, diemDi, diemDen, giaVe, bienSo)
+	VALUES  (@gioDi, @ngayDi, @diemDi, @diemDen, @giaVe, @bienSo)
 END
 GO
 
@@ -104,6 +103,5 @@ themXe '59F-61792', N'Lê Quốc Hoàng', 328893485, N'KIA'
 GO
 themXe '59F-81792', N'Nguyễn Văn Lương', 184789253, N'Toyota'
 GO
-themChuyenDi 1,'5h30', '12-11-2013' , 'Long An', 'Tp Hồ Chí Minh', 125000, '59F-81792' 
+themChuyenDi '5h30', '12-11-2013' , 'Long An', 'Tp Hồ Chí Minh', 125000, '59F-81792' 
 
-SELECT * FROM dbo.Xe
