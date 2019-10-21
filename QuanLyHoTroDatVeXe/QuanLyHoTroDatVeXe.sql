@@ -35,7 +35,7 @@ CREATE TABLE NhanVien
 (
 	maNV INT IDENTITY(10078,1) PRIMARY KEY,
 	hoTen NVARCHAR(50) NOT NULL,
-	gioiTinh BIT,
+	gioiTinh NVARCHAR(10),
 	soDienThoai INT NOT NULL,
 	luong FLOAT,
 	diaChi NVARCHAR(100),
@@ -47,9 +47,9 @@ GO
 CREATE TABLE KhachHang
 (
 	soDienThoai INT PRIMARY KEY,
-	CMND int NOT NULL,
+	CMND INT NOT NULL,
 	hoTen NVARCHAR(50) NOT NULL,
-	gioiTinh BIT,		--0: nam, 1: nu
+	gioiTinh NVARCHAR(10),
 	diaChi NVARCHAR(100),
 	email VARCHAR(50),
 	tenDangNhap VARCHAR(10) NOT NULL,
@@ -98,7 +98,7 @@ BEGIN
 END
 GO
 
-CREATE PROC themKH (@soDienThoai INT, @CMND int, @hoTen NVARCHAR(50), @gioiTinh BIT, @diaChi NVARCHAR(100), @email VARCHAR(50), @tenDangNhap VARCHAR(10) )
+CREATE PROC themKH (@soDienThoai INT, @CMND int, @hoTen NVARCHAR(50), @gioiTinh NVARCHAR(10), @diaChi NVARCHAR(100), @email VARCHAR(50), @tenDangNhap VARCHAR(10) )
 AS
 BEGIN
 	INSERT dbo.KhachHang(soDienThoai, CMND, hoTen, gioiTinh, diaChi, email, tenDangNhap)
@@ -120,11 +120,10 @@ go
 INSERT INTO TaiKhoan (tenDangNhap, matKhau, loaiTaiKhoan) VALUES ( '1', '1', 1)
 go
 
-themKH 918236031, 251123456, N'Hoàng Yến', 1, 'tp.HCM', 'yen.th@gmail.com', '1'
+themKH 918236031, 251123456, N'Hoàng Yến', N'Nữ', 'tp.HCM', 'yen.th@gmail.com', '1'
 go
-themKH 912839740, 251123456, N'Thanh Tú', 0, 'tp.HCM', 'tu.nt@gmail.com', '0'
+themKH 912839740, 251123456, N'Thanh Tú', 'Nam', 'tp.HCM', 'tu.nt@gmail.com', '0'
 go
-
 
 
 

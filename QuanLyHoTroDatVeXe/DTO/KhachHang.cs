@@ -12,12 +12,12 @@ namespace DTO
         private int soDienThoai;
         private int cmnd;
         private string hoTen;
-        private int gioiTinh;
+        private string gioiTinh;
         private string diaChi;
         private string email;
         private string tenDangNhap;
 
-        public KhachHang(int soDienThoai, int cMND, string hoTen, int gioiTinh, string diaChi, string email, string tenDangNhap)
+        public KhachHang(int soDienThoai, int cMND, string hoTen, string gioiTinh, string diaChi, string email, string tenDangNhap)
         {
             this.SoDienThoai = soDienThoai;
             this.CMND = cMND;
@@ -33,7 +33,7 @@ namespace DTO
             this.SoDienThoai = (int)row["soDienThoai"];
             this.CMND = (int)row["CMND"];
             this.HoTen = row["hoTen"].ToString();
-            this.GioiTinh = (int)row["gioiTinh"];
+            this.GioiTinh = row["gioiTinh"].ToString();
             this.DiaChi = row["diaChi"].ToString();
             this.Email = row["email"].ToString();
             this.TenDangNhap = row["tenDangNhap"].ToString();
@@ -42,7 +42,7 @@ namespace DTO
         public int SoDienThoai { get => soDienThoai; set => soDienThoai = value; }
         public int CMND { get => cmnd; set => cmnd = value; }
         public string HoTen { get => hoTen; set => hoTen = value; }
-        public int GioiTinh { get => gioiTinh; set => gioiTinh = value; }
+        public string GioiTinh { get => gioiTinh; set => gioiTinh = value; }
         public string DiaChi { get => diaChi; set => diaChi = value; }
         public string Email { get => email; set => email = value; }
         public string TenDangNhap { get => tenDangNhap; set => tenDangNhap = value; }

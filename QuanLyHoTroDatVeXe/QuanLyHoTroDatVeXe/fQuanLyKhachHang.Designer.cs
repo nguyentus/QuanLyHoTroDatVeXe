@@ -54,7 +54,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.txtTenDN = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.cbGioiTinh = new System.Windows.Forms.ComboBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtDiaChi = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
@@ -62,6 +61,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtSDT = new System.Windows.Forms.TextBox();
             this.pMenu = new System.Windows.Forms.Panel();
+            this.txtGioiTinh = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.btThoat)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btBaoCao)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btXe)).BeginInit();
@@ -81,7 +81,6 @@
             this.txtHoTen.Name = "txtHoTen";
             this.txtHoTen.Size = new System.Drawing.Size(157, 22);
             this.txtHoTen.TabIndex = 12;
-            this.txtHoTen.Text = "trinh hoàng yến";
             // 
             // lb1
             // 
@@ -170,7 +169,6 @@
             this.txtCMND.Name = "txtCMND";
             this.txtCMND.Size = new System.Drawing.Size(157, 22);
             this.txtCMND.TabIndex = 12;
-            this.txtCMND.Text = "trinh hoàng yến";
             // 
             // btThoat
             // 
@@ -313,9 +311,9 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.txtGioiTinh);
             this.panel1.Controls.Add(this.txtTenDN);
             this.panel1.Controls.Add(this.label11);
-            this.panel1.Controls.Add(this.cbGioiTinh);
             this.panel1.Controls.Add(this.txtEmail);
             this.panel1.Controls.Add(this.txtDiaChi);
             this.panel1.Controls.Add(this.label10);
@@ -339,11 +337,10 @@
             // 
             this.txtTenDN.Enabled = false;
             this.txtTenDN.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTenDN.Location = new System.Drawing.Point(458, 132);
+            this.txtTenDN.Location = new System.Drawing.Point(458, 129);
             this.txtTenDN.Name = "txtTenDN";
             this.txtTenDN.Size = new System.Drawing.Size(157, 22);
             this.txtTenDN.TabIndex = 21;
-            this.txtTenDN.Text = "Tên đăng nhập:";
             // 
             // label11
             // 
@@ -355,31 +352,21 @@
             this.label11.TabIndex = 20;
             this.label11.Text = "Tên ĐN:";
             // 
-            // cbGioiTinh
-            // 
-            this.cbGioiTinh.FormattingEnabled = true;
-            this.cbGioiTinh.Location = new System.Drawing.Point(458, 29);
-            this.cbGioiTinh.Name = "cbGioiTinh";
-            this.cbGioiTinh.Size = new System.Drawing.Size(157, 21);
-            this.cbGioiTinh.TabIndex = 19;
-            // 
             // txtEmail
             // 
             this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmail.Location = new System.Drawing.Point(458, 94);
+            this.txtEmail.Location = new System.Drawing.Point(458, 96);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(157, 22);
             this.txtEmail.TabIndex = 17;
-            this.txtEmail.Text = "trinh hoàng yến";
             // 
             // txtDiaChi
             // 
             this.txtDiaChi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDiaChi.Location = new System.Drawing.Point(458, 60);
+            this.txtDiaChi.Location = new System.Drawing.Point(458, 66);
             this.txtDiaChi.Name = "txtDiaChi";
             this.txtDiaChi.Size = new System.Drawing.Size(157, 22);
             this.txtDiaChi.TabIndex = 18;
-            this.txtDiaChi.Text = "trinh hoàng yến";
             // 
             // label10
             // 
@@ -418,7 +405,6 @@
             this.txtSDT.Name = "txtSDT";
             this.txtSDT.Size = new System.Drawing.Size(157, 22);
             this.txtSDT.TabIndex = 12;
-            this.txtSDT.Text = "trinh hoàng yến";
             // 
             // pMenu
             // 
@@ -438,6 +424,14 @@
             this.pMenu.Name = "pMenu";
             this.pMenu.Size = new System.Drawing.Size(879, 57);
             this.pMenu.TabIndex = 8;
+            // 
+            // txtGioiTinh
+            // 
+            this.txtGioiTinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtGioiTinh.Location = new System.Drawing.Point(458, 31);
+            this.txtGioiTinh.Name = "txtGioiTinh";
+            this.txtGioiTinh.Size = new System.Drawing.Size(157, 22);
+            this.txtGioiTinh.TabIndex = 22;
             // 
             // fQuanLyKhachHang
             // 
@@ -497,8 +491,8 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox cbGioiTinh;
         private System.Windows.Forms.TextBox txtTenDN;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox txtGioiTinh;
     }
 }

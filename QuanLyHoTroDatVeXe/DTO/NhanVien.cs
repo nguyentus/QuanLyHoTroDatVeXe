@@ -11,14 +11,14 @@ namespace DTO
     {
         private int maNV;
         private string hoTen;
-        private int gioiTinh;
+        private string gioiTinh;
         private int soDienThoai;
         private double luong;
         private string diaChi;
         private string email;
         private string tenDangNhap;
 
-        public NhanVien(int maNV, string hoTen, int gioiTinh, int soDienThoai, double luong, string diaChi, string email, string tenDangNhap)
+        public NhanVien(int maNV, string hoTen, string gioiTinh, int soDienThoai, double luong, string diaChi, string email, string tenDangNhap)
         {
             this.MaNV = maNV;
             this.HoTen = hoTen;
@@ -34,7 +34,7 @@ namespace DTO
         {
             this.MaNV = (int)row["maNV"];
             this.HoTen = row["hoTen"].ToString();
-            this.GioiTinh = (int)row["gioiTinh"];
+            this.GioiTinh = row["gioiTinh"].ToString();
             this.SoDienThoai = (int)row["soDienThoai"];
             this.Luong = (double)row["luong"];
             this.DiaChi = row["diaChi"].ToString();
@@ -44,7 +44,7 @@ namespace DTO
 
         public int MaNV { get => maNV; set => maNV = value; }
         public string HoTen { get => hoTen; set => hoTen = value; }
-        public int GioiTinh { get => gioiTinh; set => gioiTinh = value; }
+        public string GioiTinh { get => gioiTinh; set => gioiTinh = value; }
         public int SoDienThoai { get => soDienThoai; set => soDienThoai = value; }
         public double Luong { get => luong; set => luong = value; }
         public string DiaChi { get => diaChi; set => diaChi = value; }

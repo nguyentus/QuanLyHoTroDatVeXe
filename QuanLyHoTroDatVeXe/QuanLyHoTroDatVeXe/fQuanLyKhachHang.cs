@@ -53,7 +53,7 @@ namespace QuanLyHoTroDatVeXe
             txtSDT.DataBindings.Add("value", dgvKhachHang.DataSource, "soDienThoai", true, DataSourceUpdateMode.Never);
             txtHoTen.DataBindings.Add("text", dgvKhachHang.DataSource, "hoTen", true, DataSourceUpdateMode.Never);
             txtCMND.DataBindings.Add("value", dgvKhachHang.DataSource, "CMND", true, DataSourceUpdateMode.Never);
-            cbGioiTinh.DataBindings.Add("value", dgvKhachHang.DataSource, "gioiTinh", true, DataSourceUpdateMode.Never);
+            cbGioiTinh.DataBindings.Add("text", dgvKhachHang.DataSource, "gioiTinh", true, DataSourceUpdateMode.Never);
             txtDiaChi.DataBindings.Add("text", dgvKhachHang.DataSource, "diaChi", true, DataSourceUpdateMode.Never);
             txtEmail.DataBindings.Add("text", dgvKhachHang.DataSource, "email", true, DataSourceUpdateMode.Never);
             txtTenDN.DataBindings.Add("text", dgvKhachHang.DataSource, "tenDangNhap", true, DataSourceUpdateMode.Never);
