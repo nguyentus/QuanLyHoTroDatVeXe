@@ -10,3 +10,8 @@ E:\_STUDY\KiemThuPhanMem\_BaiTapLon\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\QuanLy
 E:\_STUDY\KiemThuPhanMem\_BaiTapLon\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
 E:\_STUDY\KiemThuPhanMem\_BaiTapLon\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\DTO\obj\Debug\DTO.dll
 E:\_STUDY\KiemThuPhanMem\_BaiTapLon\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\DTO\obj\Debug\DTO.pdb
+D:\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\DTO\bin\Debug\DTO.dll
+D:\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\DTO\bin\Debug\DTO.pdb
+D:\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+D:\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\DTO\obj\Debug\DTO.dll
+D:\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\DTO\obj\Debug\DTO.pdb

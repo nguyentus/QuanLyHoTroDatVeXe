@@ -19,6 +19,7 @@ namespace QuanLyHoTroDatVeXe
             InitializeComponent();
             dgvKhachHang.DataSource = dsKhachHang;
             hienThiDanhSach();
+            taoRangBuoc();
         }
 
         #region Methods
@@ -50,13 +51,50 @@ namespace QuanLyHoTroDatVeXe
         //tạo ràng buộc giữa datagridview với các ô text
         void taoRangBuoc()
         {
-            txtSDT.DataBindings.Add("value", dgvKhachHang.DataSource, "soDienThoai", true, DataSourceUpdateMode.Never);
+            txtSDT.DataBindings.Add("text", dgvKhachHang.DataSource, "soDienThoai", true, DataSourceUpdateMode.Never);
             txtHoTen.DataBindings.Add("text", dgvKhachHang.DataSource, "hoTen", true, DataSourceUpdateMode.Never);
-            txtCMND.DataBindings.Add("value", dgvKhachHang.DataSource, "CMND", true, DataSourceUpdateMode.Never);
-            cbGioiTinh.DataBindings.Add("text", dgvKhachHang.DataSource, "gioiTinh", true, DataSourceUpdateMode.Never);
+            txtCMND.DataBindings.Add("text", dgvKhachHang.DataSource, "CMND", true, DataSourceUpdateMode.Never);
+            txtGioiTinh.DataBindings.Add("text", dgvKhachHang.DataSource, "gioiTinh", true, DataSourceUpdateMode.Never);
             txtDiaChi.DataBindings.Add("text", dgvKhachHang.DataSource, "diaChi", true, DataSourceUpdateMode.Never);
             txtEmail.DataBindings.Add("text", dgvKhachHang.DataSource, "email", true, DataSourceUpdateMode.Never);
             txtTenDN.DataBindings.Add("text", dgvKhachHang.DataSource, "tenDangNhap", true, DataSourceUpdateMode.Never);
+        }
+
+        void themDuLieu()
+        {
+            try
+            {
+                int sdt = int.Parse(txtSDT.Text);
+                int cmnd = int.Parse(txtCMND.Text);
+                string ht = txtHoTen.Text;
+                string gt = txtGioiTinh.Text;
+                string dc = txtDiaChi.Text;
+                string email = txtEmail.Text;
+                string tdn = txtTenDN.Text;
+                if( ht == "" || gt == "" || dc == "" || email == "" || tdn == "")
+                    MessageBox.Show("Bạn phải nhập đủ thông tin!", "Thêm khách hàng", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                else
+                {
+                    int sdtTim = KhachHangDAO.Instance.timKH(sdt);
+                    if (sdtTim == sdt)
+                        MessageBox.Show("Lỗi!! Số điện thoại đã tồn tại", "Thêm khách hàng", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    else
+                    {
+                        bool ketQua = KhachHangDAO.Instance.themKH(sdt, cmnd, ht, gt, dc, email, tdn);
+                        if (ketQua)
+                        {
+                            MessageBox.Show("Thêm thành công!", "Thêm khách hàng", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            hienThiDanhSach();
+                        }
+                        else
+                            MessageBox.Show("Thêm không thành công!", "Thêm khách hàng", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+            }
+            catch(Exception)
+            {
+                MessageBox.Show("Lỗi nhập!", "Thêm khách hàng", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
         #endregion
 
@@ -67,7 +105,6 @@ namespace QuanLyHoTroDatVeXe
             f.Show();
             this.Dispose(false);
         }
-
         private void BtChuyenDi_Click(object sender, EventArgs e)
         {
             fQuanLyChuyenDi f = new fQuanLyChuyenDi();
@@ -80,14 +117,12 @@ namespace QuanLyHoTroDatVeXe
             f.Show();
             this.Dispose(false);
         }
-
         private void BtBaoCao_Click(object sender, EventArgs e)
         {
             fBaoCaoThongKe f = new fBaoCaoThongKe();
             f.Show();
             this.Dispose(false);
         }
-
         private void BtThoat_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Bạn muốn rời khỏi phần mềm?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
@@ -95,17 +130,38 @@ namespace QuanLyHoTroDatVeXe
         }
         private void BtThem_Click(object sender, EventArgs e)
         {
-
+            themDuLieu();
         }
 
         private void BtSua_Click(object sender, EventArgs e)
         {
-
+            int sdt = int.Parse(txtSDT.Text);
+            int cmnd = int.Parse(txtCMND.Text);
+            string ht = txtHoTen.Text;
+            string gt = txtGioiTinh.Text;
+            string dc = txtDiaChi.Text;
+            string email = txtEmail.Text;
+            string tdn = txtTenDN.Text;
+            bool ketQua = KhachHangDAO.Instance.suaKHBangSDT(sdt, cmnd, ht, gt, dc, email, tdn);
+            if (ketQua)
+            {
+                MessageBox.Show("Sửa thành công!", "Sửa thông tin khách hàng", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                hienThiDanhSach();
+            }
+            else
+                MessageBox.Show("Sửa không thành công!", "Sửa thông tin khách hàng", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
         private void BtXoa_Click(object sender, EventArgs e)
         {
-
+            string sdt = txtSDT.Text;
+            if (sdt == "")
+                MessageBox.Show("Bạn chưa chọn khách hàng", "Xóa khách hàng", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            else
+            {
+                KhachHangDAO.Instance.xoaKHBangMa(sdt);
+                hienThiDanhSach();
+            }
         }
         #endregion
     }

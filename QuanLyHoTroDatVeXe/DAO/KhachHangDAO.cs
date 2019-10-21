@@ -29,10 +29,28 @@ namespace DAO
             return ds;
         }
 
-        public bool suaKHBangSDT(int sdt, string ht, int gt, string dc, string email, string tenDN)
+        public int timKH(int sdt)
         {
-            string query = "UPDATE dbo.KhachHang SET hoTen = N'" + ht + "', gioiTinh = " + gt + ", diaChi = N'" + dc
-                        + ", email ='" + email + "', tenDN = '" + tenDN + "'";
+            DataTable table = DataProvider.Instance.ExecuteQuery("SELECT * FROM dbo.KhachHang WHERE soDienThoai = " + sdt );
+            foreach (DataRow row in table.Rows)
+            {
+                KhachHang KHTim = new KhachHang(row);
+                return KHTim.SoDienThoai;
+            }
+            return -1;
+        }
+
+        public bool themKH(int sdt, int cnmd, string ht, string gt, string dc, string email, string tdn)
+        {
+            int result = DataProvider.Instance.ExecuteNonQuery("themKH " + sdt +", " + cnmd + ", N'" + ht + "', N'" + gt + "', N'" + dc + "', '" + email + "', '" + tdn +"'");
+            return result > 0;
+        }
+
+        public bool suaKHBangSDT(int sdt, int cmnd, string ht, string gt, string dc, string email, string tenDN)
+        {
+            string query = "UPDATE dbo.KhachHang SET CMND =" + cmnd + ", hoTen =N'" + ht 
+                    + "', gioiTinh = N'" + gt + "', diaChi = N'" + dc + "'s, email ='" + email 
+                    + "', tenDangNhap = '" + tenDN + "' WHERE soDienThoai = " + sdt;
             int result = DataProvider.Instance.ExecuteNonQuery(query);
             return result > 0;
         }

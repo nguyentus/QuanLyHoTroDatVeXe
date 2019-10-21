@@ -270,7 +270,6 @@
             this.txtTenXe.Name = "txtTenXe";
             this.txtTenXe.Size = new System.Drawing.Size(157, 22);
             this.txtTenXe.TabIndex = 16;
-            this.txtTenXe.Text = "trinh hoàng yến";
             // 
             // label9
             // 
@@ -290,7 +289,6 @@
             this.txtSDT.Name = "txtSDT";
             this.txtSDT.Size = new System.Drawing.Size(157, 22);
             this.txtSDT.TabIndex = 14;
-            this.txtSDT.Text = "trinh hoàng yến";
             // 
             // label3
             // 
@@ -310,7 +308,6 @@
             this.txtTaiXe.Name = "txtTaiXe";
             this.txtTaiXe.Size = new System.Drawing.Size(157, 22);
             this.txtTaiXe.TabIndex = 12;
-            this.txtTaiXe.Text = "trinh hoàng yến";
             // 
             // txtBienSo
             // 
@@ -319,7 +316,6 @@
             this.txtBienSo.Name = "txtBienSo";
             this.txtBienSo.Size = new System.Drawing.Size(157, 22);
             this.txtBienSo.TabIndex = 12;
-            this.txtBienSo.Text = "trinh hoàng yến";
             // 
             // label2
             // 

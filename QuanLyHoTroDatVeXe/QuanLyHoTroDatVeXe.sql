@@ -9,19 +9,34 @@ CREATE TABLE Xe
 	bienSo VARCHAR(10) PRIMARY KEY,
 	taiXe NVARCHAR(50) NOT NULL,
 	sdtTaiXe INT,
-	tenXe NVARCHAR(50) NOT NULL
+	tenXe NVARCHAR(50) NOT NULL,
+	trangThai INT
 )
 GO
+CREATE TABLE DiemDi
+(
+	maTinh INT PRIMARY KEY,
+	tenTinh NVARCHAR(20) NOT NULL
+)
+GO 
+CREATE TABLE DiemDen
+(
+	maTinh INT PRIMARY KEY,
+	tenTinh NVARCHAR(20) NOT NULL
+)
+GO 
 CREATE TABLE ChuyenDi
 (
 	maCD INT IDENTITY(10078,1) PRIMARY KEY,
 	gioDi VARCHAR(5) NOT NULL,
 	ngayDi DATETIME NOT NULL,
-	diemDi NVARCHAR(50) NOT NULL,
-	diemDen NVARCHAR(50) NOT NULL,
+	diemDi INT NOT NULL,
+	diemDen INT NOT NULL,
 	giaVe FLOAT NOT NULL,
 	bienSo VARCHAR(10) NOT NULL,
-	FOREIGN KEY (bienSo) REFERENCES dbo.Xe (bienSo)
+	FOREIGN KEY (bienSo) REFERENCES dbo.Xe (bienSo),
+	FOREIGN KEY (diemDi) REFERENCES dbo.DiemDi (maTinh),
+	FOREIGN KEY (diemDen) REFERENCES dbo.DiemDen (maTinh)
 )
 GO
 CREATE TABLE TaiKhoan
@@ -70,24 +85,19 @@ GO
 
 --STORE  PROC
 CREATE PROC themXe 
-(
-	@bienSo VARCHAR(10),
-	@taiXe NVARCHAR(50), 
-	@sdtTaiXe int, 
-	@tenXe NVARCHAR(50) 
-)
+(@bienSo VARCHAR(10),@taiXe NVARCHAR(50), @sdtTaiXe int, @tenXe NVARCHAR(50), @trangThai INT)
 AS
 BEGIN
-	INSERT dbo.Xe ( bienSo, taiXe, sdtTaiXe, tenXe )
-	VALUES  ( @bienSo, @taiXe, @sdtTaiXe, @tenXe)
+	INSERT dbo.Xe ( bienSo, taiXe, sdtTaiXe, tenXe , trangThai)
+	VALUES  ( @bienSo, @taiXe, @sdtTaiXe, @tenXe, @trangThai)
 END
 GO
 CREATE PROC themChuyenDi 
 (
 	@gioDi VARCHAR(5), 
 	@ngayDi DATETIME, 
-	@diemDi NVARCHAR(50), 
-	@diemDen NVARCHAR(50), 
+	@diemDi INT, 
+	@diemDen INT, 
 	@giaVe FLOAT, 
 	@bienSo VARCHAR(10)
 )
@@ -97,7 +107,6 @@ BEGIN
 	VALUES  (@gioDi, @ngayDi, @diemDi, @diemDen, @giaVe, @bienSo)
 END
 GO
-
 CREATE PROC themKH (@soDienThoai INT, @CMND int, @hoTen NVARCHAR(50), @gioiTinh NVARCHAR(10), @diaChi NVARCHAR(100), @email VARCHAR(50), @tenDangNhap VARCHAR(10) )
 AS
 BEGIN
@@ -105,27 +114,52 @@ BEGIN
 	VALUES (@soDienThoai, @CMND, @hoTen, @gioiTinh, @diaChi, @email, @tenDangNhap)
 END
 GO
-
---CSDL
-themXe '59F-61792', N'Lê Quốc Hoàng', 328893485, N'KIA'
+--điểm đến
+INSERT INTO dbo.DiemDen( maTinh, tenTinh )
+VALUES  ( 49, N'Bảo Lộc')
 GO
-themXe '59F-81792', N'Nguyễn Văn Lương', 184789253, N'Toyota'
+INSERT INTO dbo.DiemDen( maTinh, tenTinh )
+VALUES  ( 66, N'Đồng Tháp')
 GO
-
-themChuyenDi '5h30', '12-11-2013' , 'Long An', 'Tp Hồ Chí Minh', 125000, '59F-81792' 
-go
-
+INSERT INTO dbo.DiemDen( maTinh, tenTinh )
+VALUES  ( 62, N'Long An')
+GO
+INSERT INTO dbo.DiemDi( maTinh, tenTinh )
+VALUES  ( 71, N'Bến Tre')
+GO
+--Điểm đi
+INSERT INTO dbo.DiemDi( maTinh, tenTinh )
+VALUES  ( 60, N'Đồng Nai')
+GO
+INSERT INTO dbo.DiemDi( maTinh, tenTinh )
+VALUES  ( 59, N'tp hồ Chí Minh')
+GO
+--Xe
+themXe '59F-61792', N'Lê Quốc Hoàng', 328893485, N'KIA', 0
+GO
+themXe '39F-81792', N'Trần Nam Thương', 184789253, N'Toyota', 1
+GO
+themXe '62K-53012', N'Nguyễn Quốc Vương', 184789253, N'Limouse', 1
+GO
+themXe '48K-10054', N'Lê Văn Hùng', 184789253, N'Toyota', 0
+GO
+--chuyến đi
+themChuyenDi '5h30', '12-11-2013' , 49, 59, 125000, '62K-53012' 
+GO
+themChuyenDi '5h30', '12-11-2013' , 49, 59, 125000, '39F-81792'
+GO
+--tài khoản
 INSERT INTO TaiKhoan (tenDangNhap, matKhau, loaiTaiKhoan) VALUES ( '0', '0', 0)
-go
+GO
 INSERT INTO TaiKhoan (tenDangNhap, matKhau, loaiTaiKhoan) VALUES ( '1', '1', 1)
-go
+GO
 
 themKH 918236031, 251123456, N'Hoàng Yến', N'Nữ', 'tp.HCM', 'yen.th@gmail.com', '1'
-go
+GO
 themKH 912839740, 251123456, N'Thanh Tú', 'Nam', 'tp.HCM', 'tu.nt@gmail.com', '0'
-go
+GO
 
-
+SELECT * FROM dbo.DiemDi
 
 
 

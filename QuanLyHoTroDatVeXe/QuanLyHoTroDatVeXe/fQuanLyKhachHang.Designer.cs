@@ -52,6 +52,7 @@
             this.pNoiDung = new System.Windows.Forms.Panel();
             this.listView1 = new System.Windows.Forms.ListView();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txtGioiTinh = new System.Windows.Forms.TextBox();
             this.txtTenDN = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.txtEmail = new System.Windows.Forms.TextBox();
@@ -61,7 +62,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtSDT = new System.Windows.Forms.TextBox();
             this.pMenu = new System.Windows.Forms.Panel();
-            this.txtGioiTinh = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.btThoat)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btBaoCao)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btXe)).BeginInit();
@@ -333,9 +333,16 @@
             this.panel1.Size = new System.Drawing.Size(860, 180);
             this.panel1.TabIndex = 0;
             // 
+            // txtGioiTinh
+            // 
+            this.txtGioiTinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtGioiTinh.Location = new System.Drawing.Point(458, 31);
+            this.txtGioiTinh.Name = "txtGioiTinh";
+            this.txtGioiTinh.Size = new System.Drawing.Size(157, 22);
+            this.txtGioiTinh.TabIndex = 22;
+            // 
             // txtTenDN
             // 
-            this.txtTenDN.Enabled = false;
             this.txtTenDN.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTenDN.Location = new System.Drawing.Point(458, 129);
             this.txtTenDN.Name = "txtTenDN";
@@ -424,14 +431,6 @@
             this.pMenu.Name = "pMenu";
             this.pMenu.Size = new System.Drawing.Size(879, 57);
             this.pMenu.TabIndex = 8;
-            // 
-            // txtGioiTinh
-            // 
-            this.txtGioiTinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtGioiTinh.Location = new System.Drawing.Point(458, 31);
-            this.txtGioiTinh.Name = "txtGioiTinh";
-            this.txtGioiTinh.Size = new System.Drawing.Size(157, 22);
-            this.txtGioiTinh.TabIndex = 22;
             // 
             // fQuanLyKhachHang
             // 

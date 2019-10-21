@@ -117,7 +117,6 @@ namespace QuanLyHoTroDatVeXe
             }
             else
                 MessageBox.Show("Sửa không thành công!", "Sửa thông tin xe", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
         }
         private void BtDatVeXe_Click(object sender, EventArgs e)
         {
