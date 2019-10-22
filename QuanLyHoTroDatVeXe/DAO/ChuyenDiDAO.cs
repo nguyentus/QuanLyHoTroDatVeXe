@@ -20,7 +20,7 @@ namespace DAO
 
         private ChuyenDiDAO() { }
 
-        //lấy ds xe
+        //lấy ds chuyến đi
         public List<ChuyenDi> LayDsChuyenDi()
         {
             List<ChuyenDi> danhSach = new List<ChuyenDi>();
@@ -33,6 +33,28 @@ namespace DAO
                 danhSach.Add(new ChuyenDi(item));
             }
             return danhSach;
+        }
+        //thêm chuyến đi vào danh sách
+        public bool themChuyenDi(string gioDi, string ngayDi, string diemDi, string diemDen, double giaVe, string bienSo)
+        {
+            int result = DataProvider.Instance.ExecuteNonQuery("themChuyenDi '" + gioDi + "', '" + ngayDi + "', '" + diemDi + "', '" + diemDen + "', " + giaVe + ", '" + bienSo + "'");
+            return result > 0;
+        }
+        //lấy khoa bằng tên
+
+        //xóa xe chuyến đi
+        public void xoaChuyenDiBymaCD(int maCD)
+        {
+            DataProvider.Instance.ExecuteNonQuery("DELETE dbo.ChuyenDi WHERE maCD = '" + maCD + "'");
+        }
+
+        //sửa thông tin
+        public bool suaThongTinChuyenDi(int maCD, string gioDi, string ngayDi, string diemDi, string diemDen, double giaVe, string bienSo)
+        {
+            int result = DataProvider.Instance.ExecuteNonQuery("UPDATE dbo.ChuyenDi SET gioDi = N'"
+                + gioDi + "', ngayDi = '" + ngayDi + "', diemDi = N'" + diemDi + "', diemDen = N'" + diemDen + "', giaVe = " + giaVe
+                + ", bienSo = N'" + bienSo + "' WHERE maCD = " + maCD);
+            return result > 0;
         }
     }
 }

@@ -46,6 +46,8 @@
   <ItemGroup>
     <Compile Include="ChuyenDiDAO.cs" />
     <Compile Include="DataProvider.cs" />
+    <Compile Include="DiemDenDAO.cs" />
+    <Compile Include="DiemDiDAO.cs" />
     <Compile Include="KhachHangDAO.cs" />
     <Compile Include="NhanVienDAO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
