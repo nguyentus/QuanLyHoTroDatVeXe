@@ -34,15 +34,24 @@ namespace DAO
             }
             return danhSach;
         }
+        //
+        //Tìm chuyến đi để dặt vé
+        public ChuyenDi timChuyenDi(string gd, string ngayDi, string diemDi, string diemDen)
+        {
+            DataTable table = DataProvider.Instance.ExecuteQuery("SELECT* FROM dbo.ChuyenDi WHERE gioDi = '" + gd 
+                +"' AND ngayDi = '" + ngayDi + "' AND diemDi = '" + diemDi + "' AND diemDen = '" + diemDen + "'");
+            foreach (DataRow row in table.Rows)
+                return new ChuyenDi(row);
+            return null;
+        }
         //thêm chuyến đi vào danh sách
         public bool themChuyenDi(string gioDi, string ngayDi, string diemDi, string diemDen, double giaVe, string bienSo)
         {
             int result = DataProvider.Instance.ExecuteNonQuery("themChuyenDi '" + gioDi + "', '" + ngayDi + "', '" + diemDi + "', '" + diemDen + "', " + giaVe + ", '" + bienSo + "'");
             return result > 0;
         }
-        //lấy khoa bằng tên
 
-        //xóa xe chuyến đi
+        //xóa chuyến đi
         public void xoaChuyenDiBymaCD(int maCD)
         {
             DataProvider.Instance.ExecuteNonQuery("DELETE dbo.ChuyenDi WHERE maCD = '" + maCD + "'");

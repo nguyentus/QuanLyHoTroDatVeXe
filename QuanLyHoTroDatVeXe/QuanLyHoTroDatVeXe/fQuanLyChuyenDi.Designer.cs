@@ -270,7 +270,7 @@
             // 
             this.cbDiemDen.FormattingEnabled = true;
             this.cbDiemDen.Location = new System.Drawing.Point(630, 31);
-            this.cbDiemDen.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.cbDiemDen.Margin = new System.Windows.Forms.Padding(1);
             this.cbDiemDen.Name = "cbDiemDen";
             this.cbDiemDen.Size = new System.Drawing.Size(103, 21);
             this.cbDiemDen.TabIndex = 12;
@@ -279,7 +279,7 @@
             // 
             this.cbDiemDi.FormattingEnabled = true;
             this.cbDiemDi.Location = new System.Drawing.Point(496, 31);
-            this.cbDiemDi.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.cbDiemDi.Margin = new System.Windows.Forms.Padding(1);
             this.cbDiemDi.Name = "cbDiemDi";
             this.cbDiemDi.Size = new System.Drawing.Size(106, 21);
             this.cbDiemDi.TabIndex = 12;
@@ -288,7 +288,7 @@
             // 
             this.cbBienSo.FormattingEnabled = true;
             this.cbBienSo.Location = new System.Drawing.Point(383, 31);
-            this.cbBienSo.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.cbBienSo.Margin = new System.Windows.Forms.Padding(1);
             this.cbBienSo.Name = "cbBienSo";
             this.cbBienSo.Size = new System.Drawing.Size(96, 21);
             this.cbBienSo.TabIndex = 12;
@@ -296,12 +296,8 @@
             // cbGioKhoiHanh
             // 
             this.cbGioKhoiHanh.FormattingEnabled = true;
-            this.cbGioKhoiHanh.Items.AddRange(new object[] {
-            "4:00",
-            "4:30",
-            "5:00"});
             this.cbGioKhoiHanh.Location = new System.Drawing.Point(111, 31);
-            this.cbGioKhoiHanh.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.cbGioKhoiHanh.Margin = new System.Windows.Forms.Padding(1);
             this.cbGioKhoiHanh.Name = "cbGioKhoiHanh";
             this.cbGioKhoiHanh.Size = new System.Drawing.Size(121, 21);
             this.cbGioKhoiHanh.TabIndex = 12;
@@ -310,7 +306,7 @@
             // 
             this.txtMaChuyenDi.Enabled = false;
             this.txtMaChuyenDi.Location = new System.Drawing.Point(15, 28);
-            this.txtMaChuyenDi.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.txtMaChuyenDi.Margin = new System.Windows.Forms.Padding(1);
             this.txtMaChuyenDi.Multiline = true;
             this.txtMaChuyenDi.Name = "txtMaChuyenDi";
             this.txtMaChuyenDi.Size = new System.Drawing.Size(86, 22);
@@ -340,8 +336,8 @@
             // 
             // txtGiaVe
             // 
-            this.txtGiaVe.Location = new System.Drawing.Point(764, 28);
-            this.txtGiaVe.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.txtGiaVe.Location = new System.Drawing.Point(764, 30);
+            this.txtGiaVe.Margin = new System.Windows.Forms.Padding(1);
             this.txtGiaVe.Multiline = true;
             this.txtGiaVe.Name = "txtGiaVe";
             this.txtGiaVe.Size = new System.Drawing.Size(90, 21);
@@ -352,7 +348,7 @@
             this.label10.AutoSize = true;
             this.label10.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label10.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(764, 8);
+            this.label10.Location = new System.Drawing.Point(764, 10);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(50, 18);
             this.label10.TabIndex = 7;

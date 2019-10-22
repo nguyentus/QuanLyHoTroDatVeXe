@@ -1,4 +1,6 @@
-﻿using System;
+﻿using DAO;
+using DTO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,9 +17,34 @@ namespace QuanLyHoTroDatVeXe
         public fDatVeXe()
         {
             InitializeComponent();
+            Load();
         }
 
         #region Methods
+        void Load()
+        {
+            hienThiDiemDen();
+            hienThiDiemDi();
+            hienThiGioDi();
+        }
+        void hienThiDiemDi()
+        {
+            List<DiemDi> dsDiemDi = DiemDiDAO.Instance.LayDsDiemDi();
+            cbDiemDi.DataSource = dsDiemDi;
+            cbDiemDi.DisplayMember = "tenTinh";
+        }
+        void hienThiDiemDen()
+        {
+            List<DiemDen> dsDiemDen = DiemDenDAO.Instance.LayDsDiemDen();
+            cbDiemDen.DataSource = dsDiemDen;
+            cbDiemDen.DisplayMember = "tenTinh";
+        }
+        void hienThiGioDi()
+        {
+            List<ChuyenDi> dsChuyenDi = ChuyenDiDAO.Instance.LayDsChuyenDi();
+            cbGio.DataSource = dsChuyenDi;
+            cbGio.DisplayMember = "gioDi";
+        }
         #endregion
 
         #region Events
@@ -42,21 +69,18 @@ namespace QuanLyHoTroDatVeXe
             f.Show();
             this.Dispose(false);
         }
-
         private void BtXe_Click(object sender, EventArgs e)
         {
             fQuanLyXe f = new fQuanLyXe();
             f.Show();
             this.Dispose(false);
         }
-
         private void BtKhachHang_Click(object sender, EventArgs e)
         {
             fQuanLyKhachHang f = new fQuanLyKhachHang();
             f.Show();
             this.Dispose(false);
         }
-
         private void BtBaoCao_Click(object sender, EventArgs e)
         {
             fBaoCaoThongKe f = new fBaoCaoThongKe();
@@ -68,6 +92,20 @@ namespace QuanLyHoTroDatVeXe
         {
             if (MessageBox.Show("Bạn muốn rời khỏi phần mềm?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 this.Close();
+        }
+
+        private void btTimChuyen_Click(object sender, EventArgs e)
+        {
+            string gio = cbGio.SelectedItem.ToString();
+            string ngay = dtpNgayDi.Value.Day + "-" + dtpNgayDi.Value.Month + "-" + dtpNgayDi.Value.Year;
+            string di = cbDiemDi.SelectedItem.ToString();
+            string den = cbDiemDen.SelectedItem.ToString();
+       
+        }
+
+        private void btXacNhan_Click(object sender, EventArgs e)
+        {
+            
         }
         #endregion
     }

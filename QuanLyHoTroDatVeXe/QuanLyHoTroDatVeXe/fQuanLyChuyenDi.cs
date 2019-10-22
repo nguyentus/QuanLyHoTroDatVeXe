@@ -18,15 +18,20 @@ namespace QuanLyHoTroDatVeXe
         public fQuanLyChuyenDi()
         {
             InitializeComponent();
+            Load();
+        }
+
+        #region Methods
+        void Load()
+        {
             dgvChuyenDi.DataSource = dsChuyenDi;
             hienThiDanhSachChuyenDi();
             hienThiBienSo();
             hienThiMaCD();
             hienThiDiemDi();
             hienThiDiemDen();
+            hienThiGioDi();
         }
-
-        #region Methods
         void hienThiDanhSachChuyenDi()
         {
             dsChuyenDi.DataSource = ChuyenDiDAO.Instance.LayDsChuyenDi();
@@ -54,6 +59,12 @@ namespace QuanLyHoTroDatVeXe
         void hienThiMaCD()
         {
             txtMaChuyenDi.DataBindings.Add("Text", dgvChuyenDi.DataSource, "maCD", true, DataSourceUpdateMode.Never);
+        }
+        void hienThiGioDi()
+        {
+            List<ChuyenDi> dsChuyenDi = ChuyenDiDAO.Instance.LayDsChuyenDi();
+            cbGioKhoiHanh.DataSource = dsChuyenDi;
+            cbGioKhoiHanh.DisplayMember = "gioDi";
         }
         void hienThiDiemDi()
         {

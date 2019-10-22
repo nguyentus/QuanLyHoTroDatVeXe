@@ -73,7 +73,7 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.lbHoTen = new System.Windows.Forms.Label();
             this.lbTongTien = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btXacNhan = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.lbGiaVe = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -91,6 +91,7 @@
             this.cbGio = new System.Windows.Forms.ComboBox();
             this.pGhe = new System.Windows.Forms.Panel();
             this.lbVeChon = new System.Windows.Forms.ListBox();
+            this.btTimChuyen = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.A13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.A07)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.A04)).BeginInit();
@@ -289,11 +290,11 @@
             // 
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(100, 340);
+            this.label22.Location = new System.Drawing.Point(88, 340);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(97, 18);
+            this.label22.Size = new System.Drawing.Size(113, 18);
             this.label22.TabIndex = 8;
-            this.label22.Text = "Ghế đã chọn:";
+            this.label22.Text = "Ghế đang chọn:";
             // 
             // A06
             // 
@@ -548,7 +549,7 @@
             this.panel3.Controls.Add(this.textBox1);
             this.panel3.Controls.Add(this.lbHoTen);
             this.panel3.Controls.Add(this.lbTongTien);
-            this.panel3.Controls.Add(this.button1);
+            this.panel3.Controls.Add(this.btXacNhan);
             this.panel3.Controls.Add(this.label3);
             this.panel3.Controls.Add(this.lbGiaVe);
             this.panel3.Controls.Add(this.label5);
@@ -615,16 +616,17 @@
             this.lbTongTien.TabIndex = 6;
             this.lbTongTien.Text = "asd";
             // 
-            // button1
+            // btXacNhan
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
-            this.button1.Location = new System.Drawing.Point(93, 423);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(105, 42);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Xác Nhận";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btXacNhan.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btXacNhan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
+            this.btXacNhan.Location = new System.Drawing.Point(93, 423);
+            this.btXacNhan.Name = "btXacNhan";
+            this.btXacNhan.Size = new System.Drawing.Size(105, 42);
+            this.btXacNhan.TabIndex = 4;
+            this.btXacNhan.Text = "Xác Nhận";
+            this.btXacNhan.UseVisualStyleBackColor = true;
+            this.btXacNhan.Click += new System.EventHandler(this.btXacNhan_Click);
             // 
             // label3
             // 
@@ -764,6 +766,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panel2.Controls.Add(this.btTimChuyen);
             this.panel2.Controls.Add(this.dtpNgayDi);
             this.panel2.Controls.Add(this.label27);
             this.panel2.Controls.Add(this.label26);
@@ -819,10 +822,22 @@
             this.lbVeChon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
             this.lbVeChon.FormattingEnabled = true;
             this.lbVeChon.ItemHeight = 20;
-            this.lbVeChon.Location = new System.Drawing.Point(98, 361);
+            this.lbVeChon.Location = new System.Drawing.Point(86, 361);
             this.lbVeChon.Name = "lbVeChon";
-            this.lbVeChon.Size = new System.Drawing.Size(100, 104);
+            this.lbVeChon.Size = new System.Drawing.Size(115, 104);
             this.lbVeChon.TabIndex = 9;
+            // 
+            // btTimChuyen
+            // 
+            this.btTimChuyen.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btTimChuyen.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
+            this.btTimChuyen.Location = new System.Drawing.Point(163, 252);
+            this.btTimChuyen.Name = "btTimChuyen";
+            this.btTimChuyen.Size = new System.Drawing.Size(105, 42);
+            this.btTimChuyen.TabIndex = 8;
+            this.btTimChuyen.Text = "Tìm chuyến";
+            this.btTimChuyen.UseVisualStyleBackColor = true;
+            this.btTimChuyen.Click += new System.EventHandler(this.btTimChuyen_Click);
             // 
             // fDatVeXe
             // 
@@ -919,7 +934,7 @@
         private System.Windows.Forms.Label lbGhe;
         private System.Windows.Forms.Label lbThoiGian;
         private System.Windows.Forms.Label lbChuyen;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btXacNhan;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
@@ -932,6 +947,7 @@
         private System.Windows.Forms.ComboBox cbGio;
         private System.Windows.Forms.Panel pGhe;
         private System.Windows.Forms.ListBox lbVeChon;
+        private System.Windows.Forms.Button btTimChuyen;
     }
 }
 

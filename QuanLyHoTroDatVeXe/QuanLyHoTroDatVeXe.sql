@@ -15,12 +15,12 @@ CREATE TABLE Xe
 GO
 CREATE TABLE DiemDi
 (
-	tenTinh NVARCHAR(20) PRIMARY KEY
+	tenTinh VARCHAR(20) PRIMARY KEY
 )
 GO 
 CREATE TABLE DiemDen
 (
-	tenTinh NVARCHAR(20) PRIMARY KEY
+	tenTinh VARCHAR(20) PRIMARY KEY
 )
 GO 
 CREATE TABLE ChuyenDi
@@ -28,8 +28,8 @@ CREATE TABLE ChuyenDi
 	maCD INT IDENTITY(10078,1) PRIMARY KEY,
 	gioDi VARCHAR(5) NOT NULL,
 	ngayDi DATETIME NOT NULL,
-	diemDi NVARCHAR(20) ,
-	diemDen NVARCHAR(20) ,
+	diemDi VARCHAR(20) ,
+	diemDen VARCHAR(20) ,
 	giaVe FLOAT NOT NULL,
 	bienSo VARCHAR(10) NOT NULL,
 	FOREIGN KEY (bienSo) REFERENCES dbo.Xe (bienSo),
@@ -92,14 +92,7 @@ BEGIN
 END
 GO
 CREATE PROC themChuyenDi 
-(
-	@gioDi VARCHAR(5), 
-	@ngayDi DATETIME, 
-	@diemDi NVARCHAR(20), 
-	@diemDen NVARCHAR(20), 
-	@giaVe FLOAT, 
-	@bienSo VARCHAR(10)
-)
+(@gioDi VARCHAR(5), @ngayDi DATETIME, @diemDi VARCHAR(20), @diemDen VARCHAR(20), @giaVe FLOAT, @bienSo VARCHAR(10))
 AS
 BEGIN
 	INSERT dbo.ChuyenDi(gioDi, ngayDi, diemDi, diemDen, giaVe, bienSo)
@@ -133,18 +126,31 @@ GO
 --Xe
 themXe '59F-61792', N'Lê Quốc Hoàng', 328893485, N'KIA', 0
 GO
-themXe '39F-81792', N'Trần Nam Thương', 184789253, N'Toyota', 1
+themXe '39F-81792', N'Trần Nam Thương', 123457890, N'Toyota', 1
 GO
-themXe '62K-53012', N'Nguyễn Quốc Vương', 184789253, N'Limouse', 1
+themXe '62M-53012', N'Nguyễn Quốc Vương', 102458079, N'Limouse', 1
 GO
-themXe '48K-10054', N'Lê Văn Hùng', 184789253, N'Toyota', 0
+themXe '48K-10054', N'Vũ Hoàng Nam', 112589774, N'Limouse Phương Trang', 1
+GO
+themXe '66T-10054', N'Cao Bá Đạt', 857493050, N'KIA', 1
+GO
+themXe '62L-10054', N'Trần Văn Anh', 205793240, N'Limouse', 1
+GO
+themXe '74L-98754', N'nguyễn Kim Thiện', 971528030, N'Toyota', 1
 GO
 --chuyến đi
-themChuyenDi '5h30', '12-11-2013' , 'DongNai', 'LongAn', 125000, '62K-53012' 
+themChuyenDi '16h00', '12-06-2019' , 'DongNai', 'LongAn', 125000, '39F-81792' 
 GO
-SELECT maCD, gioDi, ngayDi, di.tenTinh, den.tenTinh, bienSo, giaVe 
-FROM dbo.ChuyenDi AS c, dbo.DiemDi AS di, dbo.DiemDen AS den
-WHERE c.diemDi = di.tenTinh AND c.diemDen = den.tenTinh
+themChuyenDi '16h30', '11-5-2019' , 'HoChiMinh', 'LongAn', 125000, '62M-53012' 
+GO
+themChuyenDi '17h00', '11-3-2019' , 'HoChiMinh', 'DongThap', 125000, '48K-10054' 
+GO
+themChuyenDi '17h30', '11-7-2013' , 'HoChiMinh', 'BaoLoc', 125000, '66T-10054' 
+GO
+themChuyenDi '18h00', '11-7-2013' , 'DongNai', 'BaoLoc', 125000, '62L-10054' 
+GO
+themChuyenDi '18h30', '11-7-2013' , 'DongNai', 'DongThap', 125000, '74L-98754' 
+GO
 --tài khoản
 INSERT INTO TaiKhoan (tenDangNhap, matKhau, loaiTaiKhoan) VALUES ( '0', '0', 0)
 GO
@@ -155,8 +161,9 @@ themKH 918236031, 251123456, N'Hoàng Yến', N'Nữ', 'tp.HCM', 'yen.th@gmail.c
 GO
 themKH 912839740, 251123456, N'Thanh Tú', 'Nam', 'tp.HCM', 'tu.nt@gmail.com', '0'
 GO
+SELECT * FROM dbo.ChuyenDi
+SELECT * FROM dbo.ChuyenDi WHERE gioDi = '16h00' AND ngayDi = '12-06-2019' AND diemDi = 'DongNai' AND diemDen = 'LongAn'
 
-SELECT * FROM dbo.DiemDi
 
 
 
