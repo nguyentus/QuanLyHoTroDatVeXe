@@ -62,6 +62,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtSDT = new System.Windows.Forms.TextBox();
             this.pMenu = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.btThoat)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btBaoCao)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btXe)).BeginInit();
@@ -72,6 +73,7 @@
             this.pNoiDung.SuspendLayout();
             this.panel1.SuspendLayout();
             this.pMenu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // txtHoTen
@@ -432,11 +434,22 @@
             this.pMenu.Size = new System.Drawing.Size(879, 57);
             this.pMenu.TabIndex = 8;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(501, 55);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(160, 5);
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
+            // 
             // fQuanLyKhachHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(884, 546);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pNoiDung);
             this.Controls.Add(this.pMenu);
             this.Name = "fQuanLyKhachHang";
@@ -454,6 +467,7 @@
             this.panel1.PerformLayout();
             this.pMenu.ResumeLayout(false);
             this.pMenu.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -493,5 +507,6 @@
         private System.Windows.Forms.TextBox txtTenDN;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox txtGioiTinh;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

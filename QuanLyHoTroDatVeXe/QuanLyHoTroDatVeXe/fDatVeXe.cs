@@ -17,12 +17,20 @@ namespace QuanLyHoTroDatVeXe
         public fDatVeXe()
         {
             InitializeComponent();
+            phanQuyen();
             hienThiDiemDen();
             hienThiDiemDi();
             hienThiGioDi();
         }
 
         #region Methods
+        void phanQuyen()
+        {
+            btChuyenDi.Enabled = false;
+            btXe.Enabled = false;
+            btKhachHang.Enabled = false;
+            btBaoCao.Enabled = false;
+        }
         void hienThiDiemDi()
         {
             List<ChuyenDi> dsDiemDi = ChuyenDiDAO.Instance.LayDsChuyenDi();

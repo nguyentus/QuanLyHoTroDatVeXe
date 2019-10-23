@@ -17,12 +17,17 @@ namespace QuanLyHoTroDatVeXe
         public fQuanLyKhachHang()
         {
             InitializeComponent();
+            phanQuyen();
             dgvKhachHang.DataSource = dsKhachHang;
             hienThiDanhSach();
             taoRangBuoc();
         }
 
         #region Methods
+        void phanQuyen()
+        {
+            btDatVe.Enabled = false;
+        }
         void hienThiDanhSach()
         {
             dsKhachHang.DataSource = KhachHangDAO.Instance.layDsKhachHang();

@@ -53,6 +53,7 @@
             this.A05 = new System.Windows.Forms.PictureBox();
             this.A02 = new System.Windows.Forms.PictureBox();
             this.pMenu = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
@@ -88,10 +89,10 @@
             this.label30 = new System.Windows.Forms.Label();
             this.lbChuyen = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btTimChuyen = new System.Windows.Forms.Button();
             this.cbGio = new System.Windows.Forms.ComboBox();
             this.pGhe = new System.Windows.Forms.Panel();
             this.lbVeChon = new System.Windows.Forms.ListBox();
-            this.btTimChuyen = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.A13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.A07)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.A04)).BeginInit();
@@ -107,6 +108,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.A05)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.A02)).BeginInit();
             this.pMenu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btThoat)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btKhachHang)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btBaoCao)).BeginInit();
@@ -365,6 +367,7 @@
             // pMenu
             // 
             this.pMenu.BackColor = System.Drawing.Color.Transparent;
+            this.pMenu.Controls.Add(this.pictureBox1);
             this.pMenu.Controls.Add(this.label17);
             this.pMenu.Controls.Add(this.label18);
             this.pMenu.Controls.Add(this.label19);
@@ -378,8 +381,18 @@
             this.pMenu.Controls.Add(this.btDatVe);
             this.pMenu.Location = new System.Drawing.Point(3, 0);
             this.pMenu.Name = "pMenu";
-            this.pMenu.Size = new System.Drawing.Size(879, 57);
+            this.pMenu.Size = new System.Drawing.Size(879, 62);
             this.pMenu.TabIndex = 5;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(5, 55);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(160, 5);
+            this.pictureBox1.TabIndex = 9;
+            this.pictureBox1.TabStop = false;
             // 
             // label17
             // 
@@ -563,9 +576,9 @@
             this.panel3.Controls.Add(this.lbThoiGian);
             this.panel3.Controls.Add(this.label30);
             this.panel3.Controls.Add(this.lbChuyen);
-            this.panel3.Location = new System.Drawing.Point(584, 0);
+            this.panel3.Location = new System.Drawing.Point(584, 5);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(290, 488);
+            this.panel3.Size = new System.Drawing.Size(290, 483);
             this.panel3.TabIndex = 2;
             // 
             // textBox3
@@ -776,10 +789,22 @@
             this.panel2.Controls.Add(this.cbDiemDen);
             this.panel2.Controls.Add(this.cbDiemDi);
             this.panel2.Controls.Add(this.cbGio);
-            this.panel2.Location = new System.Drawing.Point(3, 0);
+            this.panel2.Location = new System.Drawing.Point(3, 5);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(289, 488);
+            this.panel2.Size = new System.Drawing.Size(289, 483);
             this.panel2.TabIndex = 13;
+            // 
+            // btTimChuyen
+            // 
+            this.btTimChuyen.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btTimChuyen.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
+            this.btTimChuyen.Location = new System.Drawing.Point(163, 252);
+            this.btTimChuyen.Name = "btTimChuyen";
+            this.btTimChuyen.Size = new System.Drawing.Size(105, 42);
+            this.btTimChuyen.TabIndex = 8;
+            this.btTimChuyen.Text = "Tìm chuyến";
+            this.btTimChuyen.UseVisualStyleBackColor = true;
+            this.btTimChuyen.Click += new System.EventHandler(this.btTimChuyen_Click);
             // 
             // cbGio
             // 
@@ -810,9 +835,9 @@
             this.pGhe.Controls.Add(this.A08);
             this.pGhe.Controls.Add(this.A05);
             this.pGhe.Controls.Add(this.A02);
-            this.pGhe.Location = new System.Drawing.Point(295, 0);
+            this.pGhe.Location = new System.Drawing.Point(295, 5);
             this.pGhe.Name = "pGhe";
-            this.pGhe.Size = new System.Drawing.Size(287, 488);
+            this.pGhe.Size = new System.Drawing.Size(287, 483);
             this.pGhe.TabIndex = 1;
             // 
             // lbVeChon
@@ -826,18 +851,6 @@
             this.lbVeChon.Name = "lbVeChon";
             this.lbVeChon.Size = new System.Drawing.Size(115, 104);
             this.lbVeChon.TabIndex = 9;
-            // 
-            // btTimChuyen
-            // 
-            this.btTimChuyen.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btTimChuyen.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
-            this.btTimChuyen.Location = new System.Drawing.Point(163, 252);
-            this.btTimChuyen.Name = "btTimChuyen";
-            this.btTimChuyen.Size = new System.Drawing.Size(105, 42);
-            this.btTimChuyen.TabIndex = 8;
-            this.btTimChuyen.Text = "Tìm chuyến";
-            this.btTimChuyen.UseVisualStyleBackColor = true;
-            this.btTimChuyen.Click += new System.EventHandler(this.btTimChuyen_Click);
             // 
             // fDatVeXe
             // 
@@ -865,6 +878,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.A02)).EndInit();
             this.pMenu.ResumeLayout(false);
             this.pMenu.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btThoat)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btKhachHang)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btBaoCao)).EndInit();
@@ -948,6 +962,7 @@
         private System.Windows.Forms.Panel pGhe;
         private System.Windows.Forms.ListBox lbVeChon;
         private System.Windows.Forms.Button btTimChuyen;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

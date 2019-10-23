@@ -16,7 +16,7 @@ namespace QuanLyHoTroDatVeXe
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new fQuanLyXe());
+            Application.Run(new fDangNhap());
         }
     }
 }

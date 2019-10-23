@@ -18,6 +18,7 @@ namespace QuanLyHoTroDatVeXe
         public fQuanLyChuyenDi()
         {
             InitializeComponent();
+            phanQuyen();
             dgvChuyenDi.DataSource = dsChuyenDi;
             hienThiDanhSachChuyenDi();
             hienThiBienSo();
@@ -25,6 +26,10 @@ namespace QuanLyHoTroDatVeXe
         }
 
         #region Methods
+        void phanQuyen()
+        {
+            btDatVe.Enabled = false;
+        }
         void hienThiDanhSachChuyenDi()
         {
             dsChuyenDi.DataSource = ChuyenDiDAO.Instance.LayDsChuyenDi();
@@ -53,11 +58,8 @@ namespace QuanLyHoTroDatVeXe
         {
             txtMa.DataBindings.Add("Text", dgvChuyenDi.DataSource, "maCD", true, DataSourceUpdateMode.Never);
             txtGio.DataBindings.Add("Text", dgvChuyenDi.DataSource, "gioDi", true, DataSourceUpdateMode.Never);
-
-            
-            dtpNgay.DataBindings.Add("Datetime", dgvChuyenDi.DataSource, "ngayDi",true, DataSourceUpdateMode.Never);
+            dtpNgay.DataBindings.Add("Value", dgvChuyenDi.DataSource, "ngayDi");
             cbBienSo.DataBindings.Add("Text", dgvChuyenDi.DataSource, "bienSo", true, DataSourceUpdateMode.Never);
-
             txtDiemDi.DataBindings.Add("Text", dgvChuyenDi.DataSource, "diemDi", true, DataSourceUpdateMode.Never);
             txtDiemDen.DataBindings.Add("Text", dgvChuyenDi.DataSource, "diemDen", true, DataSourceUpdateMode.Never);
             txtGiaVe.DataBindings.Add("Text", dgvChuyenDi.DataSource, "giaVe", true, DataSourceUpdateMode.Never);

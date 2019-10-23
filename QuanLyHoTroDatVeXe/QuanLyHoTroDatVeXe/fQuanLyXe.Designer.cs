@@ -56,6 +56,7 @@
             this.btXoa = new System.Windows.Forms.Button();
             this.btSua = new System.Windows.Forms.Button();
             this.btThem = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btThoat)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btKhachHang)).BeginInit();
@@ -66,6 +67,7 @@
             this.pNoiDung.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvXe)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // listView1
@@ -105,7 +107,7 @@
             this.pMenu.Controls.Add(this.btDatVe);
             this.pMenu.Location = new System.Drawing.Point(3, 0);
             this.pMenu.Name = "pMenu";
-            this.pMenu.Size = new System.Drawing.Size(879, 57);
+            this.pMenu.Size = new System.Drawing.Size(879, 60);
             this.pMenu.TabIndex = 6;
             // 
             // label6
@@ -232,9 +234,9 @@
             this.pNoiDung.Controls.Add(this.dgvXe);
             this.pNoiDung.Controls.Add(this.listView1);
             this.pNoiDung.Controls.Add(this.panel1);
-            this.pNoiDung.Location = new System.Drawing.Point(3, 60);
+            this.pNoiDung.Location = new System.Drawing.Point(3, 63);
             this.pNoiDung.Name = "pNoiDung";
-            this.pNoiDung.Size = new System.Drawing.Size(876, 486);
+            this.pNoiDung.Size = new System.Drawing.Size(876, 483);
             this.pNoiDung.TabIndex = 5;
             // 
             // dgvXe
@@ -369,11 +371,22 @@
             this.btThem.UseVisualStyleBackColor = true;
             this.btThem.Click += new System.EventHandler(this.btThem_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(337, 55);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(160, 5);
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
+            // 
             // fQuanLyXe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(884, 546);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pMenu);
             this.Controls.Add(this.pNoiDung);
             this.Name = "fQuanLyXe";
@@ -391,6 +404,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvXe)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -424,5 +438,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtTenXe;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

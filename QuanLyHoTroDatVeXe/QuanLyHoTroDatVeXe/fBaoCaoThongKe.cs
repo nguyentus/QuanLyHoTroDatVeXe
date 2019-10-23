@@ -15,8 +15,13 @@ namespace QuanLyHoTroDatVeXe
         public fBaoCaoThongKe()
         {
             InitializeComponent();
+            phanQuyen();
         }
         #region Methods
+        void phanQuyen()
+        {
+            btDatVe.Enabled = false;
+        }
         #endregion
 
         #region Events
@@ -54,5 +59,6 @@ namespace QuanLyHoTroDatVeXe
                 this.Close();
         }
         #endregion
+
     }
 }

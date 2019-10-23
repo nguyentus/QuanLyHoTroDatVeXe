@@ -32,6 +32,7 @@
             this.pMenu = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -46,6 +47,7 @@
             this.listView1 = new System.Windows.Forms.ListView();
             this.pNoiDung = new System.Windows.Forms.Panel();
             this.pMenu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btThoat)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btKhachHang)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btBaoCao)).BeginInit();
@@ -61,6 +63,7 @@
             this.pMenu.BackColor = System.Drawing.Color.Transparent;
             this.pMenu.Controls.Add(this.label6);
             this.pMenu.Controls.Add(this.label5);
+            this.pMenu.Controls.Add(this.pictureBox1);
             this.pMenu.Controls.Add(this.label4);
             this.pMenu.Controls.Add(this.label7);
             this.pMenu.Controls.Add(this.label8);
@@ -72,7 +75,7 @@
             this.pMenu.Controls.Add(this.btDatVe);
             this.pMenu.Location = new System.Drawing.Point(3, 0);
             this.pMenu.Name = "pMenu";
-            this.pMenu.Size = new System.Drawing.Size(879, 57);
+            this.pMenu.Size = new System.Drawing.Size(879, 62);
             this.pMenu.TabIndex = 10;
             // 
             // label6
@@ -98,6 +101,16 @@
             this.label5.Size = new System.Drawing.Size(107, 13);
             this.label5.TabIndex = 4;
             this.label5.Text = "Quản Lý Khách Hàng";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(662, 55);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(160, 5);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // label4
             // 
@@ -210,9 +223,9 @@
             // 
             this.panel1.Controls.Add(this.cbNhanVien);
             this.panel1.Controls.Add(this.listView1);
-            this.panel1.Location = new System.Drawing.Point(8, 3);
+            this.panel1.Location = new System.Drawing.Point(8, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(860, 471);
+            this.panel1.Size = new System.Drawing.Size(860, 473);
             this.panel1.TabIndex = 0;
             // 
             // cbNhanVien
@@ -252,6 +265,7 @@
             this.Text = "fBaoCaoThongKe";
             this.pMenu.ResumeLayout(false);
             this.pMenu.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btThoat)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btKhachHang)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btBaoCao)).EndInit();
@@ -282,5 +296,6 @@
         private System.Windows.Forms.Panel pNoiDung;
         private System.Windows.Forms.ComboBox cbNhanVien;
         private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

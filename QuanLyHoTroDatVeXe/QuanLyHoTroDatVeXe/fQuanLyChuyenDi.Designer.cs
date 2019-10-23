@@ -39,11 +39,15 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.pMenu = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.btChuyenDi = new System.Windows.Forms.PictureBox();
             this.pNoiDung = new System.Windows.Forms.Panel();
             this.btThem = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txtDiemDen = new System.Windows.Forms.TextBox();
+            this.txtDiemDi = new System.Windows.Forms.TextBox();
+            this.txtGio = new System.Windows.Forms.TextBox();
             this.cbBienSo = new System.Windows.Forms.ComboBox();
             this.txtMa = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
@@ -58,15 +62,13 @@
             this.btXoa = new System.Windows.Forms.Button();
             this.btCapNhat = new System.Windows.Forms.Button();
             this.dgvChuyenDi = new System.Windows.Forms.DataGridView();
-            this.txtGio = new System.Windows.Forms.TextBox();
-            this.txtDiemDi = new System.Windows.Forms.TextBox();
-            this.txtDiemDen = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.btThoat)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btKhachHang)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btBaoCao)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btXe)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btDatVe)).BeginInit();
             this.pMenu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btChuyenDi)).BeginInit();
             this.pNoiDung.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -184,6 +186,7 @@
             // pMenu
             // 
             this.pMenu.BackColor = System.Drawing.Color.Transparent;
+            this.pMenu.Controls.Add(this.pictureBox1);
             this.pMenu.Controls.Add(this.label6);
             this.pMenu.Controls.Add(this.label5);
             this.pMenu.Controls.Add(this.label4);
@@ -197,8 +200,18 @@
             this.pMenu.Controls.Add(this.btDatVe);
             this.pMenu.Location = new System.Drawing.Point(3, 0);
             this.pMenu.Name = "pMenu";
-            this.pMenu.Size = new System.Drawing.Size(879, 57);
+            this.pMenu.Size = new System.Drawing.Size(879, 63);
             this.pMenu.TabIndex = 4;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(169, 55);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(160, 5);
+            this.pictureBox1.TabIndex = 15;
+            this.pictureBox1.TabStop = false;
             // 
             // label5
             // 
@@ -230,9 +243,9 @@
             this.pNoiDung.Controls.Add(this.btXoa);
             this.pNoiDung.Controls.Add(this.btCapNhat);
             this.pNoiDung.Controls.Add(this.dgvChuyenDi);
-            this.pNoiDung.Location = new System.Drawing.Point(3, 60);
+            this.pNoiDung.Location = new System.Drawing.Point(3, 66);
             this.pNoiDung.Name = "pNoiDung";
-            this.pNoiDung.Size = new System.Drawing.Size(876, 486);
+            this.pNoiDung.Size = new System.Drawing.Size(876, 480);
             this.pNoiDung.TabIndex = 3;
             // 
             // btThem
@@ -265,6 +278,27 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(860, 61);
             this.panel1.TabIndex = 8;
+            // 
+            // txtDiemDen
+            // 
+            this.txtDiemDen.Location = new System.Drawing.Point(641, 31);
+            this.txtDiemDen.Name = "txtDiemDen";
+            this.txtDiemDen.Size = new System.Drawing.Size(90, 20);
+            this.txtDiemDen.TabIndex = 15;
+            // 
+            // txtDiemDi
+            // 
+            this.txtDiemDi.Location = new System.Drawing.Point(521, 31);
+            this.txtDiemDi.Name = "txtDiemDi";
+            this.txtDiemDi.Size = new System.Drawing.Size(90, 20);
+            this.txtDiemDi.TabIndex = 14;
+            // 
+            // txtGio
+            // 
+            this.txtGio.Location = new System.Drawing.Point(126, 31);
+            this.txtGio.Name = "txtGio";
+            this.txtGio.Size = new System.Drawing.Size(92, 20);
+            this.txtGio.TabIndex = 13;
             // 
             // cbBienSo
             // 
@@ -409,27 +443,6 @@
             this.dgvChuyenDi.Size = new System.Drawing.Size(860, 357);
             this.dgvChuyenDi.TabIndex = 7;
             // 
-            // txtGio
-            // 
-            this.txtGio.Location = new System.Drawing.Point(126, 31);
-            this.txtGio.Name = "txtGio";
-            this.txtGio.Size = new System.Drawing.Size(92, 20);
-            this.txtGio.TabIndex = 13;
-            // 
-            // txtDiemDi
-            // 
-            this.txtDiemDi.Location = new System.Drawing.Point(521, 31);
-            this.txtDiemDi.Name = "txtDiemDi";
-            this.txtDiemDi.Size = new System.Drawing.Size(90, 20);
-            this.txtDiemDi.TabIndex = 14;
-            // 
-            // txtDiemDen
-            // 
-            this.txtDiemDen.Location = new System.Drawing.Point(641, 31);
-            this.txtDiemDen.Name = "txtDiemDen";
-            this.txtDiemDen.Size = new System.Drawing.Size(90, 20);
-            this.txtDiemDen.TabIndex = 15;
-            // 
             // fQuanLyChuyenDi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -447,6 +460,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.btDatVe)).EndInit();
             this.pMenu.ResumeLayout(false);
             this.pMenu.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btChuyenDi)).EndInit();
             this.pNoiDung.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
@@ -490,5 +504,6 @@
         private System.Windows.Forms.TextBox txtDiemDen;
         private System.Windows.Forms.TextBox txtDiemDi;
         private System.Windows.Forms.TextBox txtGio;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
