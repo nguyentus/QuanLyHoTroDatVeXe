@@ -24,7 +24,7 @@ namespace DAO
 
         private DataProvider()
         {
-            string con = @"Data Source=NGUYENTU\SQLNT;Initial Catalog=QuanLyHoTroDatVe1;Integrated Security=True";
+            string con = @"Data Source=.;Initial Catalog=QuanLyHoTroDatVe1;Integrated Security=True";
             connection = new SqlConnection(con);
         }
         
