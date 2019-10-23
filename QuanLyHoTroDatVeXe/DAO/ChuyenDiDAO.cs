@@ -52,7 +52,7 @@ namespace DAO
         }
 
         //xóa chuyến đi
-        public void xoaChuyenDiBymaCD(int maCD)
+        public void xoaChuyenDiBangmaCD(int maCD)
         {
             DataProvider.Instance.ExecuteNonQuery("DELETE dbo.ChuyenDi WHERE maCD = '" + maCD + "'");
         }

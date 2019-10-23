@@ -17,27 +17,23 @@ namespace QuanLyHoTroDatVeXe
         public fDatVeXe()
         {
             InitializeComponent();
-            Load();
-        }
-
-        #region Methods
-        void Load()
-        {
             hienThiDiemDen();
             hienThiDiemDi();
             hienThiGioDi();
         }
+
+        #region Methods
         void hienThiDiemDi()
         {
-            List<DiemDi> dsDiemDi = DiemDiDAO.Instance.LayDsDiemDi();
+            List<ChuyenDi> dsDiemDi = ChuyenDiDAO.Instance.LayDsChuyenDi();
             cbDiemDi.DataSource = dsDiemDi;
-            cbDiemDi.DisplayMember = "tenTinh";
+            cbDiemDi.DisplayMember = "diemDi";
         }
         void hienThiDiemDen()
         {
-            List<DiemDen> dsDiemDen = DiemDenDAO.Instance.LayDsDiemDen();
+            List<ChuyenDi> dsDiemDen = ChuyenDiDAO.Instance.LayDsChuyenDi();
             cbDiemDen.DataSource = dsDiemDen;
-            cbDiemDen.DisplayMember = "tenTinh";
+            cbDiemDen.DisplayMember = "diemDen";
         }
         void hienThiGioDi()
         {

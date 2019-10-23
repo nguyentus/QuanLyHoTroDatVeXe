@@ -18,30 +18,23 @@ namespace QuanLyHoTroDatVeXe
         public fQuanLyChuyenDi()
         {
             InitializeComponent();
-            Load();
-        }
-
-        #region Methods
-        void Load()
-        {
             dgvChuyenDi.DataSource = dsChuyenDi;
             hienThiDanhSachChuyenDi();
             hienThiBienSo();
-            hienThiMaCD();
-            hienThiDiemDi();
-            hienThiDiemDen();
-            hienThiGioDi();
+            taoRangBuoc();
         }
+
+        #region Methods
         void hienThiDanhSachChuyenDi()
         {
             dsChuyenDi.DataSource = ChuyenDiDAO.Instance.LayDsChuyenDi();
             dgvChuyenDi.Columns[0].HeaderText = "Mã Chuyến đi";
             dgvChuyenDi.Columns[0].Width = 108;
-            dgvChuyenDi.Columns[1].HeaderText = "Ngày đi";
-            dgvChuyenDi.Columns[1].Width = 108;
             dgvChuyenDi.Columns[2].HeaderText = "Giờ đi";
             dgvChuyenDi.Columns[2].Width = 108;
-            dgvChuyenDi.Columns[3].HeaderText = "Điểm đi";
+            dgvChuyenDi.Columns[1].HeaderText = "Ngày đi";
+            dgvChuyenDi.Columns[1].Width = 108;
+            dgvChuyenDi.Columns[3].HeaderText = "Nới xuất phát";
             dgvChuyenDi.Columns[3].Width = 108;
             dgvChuyenDi.Columns[4].HeaderText = "Điểm đến";
             dgvChuyenDi.Columns[4].Width = 108;
@@ -56,40 +49,31 @@ namespace QuanLyHoTroDatVeXe
             cbBienSo.DataSource = dsBienSo;
             cbBienSo.DisplayMember = "bienSo";
         }
-        void hienThiMaCD()
+        void taoRangBuoc()
         {
-            txtMaChuyenDi.DataBindings.Add("Text", dgvChuyenDi.DataSource, "maCD", true, DataSourceUpdateMode.Never);
-        }
-        void hienThiGioDi()
-        {
-            List<ChuyenDi> dsChuyenDi = ChuyenDiDAO.Instance.LayDsChuyenDi();
-            cbGioKhoiHanh.DataSource = dsChuyenDi;
-            cbGioKhoiHanh.DisplayMember = "gioDi";
-        }
-        void hienThiDiemDi()
-        {
-            List<DiemDi> dsDiemDi = DiemDiDAO.Instance.LayDsDiemDi();
-            cbDiemDi.DataSource = dsDiemDi;
-            cbDiemDi.DisplayMember = "tenTinh";
-        }
-        void hienThiDiemDen()
-        {
-            List<DiemDen> dsDiemDen = DiemDenDAO.Instance.LayDsDiemDen();
-            cbDiemDen.DataSource = dsDiemDen;
-            cbDiemDen.DisplayMember = "tenTinh";
-        }
-        #endregion
+            txtMa.DataBindings.Add("Text", dgvChuyenDi.DataSource, "maCD", true, DataSourceUpdateMode.Never);
+            txtGio.DataBindings.Add("Text", dgvChuyenDi.DataSource, "gioDi", true, DataSourceUpdateMode.Never);
 
-        #region Events
-        private void BtThem_Click(object sender, EventArgs e)
+            
+            dtpNgay.DataBindings.Add("Datetime", dgvChuyenDi.DataSource, "ngayDi",true, DataSourceUpdateMode.Never);
+            cbBienSo.DataBindings.Add("Text", dgvChuyenDi.DataSource, "bienSo", true, DataSourceUpdateMode.Never);
+
+            txtDiemDi.DataBindings.Add("Text", dgvChuyenDi.DataSource, "diemDi", true, DataSourceUpdateMode.Never);
+            txtDiemDen.DataBindings.Add("Text", dgvChuyenDi.DataSource, "diemDen", true, DataSourceUpdateMode.Never);
+            txtGiaVe.DataBindings.Add("Text", dgvChuyenDi.DataSource, "giaVe", true, DataSourceUpdateMode.Never);
+        }
+            #endregion
+
+            #region Events
+            private void BtThem_Click(object sender, EventArgs e)
         {
             try
             {
-                string gioDi = this.cbGioKhoiHanh.GetItemText(this.cbGioKhoiHanh.SelectedItem);
-                string ngayDi = dtpNgayKhoiHanh.Value.Month + "-" + dtpNgayKhoiHanh.Value.Day + "-" + dtpNgayKhoiHanh.Value.Year;
-                string diemDi = this.cbDiemDi.GetItemText(this.cbDiemDi.SelectedItem);
+                string gioDi = txtGio.Text;
+                string ngayDi = dtpNgay.Value.Month + "-" + dtpNgay.Value.Day + "-" + dtpNgay.Value.Year;
+                string diemDi = txtDiemDi.Text;
                 string bienSo = this.cbBienSo.GetItemText(this.cbBienSo.SelectedItem);
-                string diemDen = this.cbDiemDen.GetItemText(this.cbDiemDen.SelectedItem);
+                string diemDen = txtDiemDen.Text;
                 double giaVe = double.Parse(txtGiaVe.Text);
 
                 if (gioDi == "" || ngayDi == "" || diemDi == "" || diemDen == "" || giaVe == 0 || bienSo == "")
@@ -104,7 +88,6 @@ namespace QuanLyHoTroDatVeXe
                     }
                     else
                         MessageBox.Show("Thêm không thành công!", "Thêm chuyến đi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
                 }
             }
             catch (Exception)
@@ -115,13 +98,13 @@ namespace QuanLyHoTroDatVeXe
 
         private void BtCapNhat_Click(object sender, EventArgs e)
         {
-            string gioDi = this.cbGioKhoiHanh.GetItemText(this.cbGioKhoiHanh.SelectedItem);
-            string ngayDi = dtpNgayKhoiHanh.Value.Month + "-" + dtpNgayKhoiHanh.Value.Day + "-" + dtpNgayKhoiHanh.Value.Year;
-            string diemDi = this.cbDiemDi.GetItemText(this.cbDiemDi.SelectedItem);
+            string gioDi = txtGio.Text;
+            string ngayDi = dtpNgay.Value.Month + "-" + dtpNgay.Value.Day + "-" + dtpNgay.Value.Year;
+            string diemDi = txtDiemDi.Text;
             string bienSo = this.cbBienSo.GetItemText(this.cbBienSo.SelectedItem);
-            string diemDen = this.cbDiemDen.GetItemText(this.cbDiemDen.SelectedItem);
+            string diemDen = txtDiemDen.Text;
             double giaVe = double.Parse(txtGiaVe.Text);
-            bool ketQua = ChuyenDiDAO.Instance.suaThongTinChuyenDi(int.Parse(txtMaChuyenDi.Text), gioDi, ngayDi, diemDi, diemDen, giaVe, bienSo);
+            bool ketQua = ChuyenDiDAO.Instance.suaThongTinChuyenDi(int.Parse(txtMa.Text), gioDi, ngayDi, diemDi, diemDen, giaVe, bienSo);
             if (ketQua)
             {
                 MessageBox.Show("Sửa thành công!", "Sửa thông tin chuyến đi", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -132,12 +115,12 @@ namespace QuanLyHoTroDatVeXe
         }
         private void BtXoa_Click(object sender, EventArgs e)
         {
-            int maCD = int.Parse(txtMaChuyenDi.Text);
+            int maCD = int.Parse(txtMa.Text);
             if (maCD == 0)
                 MessageBox.Show("Bạn chưa chọn chuyến đi", "Xóa chuyến đi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             else
             {
-                ChuyenDiDAO.Instance.xoaChuyenDiBymaCD(maCD);
+                ChuyenDiDAO.Instance.xoaChuyenDiBangmaCD(maCD);
                 hienThiDanhSachChuyenDi();
             }
         }
