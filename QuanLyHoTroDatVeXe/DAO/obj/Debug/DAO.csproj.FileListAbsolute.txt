@@ -7,3 +7,11 @@ C:\Users\HP\Desktop\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\DAO\obj\Debug\DAO.cspr
 C:\Users\HP\Desktop\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\DAO\obj\Debug\DAO.csproj.CopyComplete
 C:\Users\HP\Desktop\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\DAO\obj\Debug\DAO.dll
 C:\Users\HP\Desktop\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\DAO\obj\Debug\DAO.pdb
+D:\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\DAO\bin\Debug\DAO.dll
+D:\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\DAO\bin\Debug\DAO.pdb
+D:\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\DAO\bin\Debug\DTO.dll
+D:\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\DAO\bin\Debug\DTO.pdb
+D:\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\DAO\obj\Debug\DAO.csprojAssemblyReference.cache
+D:\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\DAO\obj\Debug\DAO.csproj.CopyComplete
+D:\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\DAO\obj\Debug\DAO.dll
+D:\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\DAO\obj\Debug\DAO.pdb
