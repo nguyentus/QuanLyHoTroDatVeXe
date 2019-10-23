@@ -4,9 +4,3 @@ C:\Users\HP\Desktop\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\DTO\obj\Debug\DTO.cspr
 C:\Users\HP\Desktop\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
 C:\Users\HP\Desktop\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\DTO\obj\Debug\DTO.dll
 C:\Users\HP\Desktop\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\DTO\obj\Debug\DTO.pdb
-E:\_STUDY\KiemThuPhanMem\_BaiTapLon\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\DTO\bin\Debug\DTO.dll
-E:\_STUDY\KiemThuPhanMem\_BaiTapLon\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\DTO\bin\Debug\DTO.pdb
-E:\_STUDY\KiemThuPhanMem\_BaiTapLon\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
-E:\_STUDY\KiemThuPhanMem\_BaiTapLon\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
-E:\_STUDY\KiemThuPhanMem\_BaiTapLon\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\DTO\obj\Debug\DTO.dll
-E:\_STUDY\KiemThuPhanMem\_BaiTapLon\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\DTO\obj\Debug\DTO.pdb

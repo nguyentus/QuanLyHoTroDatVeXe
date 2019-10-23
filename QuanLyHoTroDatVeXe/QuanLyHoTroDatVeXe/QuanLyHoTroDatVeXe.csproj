@@ -53,6 +53,12 @@
     <Compile Include="fBaoCaoThongKe.Designer.cs">
       <DependentUpon>fBaoCaoThongKe.cs</DependentUpon>
     </Compile>
+    <Compile Include="fDangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fDangNhap.Designer.cs">
+      <DependentUpon>fDangNhap.cs</DependentUpon>
+    </Compile>
     <Compile Include="fDatVeXe.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,6 +87,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="fBaoCaoThongKe.resx">
       <DependentUpon>fBaoCaoThongKe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fDangNhap.resx">
+      <DependentUpon>fDangNhap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fDatVeXe.resx">
       <DependentUpon>fDatVeXe.cs</DependentUpon>
