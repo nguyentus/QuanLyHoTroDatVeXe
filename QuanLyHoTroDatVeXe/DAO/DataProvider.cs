@@ -20,11 +20,9 @@ namespace DAO
             get { if (instance == null) instance = new DataProvider(); return DataProvider.instance; }
             private set { DataProvider.instance = value; }
         }
-        
-
         private DataProvider()
         {
-            string con = @"Data Source=NGUYENTU\SQLNT;Initial Catalog=QuanLyHoTroDatVe;Integrated Security=True";
+            string con = @"Data Source=.;Initial Catalog=QuanLyHoTroDatVe;Integrated Security=True";
             connection = new SqlConnection(con);
         }
         

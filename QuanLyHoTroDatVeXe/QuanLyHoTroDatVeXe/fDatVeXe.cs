@@ -66,6 +66,12 @@ namespace QuanLyHoTroDatVeXe
                 p.BackColor = Color.Gray;
             }
         }
+        private void DoiMauGhe(object sender, EventArgs e)
+        {
+            PictureBox p = (PictureBox)sender;
+            p.BackColor = Color.Gray;
+            p.Enabled = false;
+        }
 
         private void BtChuyenDi_Click(object sender, EventArgs e)
         {
@@ -91,20 +97,25 @@ namespace QuanLyHoTroDatVeXe
             f.Show();
             this.Dispose(false);
         }
-
         private void BtThoat_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Bạn muốn rời khỏi phần mềm?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 this.Close();
         }
-
         private void btTimChuyen_Click(object sender, EventArgs e)
         {
-            string gio = cbGio.SelectedItem.ToString();
-            string ngay = dtpNgayDi.Value.Day + "-" + dtpNgayDi.Value.Month + "-" + dtpNgayDi.Value.Year;
-            string di = cbDiemDi.SelectedItem.ToString();
-            string den = cbDiemDen.SelectedItem.ToString();
-       
+            string gio = this.cbGio.GetItemText(this.cbGio.SelectedItem);
+            string ngay = dtpNgayDi.Value.Month + "-" + dtpNgayDi.Value.Day + "-" + dtpNgayDi.Value.Year;
+            string di = this.cbDiemDi.GetItemText(this.cbDiemDi.SelectedItem);
+            string den = this.cbDiemDen.GetItemText(this.cbDiemDen.SelectedItem);
+
+            int maCD = ChuyenDiDAO.Instance.timChuyenDi(gio, ngay, di, den);
+            List<VeXe> dsVeDaDat = VeXeDAO.Instance.layDsVeXe(maCD);
+
+            foreach (VeXe ve in dsVeDaDat)
+            {
+                ((PictureBox)gbGhe.Controls[ve.MaGhe]).BackColor = Color.Red;
+            }
         }
 
         private void btXacNhan_Click(object sender, EventArgs e)

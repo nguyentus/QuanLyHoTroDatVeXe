@@ -20,20 +20,6 @@ namespace DAO
 
         private TaiKhoanDAO() { }
 
-        //lấy ds tài khoản
-        public List<TaiKhoan> LayDsTaiKhoan()
-        {
-            List<TaiKhoan> danhSach = new List<TaiKhoan>();
-            string query = "SELECT * FROM dbo.DiemDi";
-            DataTable data = DataProvider.Instance.ExecuteQuery(query);
-
-            foreach (DataRow item in data.Rows)
-            {
-                danhSach.Add(new TaiKhoan(item));
-            }
-            return danhSach;
-        }
-
         //lấy tên tài khoản
         public string LayTenDangNhap(string taiKhoan)
         {

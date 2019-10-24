@@ -53,7 +53,7 @@ CREATE TABLE VeXe
 (
 	soDienThoai INT,
 	maCD INT,
-	maGhe INT,
+	maGhe VARCHAR(3),
 	thoiGianDat DATETIME NOT NULL,
 	PRIMARY KEY( soDienThoai, maCD, maGhe),
 	FOREIGN KEY (soDienThoai) REFERENCES dbo.KhachHang (soDienThoai),
@@ -133,3 +133,9 @@ GO
 themKH 912839740, 251123456, N'Thanh Tú', 'Nam', 'tp.HCM', 'tu.nt@gmail.com', 'tu2909'
 GO
 --Vé xe
+dbo.themVeXe 918236031,102, 'A01', '10-24-2019'
+GO
+dbo.themVeXe 912839740,102, 'A02', '10-24-2019'
+GO
+
+SELECT * FROM dbo.ChuyenDi

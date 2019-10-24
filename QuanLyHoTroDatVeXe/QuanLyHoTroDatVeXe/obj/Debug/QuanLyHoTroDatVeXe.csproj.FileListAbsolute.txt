@@ -31,6 +31,12 @@ C:\Users\HP\Desktop\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\bin
 C:\Users\HP\Desktop\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\bin\Debug\DAO.pdb
 C:\Users\HP\Desktop\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\bin\Debug\DTO.pdb
 C:\Users\HP\Desktop\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\obj\Debug\QuanLyHoTroDatVeXe.csproj.CopyComplete
+E:\_STUDY\KiemThuPhanMem\_BaiTapLon\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\bin\Debug\DAO.dll
+E:\_STUDY\KiemThuPhanMem\_BaiTapLon\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\bin\Debug\DTO.dll
+E:\_STUDY\KiemThuPhanMem\_BaiTapLon\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\bin\Debug\DAO.pdb
+E:\_STUDY\KiemThuPhanMem\_BaiTapLon\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\bin\Debug\DTO.pdb
+E:\_STUDY\KiemThuPhanMem\_BaiTapLon\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\obj\Debug\QuanLyHoTroDatVeXe.fDangNhap.resources
+E:\_STUDY\KiemThuPhanMem\_BaiTapLon\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\obj\Debug\QuanLyHoTroDatVeXe.csproj.CopyComplete
 D:\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\bin\Debug\QuanLyHoTroDatVeXe.exe.config
 D:\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\bin\Debug\QuanLyHoTroDatVeXe.exe
 D:\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\bin\Debug\QuanLyHoTroDatVeXe.pdb
@@ -50,9 +56,3 @@ D:\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\obj\Debug\QuanLyHoTr
 D:\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\obj\Debug\QuanLyHoTroDatVeXe.csproj.CopyComplete
 D:\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\obj\Debug\QuanLyHoTroDatVeXe.exe
 D:\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\obj\Debug\QuanLyHoTroDatVeXe.pdb
-E:\_STUDY\KiemThuPhanMem\_BaiTapLon\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\bin\Debug\DAO.dll
-E:\_STUDY\KiemThuPhanMem\_BaiTapLon\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\bin\Debug\DTO.dll
-E:\_STUDY\KiemThuPhanMem\_BaiTapLon\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\bin\Debug\DAO.pdb
-E:\_STUDY\KiemThuPhanMem\_BaiTapLon\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\bin\Debug\DTO.pdb
-E:\_STUDY\KiemThuPhanMem\_BaiTapLon\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\obj\Debug\QuanLyHoTroDatVeXe.fDangNhap.resources
-E:\_STUDY\KiemThuPhanMem\_BaiTapLon\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\obj\Debug\QuanLyHoTroDatVeXe.csproj.CopyComplete

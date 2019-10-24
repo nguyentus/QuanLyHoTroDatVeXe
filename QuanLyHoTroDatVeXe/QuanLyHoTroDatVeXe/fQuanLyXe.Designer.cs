@@ -243,6 +243,7 @@
             // 
             this.dgvXe.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvXe.Location = new System.Drawing.Point(20, 181);
+            this.dgvXe.MultiSelect = false;
             this.dgvXe.Name = "dgvXe";
             this.dgvXe.Size = new System.Drawing.Size(835, 280);
             this.dgvXe.TabIndex = 2;

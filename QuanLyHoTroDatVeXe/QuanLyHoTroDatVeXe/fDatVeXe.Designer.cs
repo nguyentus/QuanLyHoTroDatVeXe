@@ -29,29 +29,15 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fDatVeXe));
-            this.A13 = new System.Windows.Forms.PictureBox();
-            this.A07 = new System.Windows.Forms.PictureBox();
-            this.A04 = new System.Windows.Forms.PictureBox();
-            this.A01 = new System.Windows.Forms.PictureBox();
-            this.A15 = new System.Windows.Forms.PictureBox();
-            this.A12 = new System.Windows.Forms.PictureBox();
             this.dtpNgayDi = new System.Windows.Forms.DateTimePicker();
-            this.A09 = new System.Windows.Forms.PictureBox();
             this.label27 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.cbDiemDen = new System.Windows.Forms.ComboBox();
-            this.A10 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
-            this.A06 = new System.Windows.Forms.PictureBox();
-            this.A14 = new System.Windows.Forms.PictureBox();
-            this.A11 = new System.Windows.Forms.PictureBox();
-            this.A08 = new System.Windows.Forms.PictureBox();
-            this.A05 = new System.Windows.Forms.PictureBox();
-            this.A02 = new System.Windows.Forms.PictureBox();
             this.pMenu = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label17 = new System.Windows.Forms.Label();
@@ -65,7 +51,6 @@
             this.btXe = new System.Windows.Forms.PictureBox();
             this.btChuyenDi = new System.Windows.Forms.PictureBox();
             this.btDatVe = new System.Windows.Forms.PictureBox();
-            this.A03 = new System.Windows.Forms.PictureBox();
             this.cbDiemDi = new System.Windows.Forms.ComboBox();
             this.pNoiDung = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -91,22 +76,24 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.btTimChuyen = new System.Windows.Forms.Button();
             this.cbGio = new System.Windows.Forms.ComboBox();
-            this.pGhe = new System.Windows.Forms.Panel();
             this.lbVeChon = new System.Windows.Forms.ListBox();
-            ((System.ComponentModel.ISupportInitialize)(this.A13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.A07)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.A04)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.A01)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.A15)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.A12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.A09)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.A10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.A06)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.A14)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.A11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.A08)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.A05)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.A02)).BeginInit();
+            this.pGhe = new System.Windows.Forms.Panel();
+            this.gbGhe = new System.Windows.Forms.GroupBox();
+            this.A13 = new System.Windows.Forms.PictureBox();
+            this.A10 = new System.Windows.Forms.PictureBox();
+            this.A07 = new System.Windows.Forms.PictureBox();
+            this.A04 = new System.Windows.Forms.PictureBox();
+            this.A01 = new System.Windows.Forms.PictureBox();
+            this.A15 = new System.Windows.Forms.PictureBox();
+            this.A12 = new System.Windows.Forms.PictureBox();
+            this.A09 = new System.Windows.Forms.PictureBox();
+            this.A06 = new System.Windows.Forms.PictureBox();
+            this.A03 = new System.Windows.Forms.PictureBox();
+            this.A14 = new System.Windows.Forms.PictureBox();
+            this.A11 = new System.Windows.Forms.PictureBox();
+            this.A08 = new System.Windows.Forms.PictureBox();
+            this.A05 = new System.Windows.Forms.PictureBox();
+            this.A02 = new System.Windows.Forms.PictureBox();
             this.pMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btThoat)).BeginInit();
@@ -115,78 +102,27 @@
             ((System.ComponentModel.ISupportInitialize)(this.btXe)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btChuyenDi)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btDatVe)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.A03)).BeginInit();
             this.pNoiDung.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.pGhe.SuspendLayout();
+            this.gbGhe.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.A13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.A10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.A07)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.A04)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.A01)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.A15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.A12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.A09)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.A06)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.A03)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.A14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.A11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.A08)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.A05)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.A02)).BeginInit();
             this.SuspendLayout();
-            // 
-            // A13
-            // 
-            this.A13.Image = ((System.Drawing.Image)(resources.GetObject("A13.Image")));
-            this.A13.Location = new System.Drawing.Point(59, 281);
-            this.A13.Name = "A13";
-            this.A13.Size = new System.Drawing.Size(54, 48);
-            this.A13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.A13.TabIndex = 0;
-            this.A13.TabStop = false;
-            this.A13.Click += new System.EventHandler(this.ChonGhe_Click);
-            // 
-            // A07
-            // 
-            this.A07.Image = ((System.Drawing.Image)(resources.GetObject("A07.Image")));
-            this.A07.Location = new System.Drawing.Point(59, 173);
-            this.A07.Name = "A07";
-            this.A07.Size = new System.Drawing.Size(54, 48);
-            this.A07.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.A07.TabIndex = 0;
-            this.A07.TabStop = false;
-            this.A07.Click += new System.EventHandler(this.ChonGhe_Click);
-            // 
-            // A04
-            // 
-            this.A04.Image = ((System.Drawing.Image)(resources.GetObject("A04.Image")));
-            this.A04.Location = new System.Drawing.Point(59, 119);
-            this.A04.Name = "A04";
-            this.A04.Size = new System.Drawing.Size(54, 48);
-            this.A04.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.A04.TabIndex = 0;
-            this.A04.TabStop = false;
-            this.A04.Click += new System.EventHandler(this.ChonGhe_Click);
-            // 
-            // A01
-            // 
-            this.A01.Image = ((System.Drawing.Image)(resources.GetObject("A01.Image")));
-            this.A01.Location = new System.Drawing.Point(59, 65);
-            this.A01.Name = "A01";
-            this.A01.Size = new System.Drawing.Size(54, 48);
-            this.A01.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.A01.TabIndex = 0;
-            this.A01.TabStop = false;
-            this.A01.Click += new System.EventHandler(this.ChonGhe_Click);
-            // 
-            // A15
-            // 
-            this.A15.Image = ((System.Drawing.Image)(resources.GetObject("A15.Image")));
-            this.A15.Location = new System.Drawing.Point(179, 281);
-            this.A15.Name = "A15";
-            this.A15.Size = new System.Drawing.Size(54, 48);
-            this.A15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.A15.TabIndex = 0;
-            this.A15.TabStop = false;
-            this.A15.Click += new System.EventHandler(this.ChonGhe_Click);
-            // 
-            // A12
-            // 
-            this.A12.Image = ((System.Drawing.Image)(resources.GetObject("A12.Image")));
-            this.A12.Location = new System.Drawing.Point(179, 227);
-            this.A12.Name = "A12";
-            this.A12.Size = new System.Drawing.Size(54, 48);
-            this.A12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.A12.TabIndex = 0;
-            this.A12.TabStop = false;
-            this.A12.Click += new System.EventHandler(this.ChonGhe_Click);
             // 
             // dtpNgayDi
             // 
@@ -195,17 +131,6 @@
             this.dtpNgayDi.Name = "dtpNgayDi";
             this.dtpNgayDi.Size = new System.Drawing.Size(122, 20);
             this.dtpNgayDi.TabIndex = 7;
-            // 
-            // A09
-            // 
-            this.A09.Image = ((System.Drawing.Image)(resources.GetObject("A09.Image")));
-            this.A09.Location = new System.Drawing.Point(179, 173);
-            this.A09.Name = "A09";
-            this.A09.Size = new System.Drawing.Size(54, 48);
-            this.A09.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.A09.TabIndex = 0;
-            this.A09.TabStop = false;
-            this.A09.Click += new System.EventHandler(this.ChonGhe_Click);
             // 
             // label27
             // 
@@ -256,17 +181,6 @@
             this.cbDiemDen.Size = new System.Drawing.Size(121, 21);
             this.cbDiemDen.TabIndex = 0;
             // 
-            // A10
-            // 
-            this.A10.Image = ((System.Drawing.Image)(resources.GetObject("A10.Image")));
-            this.A10.Location = new System.Drawing.Point(59, 227);
-            this.A10.Name = "A10";
-            this.A10.Size = new System.Drawing.Size(54, 48);
-            this.A10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.A10.TabIndex = 0;
-            this.A10.TabStop = false;
-            this.A10.Click += new System.EventHandler(this.ChonGhe_Click);
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -297,72 +211,6 @@
             this.label22.Size = new System.Drawing.Size(113, 18);
             this.label22.TabIndex = 8;
             this.label22.Text = "Ghế đang chọn:";
-            // 
-            // A06
-            // 
-            this.A06.Image = ((System.Drawing.Image)(resources.GetObject("A06.Image")));
-            this.A06.Location = new System.Drawing.Point(179, 119);
-            this.A06.Name = "A06";
-            this.A06.Size = new System.Drawing.Size(54, 48);
-            this.A06.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.A06.TabIndex = 0;
-            this.A06.TabStop = false;
-            this.A06.Click += new System.EventHandler(this.ChonGhe_Click);
-            // 
-            // A14
-            // 
-            this.A14.Image = ((System.Drawing.Image)(resources.GetObject("A14.Image")));
-            this.A14.Location = new System.Drawing.Point(119, 281);
-            this.A14.Name = "A14";
-            this.A14.Size = new System.Drawing.Size(54, 48);
-            this.A14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.A14.TabIndex = 0;
-            this.A14.TabStop = false;
-            this.A14.Click += new System.EventHandler(this.ChonGhe_Click);
-            // 
-            // A11
-            // 
-            this.A11.Image = ((System.Drawing.Image)(resources.GetObject("A11.Image")));
-            this.A11.Location = new System.Drawing.Point(119, 227);
-            this.A11.Name = "A11";
-            this.A11.Size = new System.Drawing.Size(54, 48);
-            this.A11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.A11.TabIndex = 0;
-            this.A11.TabStop = false;
-            this.A11.Click += new System.EventHandler(this.ChonGhe_Click);
-            // 
-            // A08
-            // 
-            this.A08.Image = ((System.Drawing.Image)(resources.GetObject("A08.Image")));
-            this.A08.Location = new System.Drawing.Point(119, 173);
-            this.A08.Name = "A08";
-            this.A08.Size = new System.Drawing.Size(54, 48);
-            this.A08.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.A08.TabIndex = 0;
-            this.A08.TabStop = false;
-            this.A08.Click += new System.EventHandler(this.ChonGhe_Click);
-            // 
-            // A05
-            // 
-            this.A05.Image = ((System.Drawing.Image)(resources.GetObject("A05.Image")));
-            this.A05.Location = new System.Drawing.Point(119, 119);
-            this.A05.Name = "A05";
-            this.A05.Size = new System.Drawing.Size(54, 48);
-            this.A05.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.A05.TabIndex = 0;
-            this.A05.TabStop = false;
-            this.A05.Click += new System.EventHandler(this.ChonGhe_Click);
-            // 
-            // A02
-            // 
-            this.A02.Image = ((System.Drawing.Image)(resources.GetObject("A02.Image")));
-            this.A02.Location = new System.Drawing.Point(119, 65);
-            this.A02.Name = "A02";
-            this.A02.Size = new System.Drawing.Size(54, 48);
-            this.A02.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.A02.TabIndex = 0;
-            this.A02.TabStop = false;
-            this.A02.Click += new System.EventHandler(this.ChonGhe_Click);
             // 
             // pMenu
             // 
@@ -524,17 +372,6 @@
             this.btDatVe.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btDatVe.TabIndex = 0;
             this.btDatVe.TabStop = false;
-            // 
-            // A03
-            // 
-            this.A03.Image = ((System.Drawing.Image)(resources.GetObject("A03.Image")));
-            this.A03.Location = new System.Drawing.Point(179, 65);
-            this.A03.Name = "A03";
-            this.A03.Size = new System.Drawing.Size(54, 48);
-            this.A03.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.A03.TabIndex = 0;
-            this.A03.TabStop = false;
-            this.A03.Click += new System.EventHandler(this.ChonGhe_Click);
             // 
             // cbDiemDi
             // 
@@ -814,32 +651,6 @@
             this.cbGio.Size = new System.Drawing.Size(121, 21);
             this.cbGio.TabIndex = 0;
             // 
-            // pGhe
-            // 
-            this.pGhe.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.pGhe.Controls.Add(this.lbVeChon);
-            this.pGhe.Controls.Add(this.label22);
-            this.pGhe.Controls.Add(this.A13);
-            this.pGhe.Controls.Add(this.A10);
-            this.pGhe.Controls.Add(this.label1);
-            this.pGhe.Controls.Add(this.A07);
-            this.pGhe.Controls.Add(this.A04);
-            this.pGhe.Controls.Add(this.A01);
-            this.pGhe.Controls.Add(this.A15);
-            this.pGhe.Controls.Add(this.A12);
-            this.pGhe.Controls.Add(this.A09);
-            this.pGhe.Controls.Add(this.A06);
-            this.pGhe.Controls.Add(this.A03);
-            this.pGhe.Controls.Add(this.A14);
-            this.pGhe.Controls.Add(this.A11);
-            this.pGhe.Controls.Add(this.A08);
-            this.pGhe.Controls.Add(this.A05);
-            this.pGhe.Controls.Add(this.A02);
-            this.pGhe.Location = new System.Drawing.Point(295, 5);
-            this.pGhe.Name = "pGhe";
-            this.pGhe.Size = new System.Drawing.Size(287, 483);
-            this.pGhe.TabIndex = 1;
-            // 
             // lbVeChon
             // 
             this.lbVeChon.BackColor = System.Drawing.SystemColors.ControlLight;
@@ -852,6 +663,191 @@
             this.lbVeChon.Size = new System.Drawing.Size(115, 104);
             this.lbVeChon.TabIndex = 9;
             // 
+            // pGhe
+            // 
+            this.pGhe.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.pGhe.Controls.Add(this.gbGhe);
+            this.pGhe.Controls.Add(this.lbVeChon);
+            this.pGhe.Controls.Add(this.label22);
+            this.pGhe.Controls.Add(this.label1);
+            this.pGhe.Location = new System.Drawing.Point(295, 5);
+            this.pGhe.Name = "pGhe";
+            this.pGhe.Size = new System.Drawing.Size(287, 483);
+            this.pGhe.TabIndex = 1;
+            // 
+            // gbGhe
+            // 
+            this.gbGhe.Controls.Add(this.A13);
+            this.gbGhe.Controls.Add(this.A10);
+            this.gbGhe.Controls.Add(this.A07);
+            this.gbGhe.Controls.Add(this.A04);
+            this.gbGhe.Controls.Add(this.A01);
+            this.gbGhe.Controls.Add(this.A15);
+            this.gbGhe.Controls.Add(this.A12);
+            this.gbGhe.Controls.Add(this.A09);
+            this.gbGhe.Controls.Add(this.A06);
+            this.gbGhe.Controls.Add(this.A03);
+            this.gbGhe.Controls.Add(this.A14);
+            this.gbGhe.Controls.Add(this.A11);
+            this.gbGhe.Controls.Add(this.A08);
+            this.gbGhe.Controls.Add(this.A05);
+            this.gbGhe.Controls.Add(this.A02);
+            this.gbGhe.Location = new System.Drawing.Point(45, 51);
+            this.gbGhe.Name = "gbGhe";
+            this.gbGhe.Size = new System.Drawing.Size(197, 278);
+            this.gbGhe.TabIndex = 10;
+            this.gbGhe.TabStop = false;
+            // 
+            // A13
+            // 
+            this.A13.Image = ((System.Drawing.Image)(resources.GetObject("A13.Image")));
+            this.A13.Location = new System.Drawing.Point(11, 223);
+            this.A13.Name = "A13";
+            this.A13.Size = new System.Drawing.Size(54, 48);
+            this.A13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.A13.TabIndex = 1;
+            this.A13.TabStop = false;
+            // 
+            // A10
+            // 
+            this.A10.Image = ((System.Drawing.Image)(resources.GetObject("A10.Image")));
+            this.A10.Location = new System.Drawing.Point(11, 169);
+            this.A10.Name = "A10";
+            this.A10.Size = new System.Drawing.Size(54, 48);
+            this.A10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.A10.TabIndex = 2;
+            this.A10.TabStop = false;
+            // 
+            // A07
+            // 
+            this.A07.Image = ((System.Drawing.Image)(resources.GetObject("A07.Image")));
+            this.A07.Location = new System.Drawing.Point(11, 115);
+            this.A07.Name = "A07";
+            this.A07.Size = new System.Drawing.Size(54, 48);
+            this.A07.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.A07.TabIndex = 3;
+            this.A07.TabStop = false;
+            // 
+            // A04
+            // 
+            this.A04.Image = ((System.Drawing.Image)(resources.GetObject("A04.Image")));
+            this.A04.Location = new System.Drawing.Point(11, 61);
+            this.A04.Name = "A04";
+            this.A04.Size = new System.Drawing.Size(54, 48);
+            this.A04.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.A04.TabIndex = 4;
+            this.A04.TabStop = false;
+            // 
+            // A01
+            // 
+            this.A01.Image = ((System.Drawing.Image)(resources.GetObject("A01.Image")));
+            this.A01.Location = new System.Drawing.Point(11, 7);
+            this.A01.Name = "A01";
+            this.A01.Size = new System.Drawing.Size(54, 48);
+            this.A01.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.A01.TabIndex = 5;
+            this.A01.TabStop = false;
+            // 
+            // A15
+            // 
+            this.A15.Image = ((System.Drawing.Image)(resources.GetObject("A15.Image")));
+            this.A15.Location = new System.Drawing.Point(131, 223);
+            this.A15.Name = "A15";
+            this.A15.Size = new System.Drawing.Size(54, 48);
+            this.A15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.A15.TabIndex = 6;
+            this.A15.TabStop = false;
+            // 
+            // A12
+            // 
+            this.A12.Image = ((System.Drawing.Image)(resources.GetObject("A12.Image")));
+            this.A12.Location = new System.Drawing.Point(131, 169);
+            this.A12.Name = "A12";
+            this.A12.Size = new System.Drawing.Size(54, 48);
+            this.A12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.A12.TabIndex = 7;
+            this.A12.TabStop = false;
+            // 
+            // A09
+            // 
+            this.A09.Image = ((System.Drawing.Image)(resources.GetObject("A09.Image")));
+            this.A09.Location = new System.Drawing.Point(131, 115);
+            this.A09.Name = "A09";
+            this.A09.Size = new System.Drawing.Size(54, 48);
+            this.A09.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.A09.TabIndex = 8;
+            this.A09.TabStop = false;
+            // 
+            // A06
+            // 
+            this.A06.Image = ((System.Drawing.Image)(resources.GetObject("A06.Image")));
+            this.A06.Location = new System.Drawing.Point(131, 61);
+            this.A06.Name = "A06";
+            this.A06.Size = new System.Drawing.Size(54, 48);
+            this.A06.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.A06.TabIndex = 9;
+            this.A06.TabStop = false;
+            // 
+            // A03
+            // 
+            this.A03.Image = ((System.Drawing.Image)(resources.GetObject("A03.Image")));
+            this.A03.Location = new System.Drawing.Point(131, 7);
+            this.A03.Name = "A03";
+            this.A03.Size = new System.Drawing.Size(54, 48);
+            this.A03.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.A03.TabIndex = 10;
+            this.A03.TabStop = false;
+            // 
+            // A14
+            // 
+            this.A14.Image = ((System.Drawing.Image)(resources.GetObject("A14.Image")));
+            this.A14.Location = new System.Drawing.Point(71, 223);
+            this.A14.Name = "A14";
+            this.A14.Size = new System.Drawing.Size(54, 48);
+            this.A14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.A14.TabIndex = 11;
+            this.A14.TabStop = false;
+            // 
+            // A11
+            // 
+            this.A11.Image = ((System.Drawing.Image)(resources.GetObject("A11.Image")));
+            this.A11.Location = new System.Drawing.Point(71, 169);
+            this.A11.Name = "A11";
+            this.A11.Size = new System.Drawing.Size(54, 48);
+            this.A11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.A11.TabIndex = 12;
+            this.A11.TabStop = false;
+            // 
+            // A08
+            // 
+            this.A08.Image = ((System.Drawing.Image)(resources.GetObject("A08.Image")));
+            this.A08.Location = new System.Drawing.Point(71, 115);
+            this.A08.Name = "A08";
+            this.A08.Size = new System.Drawing.Size(54, 48);
+            this.A08.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.A08.TabIndex = 13;
+            this.A08.TabStop = false;
+            // 
+            // A05
+            // 
+            this.A05.Image = ((System.Drawing.Image)(resources.GetObject("A05.Image")));
+            this.A05.Location = new System.Drawing.Point(71, 61);
+            this.A05.Name = "A05";
+            this.A05.Size = new System.Drawing.Size(54, 48);
+            this.A05.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.A05.TabIndex = 14;
+            this.A05.TabStop = false;
+            // 
+            // A02
+            // 
+            this.A02.Image = ((System.Drawing.Image)(resources.GetObject("A02.Image")));
+            this.A02.Location = new System.Drawing.Point(71, 7);
+            this.A02.Name = "A02";
+            this.A02.Size = new System.Drawing.Size(54, 48);
+            this.A02.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.A02.TabIndex = 15;
+            this.A02.TabStop = false;
+            // 
             // fDatVeXe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -862,20 +858,6 @@
             this.Name = "fDatVeXe";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.A13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.A07)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.A04)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.A01)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.A15)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.A12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.A09)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.A10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.A06)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.A14)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.A11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.A08)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.A05)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.A02)).EndInit();
             this.pMenu.ResumeLayout(false);
             this.pMenu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -885,7 +867,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.btXe)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btChuyenDi)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btDatVe)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.A03)).EndInit();
             this.pNoiDung.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
@@ -893,35 +874,36 @@
             this.panel2.PerformLayout();
             this.pGhe.ResumeLayout(false);
             this.pGhe.PerformLayout();
+            this.gbGhe.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.A13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.A10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.A07)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.A04)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.A01)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.A15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.A12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.A09)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.A06)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.A03)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.A14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.A11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.A08)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.A05)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.A02)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox A13;
-        private System.Windows.Forms.PictureBox A07;
-        private System.Windows.Forms.PictureBox A04;
-        private System.Windows.Forms.PictureBox A01;
-        private System.Windows.Forms.PictureBox A15;
-        private System.Windows.Forms.PictureBox A12;
         private System.Windows.Forms.DateTimePicker dtpNgayDi;
-        private System.Windows.Forms.PictureBox A09;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox cbDiemDen;
-        private System.Windows.Forms.PictureBox A10;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.PictureBox A06;
-        private System.Windows.Forms.PictureBox A14;
-        private System.Windows.Forms.PictureBox A11;
-        private System.Windows.Forms.PictureBox A08;
-        private System.Windows.Forms.PictureBox A05;
-        private System.Windows.Forms.PictureBox A02;
         private System.Windows.Forms.Panel pMenu;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
@@ -934,7 +916,6 @@
         private System.Windows.Forms.PictureBox btXe;
         private System.Windows.Forms.PictureBox btChuyenDi;
         private System.Windows.Forms.PictureBox btDatVe;
-        private System.Windows.Forms.PictureBox A03;
         private System.Windows.Forms.ComboBox cbDiemDi;
         private System.Windows.Forms.Panel pNoiDung;
         private System.Windows.Forms.Panel panel3;
@@ -959,10 +940,26 @@
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.ComboBox cbGio;
-        private System.Windows.Forms.Panel pGhe;
         private System.Windows.Forms.ListBox lbVeChon;
         private System.Windows.Forms.Button btTimChuyen;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Panel pGhe;
+        private System.Windows.Forms.GroupBox gbGhe;
+        private System.Windows.Forms.PictureBox A13;
+        private System.Windows.Forms.PictureBox A10;
+        private System.Windows.Forms.PictureBox A07;
+        private System.Windows.Forms.PictureBox A04;
+        private System.Windows.Forms.PictureBox A01;
+        private System.Windows.Forms.PictureBox A15;
+        private System.Windows.Forms.PictureBox A12;
+        private System.Windows.Forms.PictureBox A09;
+        private System.Windows.Forms.PictureBox A06;
+        private System.Windows.Forms.PictureBox A03;
+        private System.Windows.Forms.PictureBox A14;
+        private System.Windows.Forms.PictureBox A11;
+        private System.Windows.Forms.PictureBox A08;
+        private System.Windows.Forms.PictureBox A05;
+        private System.Windows.Forms.PictureBox A02;
     }
 }
 
