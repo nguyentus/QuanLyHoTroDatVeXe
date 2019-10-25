@@ -34,20 +34,20 @@ namespace DAO
             }
             return danhSach;
         }
-        //
+        
         //Tìm chuyến đi để dặt vé
-        public int timChuyenDi(string gd, string ngayDi, string diemDi, string diemDen)
+        public ChuyenDi timChuyenDi(string gd, string ngayDi, string diemDi, string diemDen)
         {
             string query = "SELECT* FROM dbo.ChuyenDi WHERE gioDi = '" + gd+ "' AND ngayDi = '" 
                 + ngayDi + "' AND diemDi = N'" + diemDi + "' AND diemDen = N'" + diemDen + "'";
             DataTable table = DataProvider.Instance.ExecuteQuery(query);
             foreach (DataRow row in table.Rows)
             {
-                ChuyenDi timChuyen = new ChuyenDi(row);
-                return timChuyen.MaCD;
+                return new ChuyenDi(row);
             }
-            return 0;
+            return null;
         }
+
         //thêm chuyến đi vào danh sách
         public bool themChuyenDi(string gioDi, string ngayDi, string diemDi, string diemDen, double giaVe, string bienSo)
         {

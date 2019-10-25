@@ -14,6 +14,7 @@ namespace DTO
         private string maGhe;
         private DateTime thoiGianDat;
 
+        public VeXe() { }
         public VeXe(int sdt, int maCD, string maGhe, DateTime thoiGianDat)
         {
             this.Sdt = sdt;

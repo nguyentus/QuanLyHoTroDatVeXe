@@ -14,6 +14,7 @@ namespace DTO
         private string gioDi, diemDi, diemDen, bienSo;
         private double giaVe;
 
+        public ChuyenDi() { }
         public ChuyenDi(DataRow row)
         {
             this.MaCD = (int)row["maCD"];

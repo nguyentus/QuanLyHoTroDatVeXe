@@ -14,16 +14,26 @@ namespace QuanLyHoTroDatVeXe
 {
     public partial class fDatVeXe : Form
     {
+        ChuyenDi chuyenDangChon = new ChuyenDi();
+        VeXe veXeHienTai = new VeXe();
         public fDatVeXe()
         {
             InitializeComponent();
             phanQuyen();
-            hienThiDiemDen();
-            hienThiDiemDi();
-            hienThiGioDi();
+            
+            fromMacDinh();
         }
 
         #region Methods
+        void fromMacDinh()
+        {
+            hienThiDiemDen();
+            hienThiDiemDi();
+            hienThiGioDi();
+            grbGhe.Enabled = false;
+            btChon.Enabled = false;
+            btXacNhan.Enabled = false;
+        }
         void phanQuyen()
         {
             btChuyenDi.Enabled = false;
@@ -34,8 +44,14 @@ namespace QuanLyHoTroDatVeXe
         void hienThiDiemDi()
         {
             List<ChuyenDi> dsDiemDi = ChuyenDiDAO.Instance.LayDsChuyenDi();
-            cbDiemDi.DataSource = dsDiemDi;
-            cbDiemDi.DisplayMember = "diemDi";
+            ComboBox newComboBox = new ComboBox();
+            newComboBox.DataSource = dsDiemDi;
+            newComboBox.DisplayMember = "diemDi";
+            for (int i = 0; i < newComboBox.Items.Count - 1; i++)
+                for (int j = i + 1; j < newComboBox.Items.Count; j++)
+                    if (newComboBox.Items[i] == newComboBox.Items[j])
+                        newComboBox.Items.Remove(newComboBox.Items[j]);
+            cbDiemDi = newComboBox;
         }
         void hienThiDiemDen()
         {
@@ -66,13 +82,6 @@ namespace QuanLyHoTroDatVeXe
                 p.BackColor = Color.Gray;
             }
         }
-        private void DoiMauGhe(object sender, EventArgs e)
-        {
-            PictureBox p = (PictureBox)sender;
-            p.BackColor = Color.Gray;
-            p.Enabled = false;
-        }
-
         private void BtChuyenDi_Click(object sender, EventArgs e)
         {
             fQuanLyChuyenDi f = new fQuanLyChuyenDi();
@@ -104,20 +113,50 @@ namespace QuanLyHoTroDatVeXe
         }
         private void btTimChuyen_Click(object sender, EventArgs e)
         {
-            string gio = this.cbGio.GetItemText(this.cbGio.SelectedItem);
+            string gio = cbGio.GetItemText(cbGio.SelectedItem);
             string ngay = dtpNgayDi.Value.Month + "-" + dtpNgayDi.Value.Day + "-" + dtpNgayDi.Value.Year;
-            string di = this.cbDiemDi.GetItemText(this.cbDiemDi.SelectedItem);
-            string den = this.cbDiemDen.GetItemText(this.cbDiemDen.SelectedItem);
+            string di = cbDiemDi.GetItemText(cbDiemDi.SelectedItem);
+            string den = cbDiemDen.GetItemText(cbDiemDen.SelectedItem);
 
-            int maCD = ChuyenDiDAO.Instance.timChuyenDi(gio, ngay, di, den);
-            List<VeXe> dsVeDaDat = VeXeDAO.Instance.layDsVeXe(maCD);
-
-            foreach (VeXe ve in dsVeDaDat)
+            chuyenDangChon = ChuyenDiDAO.Instance.timChuyenDi(gio, ngay, di, den);
+            if (chuyenDangChon != null)
             {
-                ((PictureBox)gbGhe.Controls[ve.MaGhe]).BackColor = Color.Red;
-            }
-        }
+                grbGhe.Enabled = true;
+                btChon.Enabled = true;
 
+                List<VeXe> dsVeDaDat = VeXeDAO.Instance.layDsVeXe(chuyenDangChon.MaCD);
+                foreach (VeXe ve in dsVeDaDat)
+                {
+                    ((PictureBox)grbGhe.Controls[ve.MaGhe]).BackColor = Color.Red;
+                    ((PictureBox)grbGhe.Controls[ve.MaGhe]).Enabled = false;
+                }
+            }
+            else
+                MessageBox.Show("Nhà xe chưa có chuyến này rồi!! Bạn vui lòng tìm chuyến khác nhé", "Tìm chuyến", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        }
+        private void BtChon_Click(object sender, EventArgs e)
+        {
+            int soLuongGhe = lbVeChon.Items.Count;
+            if (soLuongGhe > 0)
+            {
+                btXacNhan.Enabled = true;
+                lbChuyen.Text = chuyenDangChon.DiemDi + " - " + chuyenDangChon.DiemDen;
+                lbGio.Text = chuyenDangChon.GioDi + " " + chuyenDangChon.NgayDi.Day + "/"
+                        + chuyenDangChon.NgayDi.Month + "/" + chuyenDangChon.NgayDi.Year;
+                string ghe = "";
+                foreach (var item in lbVeChon.Items)
+                {
+                    ghe += item.ToString() + " - ";
+                }
+                lbGhe.Text = ghe;
+                lbSoLuong.Text = soLuongGhe.ToString();
+                lbGia.Text = chuyenDangChon.GiaVe.ToString();
+                double tong = chuyenDangChon.GiaVe * soLuongGhe;
+                lbTongTien.Text = tong.ToString();
+            }
+            else
+                MessageBox.Show("Bạn chưa chọn ghế!! Mau chọn ghế đi nè", "Chọn ghế", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        }
         private void btXacNhan_Click(object sender, EventArgs e)
         {
             
