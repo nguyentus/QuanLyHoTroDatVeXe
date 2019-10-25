@@ -34,7 +34,8 @@ namespace DAO
         //lấy mật khẩu
         public string LayMatKhau(string matKhau)
         {
-            DataTable table = DataProvider.Instance.ExecuteQuery("SELECT * FROM dbo.TaiKhoan WHERE matKhau = '" + matKhau + "'");
+            string query = "SELECT * FROM dbo.TaiKhoan WHERE matKhau = '" + matKhau + "'";
+            DataTable table = DataProvider.Instance.ExecuteQuery(query);
             foreach (DataRow row in table.Rows)
             {
                 TaiKhoan tk = new TaiKhoan(row);

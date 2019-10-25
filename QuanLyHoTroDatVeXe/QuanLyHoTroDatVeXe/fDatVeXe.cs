@@ -44,14 +44,8 @@ namespace QuanLyHoTroDatVeXe
         void hienThiDiemDi()
         {
             List<ChuyenDi> dsDiemDi = ChuyenDiDAO.Instance.LayDsChuyenDi();
-            ComboBox newComboBox = new ComboBox();
-            newComboBox.DataSource = dsDiemDi;
-            newComboBox.DisplayMember = "diemDi";
-            for (int i = 0; i < newComboBox.Items.Count - 1; i++)
-                for (int j = i + 1; j < newComboBox.Items.Count; j++)
-                    if (newComboBox.Items[i] == newComboBox.Items[j])
-                        newComboBox.Items.Remove(newComboBox.Items[j]);
-            cbDiemDi = newComboBox;
+            cbDiemDi.DataSource = dsDiemDi;
+            cbDiemDi.DisplayMember = "diemDi";
         }
         void hienThiDiemDen()
         {
