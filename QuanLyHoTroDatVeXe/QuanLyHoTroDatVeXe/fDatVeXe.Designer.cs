@@ -56,7 +56,7 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.lbGia = new System.Windows.Forms.Label();
             this.lbSoLuong = new System.Windows.Forms.Label();
-            this.lbGhe = new System.Windows.Forms.Label();
+            this.lbGheDaChon = new System.Windows.Forms.Label();
             this.lbGio = new System.Windows.Forms.Label();
             this.txtSDT = new System.Windows.Forms.TextBox();
             this.label29 = new System.Windows.Forms.Label();
@@ -98,7 +98,7 @@
             this.A08 = new System.Windows.Forms.PictureBox();
             this.A05 = new System.Windows.Forms.PictureBox();
             this.A02 = new System.Windows.Forms.PictureBox();
-            this.lbVeChon = new System.Windows.Forms.ListBox();
+            this.lbGheDangChon = new System.Windows.Forms.ListBox();
             this.pMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btThoat)).BeginInit();
@@ -403,7 +403,7 @@
             this.panel3.BackColor = System.Drawing.SystemColors.ControlLight;
             this.panel3.Controls.Add(this.lbGia);
             this.panel3.Controls.Add(this.lbSoLuong);
-            this.panel3.Controls.Add(this.lbGhe);
+            this.panel3.Controls.Add(this.lbGheDaChon);
             this.panel3.Controls.Add(this.lbGio);
             this.panel3.Controls.Add(this.txtSDT);
             this.panel3.Controls.Add(this.label29);
@@ -441,13 +441,13 @@
             this.lbSoLuong.Size = new System.Drawing.Size(178, 21);
             this.lbSoLuong.TabIndex = 11;
             // 
-            // lbGhe
+            // lbGheDaChon
             // 
-            this.lbGhe.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbGhe.Location = new System.Drawing.Point(93, 204);
-            this.lbGhe.Name = "lbGhe";
-            this.lbGhe.Size = new System.Drawing.Size(178, 64);
-            this.lbGhe.TabIndex = 11;
+            this.lbGheDaChon.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbGheDaChon.Location = new System.Drawing.Point(93, 204);
+            this.lbGheDaChon.Name = "lbGheDaChon";
+            this.lbGheDaChon.Size = new System.Drawing.Size(178, 64);
+            this.lbGheDaChon.TabIndex = 11;
             // 
             // lbGio
             // 
@@ -695,7 +695,7 @@
             this.pGhe.BackColor = System.Drawing.SystemColors.ControlLight;
             this.pGhe.Controls.Add(this.btChon);
             this.pGhe.Controls.Add(this.grbGhe);
-            this.pGhe.Controls.Add(this.lbVeChon);
+            this.pGhe.Controls.Add(this.lbGheDangChon);
             this.pGhe.Controls.Add(this.label22);
             this.pGhe.Controls.Add(this.label1);
             this.pGhe.Location = new System.Drawing.Point(295, 5);
@@ -903,17 +903,17 @@
             this.A02.TabStop = false;
             this.A02.Click += new System.EventHandler(this.ChonGhe_Click);
             // 
-            // lbVeChon
+            // lbGheDangChon
             // 
-            this.lbVeChon.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.lbVeChon.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbVeChon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
-            this.lbVeChon.FormattingEnabled = true;
-            this.lbVeChon.ItemHeight = 20;
-            this.lbVeChon.Location = new System.Drawing.Point(17, 375);
-            this.lbVeChon.Name = "lbVeChon";
-            this.lbVeChon.Size = new System.Drawing.Size(115, 84);
-            this.lbVeChon.TabIndex = 9;
+            this.lbGheDangChon.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.lbGheDangChon.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbGheDangChon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
+            this.lbGheDangChon.FormattingEnabled = true;
+            this.lbGheDangChon.ItemHeight = 20;
+            this.lbGheDangChon.Location = new System.Drawing.Point(17, 375);
+            this.lbGheDangChon.Name = "lbGheDangChon";
+            this.lbGheDangChon.Size = new System.Drawing.Size(115, 84);
+            this.lbGheDangChon.TabIndex = 9;
             // 
             // fDatVeXe
             // 
@@ -1005,7 +1005,7 @@
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.ComboBox cbGio;
-        private System.Windows.Forms.ListBox lbVeChon;
+        private System.Windows.Forms.ListBox lbGheDangChon;
         private System.Windows.Forms.Button btTimChuyen;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel pGhe;
@@ -1027,7 +1027,7 @@
         private System.Windows.Forms.PictureBox A02;
         private System.Windows.Forms.Label lbGia;
         private System.Windows.Forms.Label lbSoLuong;
-        private System.Windows.Forms.Label lbGhe;
+        private System.Windows.Forms.Label lbGheDaChon;
         private System.Windows.Forms.Label lbGio;
         private System.Windows.Forms.Button btChon;
         private System.Windows.Forms.Label label10;

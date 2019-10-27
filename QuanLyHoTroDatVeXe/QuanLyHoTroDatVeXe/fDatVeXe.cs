@@ -18,16 +18,12 @@ namespace QuanLyHoTroDatVeXe
         public KhachHang TaiKhoanKH { get => taiKhoanKH; set => taiKhoanKH = value; }
 
         ChuyenDi chuyenDangChon = new ChuyenDi();
-        VeXe veXeHienTai = new VeXe();
-
 
         public fDatVeXe(KhachHang kh)
         {
             InitializeComponent();
             this.taiKhoanKH = kh;
-
             phanQuyen();
-            
             fromMacDinh();
         }
 
@@ -43,6 +39,11 @@ namespace QuanLyHoTroDatVeXe
 
             txtHoTen.Text = taiKhoanKH.HoTen;
             txtSDT.Text = "0" + taiKhoanKH.SoDienThoai;
+        }
+        void reLoad()
+        {
+            this.Dispose();
+
         }
         void phanQuyen()
         {
@@ -77,12 +78,12 @@ namespace QuanLyHoTroDatVeXe
             PictureBox p = (PictureBox)sender;
             if (p.BackColor == Color.Gray)
             {
-                lbVeChon.Items.Remove(p.Name);
+                lbGheDangChon.Items.Remove(p.Name);
                 p.BackColor = pGhe.BackColor;
             }
             else
             {
-                lbVeChon.Items.Add(p.Name);
+                lbGheDangChon.Items.Add(p.Name);
                 p.BackColor = Color.Gray;
             }
         }
@@ -140,7 +141,7 @@ namespace QuanLyHoTroDatVeXe
         }
         private void BtChon_Click(object sender, EventArgs e)
         {
-            int soLuongGhe = lbVeChon.Items.Count;
+            int soLuongGhe = lbGheDangChon.Items.Count;
             if (soLuongGhe > 0)
             {
                 btXacNhan.Enabled = true;
@@ -148,22 +149,35 @@ namespace QuanLyHoTroDatVeXe
                 lbGio.Text = chuyenDangChon.GioDi + " " + chuyenDangChon.NgayDi.Day + "/"
                         + chuyenDangChon.NgayDi.Month + "/" + chuyenDangChon.NgayDi.Year;
                 string ghe = "";
-                foreach (var item in lbVeChon.Items)
+                foreach (var item in lbGheDangChon.Items)
                 {
                     ghe += item.ToString() + " - ";
                 }
-                lbGhe.Text = ghe;
+                lbGheDaChon.Text = ghe;
                 lbSoLuong.Text = soLuongGhe.ToString();
-                lbGia.Text = chuyenDangChon.GiaVe.ToString();
+                lbGia.Text = string.Format("{0:0,0} VNĐ", chuyenDangChon.GiaVe);
                 double tong = chuyenDangChon.GiaVe * soLuongGhe;
-                lbTongTien.Text = string.Format( "%f VNĐ", tong);
+                lbTongTien.Text = string.Format( "{0:0,0} VNĐ", tong);
             }
             else
                 MessageBox.Show("Bạn chưa chọn ghế!! Mau chọn ghế đi nè", "Chọn ghế", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
         private void btXacNhan_Click(object sender, EventArgs e)
         {
-            
+            int dem = 0;
+            foreach (string item in lbGheDangChon.Items)
+            {
+                bool result = VeXeDAO.Instance.datVe(taiKhoanKH.SoDienThoai, chuyenDangChon.MaCD, item);
+                if (result)
+                    dem++;
+            }
+            if (dem == 0)
+                MessageBox.Show("Đặt không thành công!!", "Đặt vé", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            else
+            {
+                MessageBox.Show("Dặt thành công " + dem + " vé", "Đặt vé", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                
+            }
         }
         #endregion
     }
