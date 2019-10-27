@@ -91,6 +91,7 @@
             this.Name = "fDangNhap";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "fDangNhap";
+            this.Enter += new System.EventHandler(this.BtDangNhap_Click);
             ((System.ComponentModel.ISupportInitialize)(this.btDangNhap)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);

@@ -58,9 +58,9 @@
             this.lbSoLuong = new System.Windows.Forms.Label();
             this.lbGhe = new System.Windows.Forms.Label();
             this.lbGio = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtSDT = new System.Windows.Forms.TextBox();
             this.label29 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtHoTen = new System.Windows.Forms.TextBox();
             this.lbHoTen = new System.Windows.Forms.Label();
             this.lbTongTien = new System.Windows.Forms.Label();
             this.btXacNhan = new System.Windows.Forms.Button();
@@ -74,9 +74,14 @@
             this.label30 = new System.Windows.Forms.Label();
             this.lbChuyen = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btTimChuyen = new System.Windows.Forms.Button();
             this.cbGio = new System.Windows.Forms.ComboBox();
             this.pGhe = new System.Windows.Forms.Panel();
+            this.btChon = new System.Windows.Forms.Button();
             this.grbGhe = new System.Windows.Forms.GroupBox();
             this.A13 = new System.Windows.Forms.PictureBox();
             this.A10 = new System.Windows.Forms.PictureBox();
@@ -94,11 +99,6 @@
             this.A05 = new System.Windows.Forms.PictureBox();
             this.A02 = new System.Windows.Forms.PictureBox();
             this.lbVeChon = new System.Windows.Forms.ListBox();
-            this.btChon = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.label10 = new System.Windows.Forms.Label();
             this.pMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btThoat)).BeginInit();
@@ -110,6 +110,8 @@
             this.pNoiDung.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.pGhe.SuspendLayout();
             this.grbGhe.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.A13)).BeginInit();
@@ -127,8 +129,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.A08)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.A05)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.A02)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // dtpNgayDi
@@ -405,9 +405,9 @@
             this.panel3.Controls.Add(this.lbSoLuong);
             this.panel3.Controls.Add(this.lbGhe);
             this.panel3.Controls.Add(this.lbGio);
-            this.panel3.Controls.Add(this.textBox3);
+            this.panel3.Controls.Add(this.txtSDT);
             this.panel3.Controls.Add(this.label29);
-            this.panel3.Controls.Add(this.textBox1);
+            this.panel3.Controls.Add(this.txtHoTen);
             this.panel3.Controls.Add(this.lbHoTen);
             this.panel3.Controls.Add(this.lbTongTien);
             this.panel3.Controls.Add(this.btXacNhan);
@@ -432,7 +432,6 @@
             this.lbGia.Name = "lbGia";
             this.lbGia.Size = new System.Drawing.Size(178, 21);
             this.lbGia.TabIndex = 11;
-            this.lbGia.Text = "asd";
             // 
             // lbSoLuong
             // 
@@ -441,7 +440,6 @@
             this.lbSoLuong.Name = "lbSoLuong";
             this.lbSoLuong.Size = new System.Drawing.Size(178, 21);
             this.lbSoLuong.TabIndex = 11;
-            this.lbSoLuong.Text = "asd";
             // 
             // lbGhe
             // 
@@ -450,7 +448,6 @@
             this.lbGhe.Name = "lbGhe";
             this.lbGhe.Size = new System.Drawing.Size(178, 64);
             this.lbGhe.TabIndex = 11;
-            this.lbGhe.Text = "asd";
             // 
             // lbGio
             // 
@@ -459,16 +456,15 @@
             this.lbGio.Name = "lbGio";
             this.lbGio.Size = new System.Drawing.Size(178, 21);
             this.lbGio.TabIndex = 11;
-            this.lbGio.Text = "asd";
             // 
-            // textBox3
+            // txtSDT
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(89, 97);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(182, 22);
-            this.textBox3.TabIndex = 9;
+            this.txtSDT.Enabled = false;
+            this.txtSDT.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSDT.Location = new System.Drawing.Point(89, 97);
+            this.txtSDT.Name = "txtSDT";
+            this.txtSDT.Size = new System.Drawing.Size(182, 22);
+            this.txtSDT.TabIndex = 9;
             // 
             // label29
             // 
@@ -480,14 +476,14 @@
             this.label29.TabIndex = 7;
             this.label29.Text = "SĐT:";
             // 
-            // textBox1
+            // txtHoTen
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(89, 66);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(182, 22);
-            this.textBox1.TabIndex = 10;
+            this.txtHoTen.Enabled = false;
+            this.txtHoTen.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtHoTen.Location = new System.Drawing.Point(89, 66);
+            this.txtHoTen.Name = "txtHoTen";
+            this.txtHoTen.Size = new System.Drawing.Size(182, 22);
+            this.txtHoTen.TabIndex = 10;
             // 
             // lbHoTen
             // 
@@ -501,13 +497,11 @@
             // 
             // lbTongTien
             // 
-            this.lbTongTien.AutoSize = true;
             this.lbTongTien.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTongTien.Location = new System.Drawing.Point(89, 339);
+            this.lbTongTien.Location = new System.Drawing.Point(89, 343);
             this.lbTongTien.Name = "lbTongTien";
-            this.lbTongTien.Size = new System.Drawing.Size(40, 24);
+            this.lbTongTien.Size = new System.Drawing.Size(182, 24);
             this.lbTongTien.TabIndex = 6;
-            this.lbTongTien.Text = "asd";
             // 
             // btXacNhan
             // 
@@ -613,7 +607,6 @@
             this.lbChuyen.Name = "lbChuyen";
             this.lbChuyen.Size = new System.Drawing.Size(178, 21);
             this.lbChuyen.TabIndex = 6;
-            this.lbChuyen.Text = "asd";
             // 
             // panel2
             // 
@@ -636,6 +629,46 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(289, 483);
             this.panel2.TabIndex = 13;
+            // 
+            // label10
+            // 
+            this.label10.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(70, 406);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(131, 21);
+            this.label10.TabIndex = 10;
+            this.label10.Text = "Ghế bạn đang chọn";
+            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label4
+            // 
+            this.label4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(70, 351);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(131, 21);
+            this.label4.TabIndex = 10;
+            this.label4.Text = "Ghế đã có người";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.Gray;
+            this.pictureBox3.Location = new System.Drawing.Point(214, 394);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(54, 48);
+            this.pictureBox3.TabIndex = 9;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Red;
+            this.pictureBox2.Location = new System.Drawing.Point(214, 339);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(54, 48);
+            this.pictureBox2.TabIndex = 9;
+            this.pictureBox2.TabStop = false;
             // 
             // btTimChuyen
             // 
@@ -669,6 +702,18 @@
             this.pGhe.Name = "pGhe";
             this.pGhe.Size = new System.Drawing.Size(287, 483);
             this.pGhe.TabIndex = 1;
+            // 
+            // btChon
+            // 
+            this.btChon.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btChon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
+            this.btChon.Location = new System.Drawing.Point(157, 394);
+            this.btChon.Name = "btChon";
+            this.btChon.Size = new System.Drawing.Size(105, 42);
+            this.btChon.TabIndex = 11;
+            this.btChon.Text = "Chọn ghế";
+            this.btChon.UseVisualStyleBackColor = true;
+            this.btChon.Click += new System.EventHandler(this.BtChon_Click);
             // 
             // grbGhe
             // 
@@ -870,58 +915,6 @@
             this.lbVeChon.Size = new System.Drawing.Size(115, 84);
             this.lbVeChon.TabIndex = 9;
             // 
-            // btChon
-            // 
-            this.btChon.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btChon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
-            this.btChon.Location = new System.Drawing.Point(157, 394);
-            this.btChon.Name = "btChon";
-            this.btChon.Size = new System.Drawing.Size(105, 42);
-            this.btChon.TabIndex = 11;
-            this.btChon.Text = "Chọn ghế";
-            this.btChon.UseVisualStyleBackColor = true;
-            this.btChon.Click += new System.EventHandler(this.BtChon_Click);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Red;
-            this.pictureBox2.Location = new System.Drawing.Point(214, 339);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(54, 48);
-            this.pictureBox2.TabIndex = 9;
-            this.pictureBox2.TabStop = false;
-            // 
-            // label4
-            // 
-            this.label4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(70, 351);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(131, 21);
-            this.label4.TabIndex = 10;
-            this.label4.Text = "Ghế đã có người";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.Color.Gray;
-            this.pictureBox3.Location = new System.Drawing.Point(214, 394);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(54, 48);
-            this.pictureBox3.TabIndex = 9;
-            this.pictureBox3.TabStop = false;
-            // 
-            // label10
-            // 
-            this.label10.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(70, 406);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(131, 21);
-            this.label10.TabIndex = 10;
-            this.label10.Text = "Ghế bạn đang chọn";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // fDatVeXe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -946,6 +939,8 @@
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.pGhe.ResumeLayout(false);
             this.pGhe.PerformLayout();
             this.grbGhe.ResumeLayout(false);
@@ -964,8 +959,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.A08)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.A05)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.A02)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -995,9 +988,9 @@
         private System.Windows.Forms.ComboBox cbDiemDi;
         private System.Windows.Forms.Panel pNoiDung;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtSDT;
         private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtHoTen;
         private System.Windows.Forms.Label lbHoTen;
         private System.Windows.Forms.Label lbTongTien;
         private System.Windows.Forms.Label lbChuyen;

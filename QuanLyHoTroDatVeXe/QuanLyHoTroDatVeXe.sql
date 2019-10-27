@@ -138,4 +138,4 @@ GO
 dbo.themVeXe 912839740,102, 'A02', '10-24-2019'
 GO
 
-SELECT * FROM dbo.ChuyenDi
+

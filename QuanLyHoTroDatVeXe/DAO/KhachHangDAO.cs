@@ -28,7 +28,14 @@ namespace DAO
 
             return ds;
         }
-
+        public KhachHang layKH(string tenDN)
+        {
+            string query = "SELECT * FROM dbo.KhachHang WHERE tenDangNhap = '" + tenDN + "'";
+            DataTable table = DataProvider.Instance.ExecuteQuery(query);
+            foreach (DataRow row in table.Rows)
+                return new KhachHang(row);
+            return null;
+        }
         public int timKH(int sdt)
         {
             DataTable table = DataProvider.Instance.ExecuteQuery("SELECT * FROM dbo.KhachHang WHERE soDienThoai = " + sdt );

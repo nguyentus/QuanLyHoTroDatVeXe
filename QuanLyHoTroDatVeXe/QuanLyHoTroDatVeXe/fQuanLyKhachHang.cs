@@ -106,9 +106,7 @@ namespace QuanLyHoTroDatVeXe
         #region Events
         private void BtDatVeXe_Click(object sender, EventArgs e)
         {
-            fDatVeXe f = new fDatVeXe();
-            f.Show();
-            this.Dispose(false);
+            MessageBox.Show("Bạn không phải khách hàng", "Phân quyền", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
         private void BtChuyenDi_Click(object sender, EventArgs e)
         {

@@ -14,11 +14,18 @@ namespace QuanLyHoTroDatVeXe
 {
     public partial class fDatVeXe : Form
     {
+        private KhachHang taiKhoanKH;
+        public KhachHang TaiKhoanKH { get => taiKhoanKH; set => taiKhoanKH = value; }
+
         ChuyenDi chuyenDangChon = new ChuyenDi();
         VeXe veXeHienTai = new VeXe();
-        public fDatVeXe()
+
+
+        public fDatVeXe(KhachHang kh)
         {
             InitializeComponent();
+            this.taiKhoanKH = kh;
+
             phanQuyen();
             
             fromMacDinh();
@@ -33,6 +40,9 @@ namespace QuanLyHoTroDatVeXe
             grbGhe.Enabled = false;
             btChon.Enabled = false;
             btXacNhan.Enabled = false;
+
+            txtHoTen.Text = taiKhoanKH.HoTen;
+            txtSDT.Text = "0" + taiKhoanKH.SoDienThoai;
         }
         void phanQuyen()
         {
@@ -146,7 +156,7 @@ namespace QuanLyHoTroDatVeXe
                 lbSoLuong.Text = soLuongGhe.ToString();
                 lbGia.Text = chuyenDangChon.GiaVe.ToString();
                 double tong = chuyenDangChon.GiaVe * soLuongGhe;
-                lbTongTien.Text = tong.ToString();
+                lbTongTien.Text = string.Format( "%f VNĐ", tong);
             }
             else
                 MessageBox.Show("Bạn chưa chọn ghế!! Mau chọn ghế đi nè", "Chọn ghế", MessageBoxButtons.OK, MessageBoxIcon.Warning);
