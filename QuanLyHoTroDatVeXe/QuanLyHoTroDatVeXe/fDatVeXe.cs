@@ -23,27 +23,27 @@ namespace QuanLyHoTroDatVeXe
         {
             InitializeComponent();
             this.taiKhoanKH = kh;
-            phanQuyen();
             fromMacDinh();
         }
 
         #region Methods
         void fromMacDinh()
         {
+            phanQuyen();
             hienThiDiemDen();
             hienThiDiemDi();
             hienThiGioDi();
             grbGhe.Enabled = false;
             btChon.Enabled = false;
             btXacNhan.Enabled = false;
-
             txtHoTen.Text = taiKhoanKH.HoTen;
             txtSDT.Text = "0" + taiKhoanKH.SoDienThoai;
         }
         void reLoad()
         {
+            fDatVeXe from = new fDatVeXe(taiKhoanKH);
+            from.Show();
             this.Dispose();
-
         }
         void phanQuyen()
         {
@@ -176,7 +176,7 @@ namespace QuanLyHoTroDatVeXe
             else
             {
                 MessageBox.Show("Dặt thành công " + dem + " vé", "Đặt vé", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                
+                reLoad();
             }
         }
         #endregion
