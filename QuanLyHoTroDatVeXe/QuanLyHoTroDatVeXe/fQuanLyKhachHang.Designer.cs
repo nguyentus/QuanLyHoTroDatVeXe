@@ -285,6 +285,7 @@
             // 
             // dgvKhachHang
             // 
+            this.dgvKhachHang.BackgroundColor = System.Drawing.Color.Lavender;
             this.dgvKhachHang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvKhachHang.Location = new System.Drawing.Point(20, 201);
             this.dgvKhachHang.MultiSelect = false;

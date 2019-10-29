@@ -1,4 +1,6 @@
-﻿using System;
+﻿using DAO;
+using DTO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,8 +18,22 @@ namespace QuanLyHoTroDatVeXe
         {
             InitializeComponent();
             phanQuyen();
+            load();
         }
         #region Methods
+        void load()
+        {
+            dgvBaoCao.DataSource = VeXeDAO.Instance.baoCao();
+
+            dgvBaoCao.Columns[0].HeaderText = "Số điện thoại";
+            dgvBaoCao.Columns[0].Width = 100;
+            dgvBaoCao.Columns[1].HeaderText = "Mã chuyến đi";
+            dgvBaoCao.Columns[1].Width = 150;
+            dgvBaoCao.Columns[2].HeaderText = "Số ghế";
+            dgvBaoCao.Columns[2].Width = 100;
+            dgvBaoCao.Columns[3].HeaderText = "Ngày đặt";
+            dgvBaoCao.Columns[3].Width = 100;
+        }
         void phanQuyen()
         {
             btDatVe.Enabled = false;
@@ -25,11 +41,6 @@ namespace QuanLyHoTroDatVeXe
         #endregion
 
         #region Events
-        private void BtDatVeXe_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Bạn không phải khách hàng", "Phân quyền", MessageBoxButtons.OK, MessageBoxIcon.Error);
-        }
-
         private void BtChuyenDi_Click(object sender, EventArgs e)
         {
             fQuanLyChuyenDi f = new fQuanLyChuyenDi();
@@ -56,7 +67,14 @@ namespace QuanLyHoTroDatVeXe
             if (MessageBox.Show("Bạn muốn rời khỏi phần mềm?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 this.Close();
         }
+
         #endregion
 
+        private void BtTim_Click(object sender, EventArgs e)
+        {
+            int sdt = int.Parse(txtSDT.Text);
+            List<VeXe> ds = VeXeDAO.Instance.timVeKH(sdt);
+            dgvBaoCao.DataSource = ds;
+        }
     }
 }

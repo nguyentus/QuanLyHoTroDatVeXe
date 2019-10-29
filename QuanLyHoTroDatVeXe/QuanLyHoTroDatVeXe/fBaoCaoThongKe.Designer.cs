@@ -43,9 +43,11 @@
             this.btChuyenDi = new System.Windows.Forms.PictureBox();
             this.btDatVe = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.cbNhanVien = new System.Windows.Forms.ComboBox();
-            this.listView1 = new System.Windows.Forms.ListView();
             this.pNoiDung = new System.Windows.Forms.Panel();
+            this.txtSDT = new System.Windows.Forms.TextBox();
+            this.btTim = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.dgvBaoCao = new System.Windows.Forms.DataGridView();
             this.pMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btThoat)).BeginInit();
@@ -56,6 +58,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.btDatVe)).BeginInit();
             this.panel1.SuspendLayout();
             this.pNoiDung.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvBaoCao)).BeginInit();
             this.SuspendLayout();
             // 
             // pMenu
@@ -217,33 +220,17 @@
             this.btDatVe.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btDatVe.TabIndex = 0;
             this.btDatVe.TabStop = false;
-            this.btDatVe.Click += new System.EventHandler(this.BtDatVeXe_Click);
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.cbNhanVien);
-            this.panel1.Controls.Add(this.listView1);
+            this.panel1.Controls.Add(this.dgvBaoCao);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.btTim);
+            this.panel1.Controls.Add(this.txtSDT);
             this.panel1.Location = new System.Drawing.Point(8, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(860, 473);
             this.panel1.TabIndex = 0;
-            // 
-            // cbNhanVien
-            // 
-            this.cbNhanVien.FormattingEnabled = true;
-            this.cbNhanVien.Location = new System.Drawing.Point(577, 16);
-            this.cbNhanVien.Name = "cbNhanVien";
-            this.cbNhanVien.Size = new System.Drawing.Size(249, 21);
-            this.cbNhanVien.TabIndex = 1;
-            // 
-            // listView1
-            // 
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(14, 16);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(521, 438);
-            this.listView1.TabIndex = 0;
-            this.listView1.UseCompatibleStateImageBehavior = false;
             // 
             // pNoiDung
             // 
@@ -252,6 +239,41 @@
             this.pNoiDung.Name = "pNoiDung";
             this.pNoiDung.Size = new System.Drawing.Size(876, 486);
             this.pNoiDung.TabIndex = 9;
+            // 
+            // txtSDT
+            // 
+            this.txtSDT.Location = new System.Drawing.Point(575, 33);
+            this.txtSDT.Name = "txtSDT";
+            this.txtSDT.Size = new System.Drawing.Size(137, 20);
+            this.txtSDT.TabIndex = 2;
+            // 
+            // btTim
+            // 
+            this.btTim.Location = new System.Drawing.Point(733, 22);
+            this.btTim.Name = "btTim";
+            this.btTim.Size = new System.Drawing.Size(101, 40);
+            this.btTim.TabIndex = 9;
+            this.btTim.Text = "Tìm";
+            this.btTim.UseVisualStyleBackColor = true;
+            this.btTim.Click += new System.EventHandler(this.BtTim_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(529, 36);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(29, 13);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "SDT";
+            // 
+            // dgvBaoCao
+            // 
+            this.dgvBaoCao.BackgroundColor = System.Drawing.Color.Lavender;
+            this.dgvBaoCao.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvBaoCao.Location = new System.Drawing.Point(13, 8);
+            this.dgvBaoCao.Name = "dgvBaoCao";
+            this.dgvBaoCao.Size = new System.Drawing.Size(497, 452);
+            this.dgvBaoCao.TabIndex = 12;
             // 
             // fBaoCaoThongKe
             // 
@@ -273,7 +295,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.btChuyenDi)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btDatVe)).EndInit();
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.pNoiDung.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvBaoCao)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -294,8 +318,10 @@
         private System.Windows.Forms.PictureBox btDatVe;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel pNoiDung;
-        private System.Windows.Forms.ComboBox cbNhanVien;
-        private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TextBox txtSDT;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btTim;
+        private System.Windows.Forms.DataGridView dgvBaoCao;
     }
 }

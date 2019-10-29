@@ -44,7 +44,7 @@
             this.txtTaiKhoan.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.txtTaiKhoan.Name = "txtTaiKhoan";
             this.txtTaiKhoan.Size = new System.Drawing.Size(277, 27);
-            this.txtTaiKhoan.TabIndex = 11;
+            this.txtTaiKhoan.TabIndex = 0;
             // 
             // txtMatKhau
             // 
@@ -53,7 +53,7 @@
             this.txtMatKhau.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.txtMatKhau.Name = "txtMatKhau";
             this.txtMatKhau.Size = new System.Drawing.Size(277, 27);
-            this.txtMatKhau.TabIndex = 12;
+            this.txtMatKhau.TabIndex = 1;
             this.txtMatKhau.UseSystemPasswordChar = true;
             // 
             // btDangNhap

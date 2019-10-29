@@ -151,7 +151,7 @@ namespace QuanLyHoTroDatVeXe
                 string ghe = "";
                 foreach (var item in lbGheDangChon.Items)
                 {
-                    ghe += item.ToString() + " - ";
+                    ghe += item.ToString() + " ";
                 }
                 lbGheDaChon.Text = ghe;
                 lbSoLuong.Text = soLuongGhe.ToString();

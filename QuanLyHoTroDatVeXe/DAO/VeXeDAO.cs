@@ -41,5 +41,24 @@ namespace DAO
             int result = DataProvider.Instance.ExecuteNonQuery(query);
             return result > 0;
         }
+
+        public List<VeXe> baoCao()
+        {
+            List<VeXe> ds = new List<VeXe>();
+            string query = "SELECT * FROM dbo.VeXe";
+            DataTable table = DataProvider.Instance.ExecuteQuery(query);
+            foreach (DataRow item in table.Rows)
+                ds.Add(new VeXe(item));
+            return ds;
+        }
+        public List<VeXe> timVeKH( int SDT)
+        {
+            List<VeXe> ds = new List<VeXe>();
+            string query = "SELECT * FROM dbo.VeXe WHERE soDienThoai = " + SDT;
+            DataTable table = DataProvider.Instance.ExecuteQuery(query);
+            foreach (DataRow item in table.Rows)
+                ds.Add( new VeXe(item));
+            return ds;
+        }
     }
 }
