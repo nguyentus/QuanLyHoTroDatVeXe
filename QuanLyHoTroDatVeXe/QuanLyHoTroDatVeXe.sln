@@ -1,13 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.852
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29209.62
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuanLyHoTroDatVeXe", "QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe.csproj", "{4D791CB9-3314-428B-B7F4-E20D4A57C36D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTO", "DTO\DTO.csproj", "{835E3F51-B895-40F5-888E-830B5919AA93}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAO", "DAO\DAO.csproj", "{1F3CE816-4D24-42B6-8E33-05EC531343F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest", "UnitTest\UnitTest.csproj", "{DD49EEC8-D938-445F-88FD-1B21C870CECD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{1F3CE816-4D24-42B6-8E33-05EC531343F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1F3CE816-4D24-42B6-8E33-05EC531343F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1F3CE816-4D24-42B6-8E33-05EC531343F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD49EEC8-D938-445F-88FD-1B21C870CECD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD49EEC8-D938-445F-88FD-1B21C870CECD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD49EEC8-D938-445F-88FD-1B21C870CECD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD49EEC8-D938-445F-88FD-1B21C870CECD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
