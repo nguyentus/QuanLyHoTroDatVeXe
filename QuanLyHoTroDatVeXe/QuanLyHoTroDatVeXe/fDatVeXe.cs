@@ -14,9 +14,9 @@ namespace QuanLyHoTroDatVeXe
 {
     public partial class fDatVeXe : Form
     {
+        //tạo biến singleton
         private KhachHang taiKhoanKH;
         public KhachHang TaiKhoanKH { get => taiKhoanKH; set => taiKhoanKH = value; }
-
         ChuyenDi chuyenDangChon = new ChuyenDi();
 
         public fDatVeXe(KhachHang kh)
@@ -27,6 +27,7 @@ namespace QuanLyHoTroDatVeXe
         }
 
         #region Methods
+        //
         void fromMacDinh()
         {
             phanQuyen();

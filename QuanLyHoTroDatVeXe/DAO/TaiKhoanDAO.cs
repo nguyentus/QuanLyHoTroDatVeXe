@@ -20,39 +20,15 @@ namespace DAO
 
         private TaiKhoanDAO() { }
 
-        //lấy tên tài khoản
-        public string LayTenDangNhap(string taiKhoan)
+        //lấy tài khoản
+        public TaiKhoan layTaiKhoan(string tenDangNhap)
         {
-            DataTable table = DataProvider.Instance.ExecuteQuery("SELECT * FROM dbo.TaiKhoan WHERE tenDangNhap = '" + taiKhoan + "'");
+            DataTable table = DataProvider.Instance.ExecuteQuery("SELECT * FROM dbo.TaiKhoan WHERE tenDangNhap = '" + tenDangNhap + "'");
             foreach (DataRow row in table.Rows)
             {
-                TaiKhoan tk = new TaiKhoan(row);
-                return tk.TenDangNhap;
+                return new TaiKhoan(row);
             }
-            return "";
-        }
-        //lấy mật khẩu
-        public string LayMatKhau(string matKhau)
-        {
-            string query = "SELECT * FROM dbo.TaiKhoan WHERE matKhau = '" + matKhau + "'";
-            DataTable table = DataProvider.Instance.ExecuteQuery(query);
-            foreach (DataRow row in table.Rows)
-            {
-                TaiKhoan tk = new TaiKhoan(row);
-                return tk.MatKhau;
-            }
-            return "";
-        }
-        //Lấy loại tài khoản
-        public int LayLoaiTaiKhoan(string taiKhoan)
-        {
-            DataTable table = DataProvider.Instance.ExecuteQuery("SELECT * FROM dbo.TaiKhoan WHERE tenDangNhap = '" + taiKhoan + "'");
-            foreach (DataRow row in table.Rows)
-            {
-                TaiKhoan tk = new TaiKhoan(row);
-                return tk.LoaiTaiKhoan;
-            }
-            return -1;
+            return null;
         }
     }
 }

@@ -28,14 +28,17 @@ namespace DAO
 
             return ds;
         }
-        public KhachHang layKH(string tenDN)
+        //lấy khách hàng bằng số điện thoại
+        public KhachHang layKH(int? sdt)
         {
-            string query = "SELECT * FROM dbo.KhachHang WHERE tenDangNhap = '" + tenDN + "'";
-            DataTable table = DataProvider.Instance.ExecuteQuery(query);
+            DataTable table = DataProvider.Instance.ExecuteQuery("SELECT * FROM dbo.KhachHang WHERE soDienThoai = " + sdt);
             foreach (DataRow row in table.Rows)
+            {
                 return new KhachHang(row);
+            }
             return null;
         }
+        //tìm khách hàng bằng số điện thoại
         public int timKH(int sdt)
         {
             DataTable table = DataProvider.Instance.ExecuteQuery("SELECT * FROM dbo.KhachHang WHERE soDienThoai = " + sdt );
@@ -46,23 +49,23 @@ namespace DAO
             }
             return -1;
         }
-
-        public bool themKH(int sdt, int cnmd, string ht, string gt, string dc, string email, string tdn)
+        //thêm 1 khách hàng vô danh sách khách hàng
+        public bool themKH(int sdt, int cnmd, string ht, string gt, string dc, string email)
         {
-            int result = DataProvider.Instance.ExecuteNonQuery("themKH " + sdt +", " + cnmd + ", N'" + ht + "', N'" + gt + "', N'" + dc + "', '" + email + "', '" + tdn +"'");
+            int result = DataProvider.Instance.ExecuteNonQuery("themKH " + sdt +", " + cnmd + ", N'" + ht + "', N'" + gt + "', N'" + dc + "', '" + email + "', '");
             return result > 0;
         }
-
-        public bool suaKHBangSDT(int sdt, int cmnd, string ht, string gt, string dc, string email, string tenDN)
+        //sửa thông tin khách hàng bằng số điện thoại
+        public bool suaKHBangSDT(int sdt, int cmnd, string ht, string gt, string dc, string email)
         {
             string query = "UPDATE dbo.KhachHang SET CMND =" + cmnd + ", hoTen =N'" + ht 
-                    + "', gioiTinh = N'" + gt + "', diaChi = N'" + dc + "'s, email ='" + email 
-                    + "', tenDangNhap = '" + tenDN + "' WHERE soDienThoai = " + sdt;
+                    + "', gioiTinh = N'" + gt + "', diaChi = N'" + dc + "', email ='" + email 
+                    + "' WHERE soDienThoai = " + sdt;
             int result = DataProvider.Instance.ExecuteNonQuery(query);
             return result > 0;
         }
-
-        public void xoaKHBangMa(string sdt)
+        //xóa khách hàng bằng số điện thoại
+        public void xoaKHBangSDT(string sdt)
         {
             string query = "DELETE dbo.KhachHang WHERE soDienThoai = " + sdt;
             DataProvider.Instance.ExecuteNonQuery(query);

@@ -21,23 +21,21 @@ namespace QuanLyHoTroDatVeXe
 
         private void BtDangNhap_Click(object sender, EventArgs e)
         {
-        string tenDangNhap = this.txtTaiKhoan.Text;
-        string matKhau = this.txtMatKhau.Text;
-            string tenTaiKhoan_real = TaiKhoanDAO.Instance.LayTenDangNhap(tenDangNhap);
-            string matkhau_real = TaiKhoanDAO.Instance.LayMatKhau(matKhau);
-            int loaiTaiKhoan_real = TaiKhoanDAO.Instance.LayLoaiTaiKhoan(tenDangNhap);
-            if (tenDangNhap == tenTaiKhoan_real && matKhau == matkhau_real)
+            string tenDangNhap = this.txtTaiKhoan.Text;
+            string matKhau = this.txtMatKhau.Text;
+            TaiKhoan taiKhoan = TaiKhoanDAO.Instance.layTaiKhoan(tenDangNhap);
+            if (matKhau == taiKhoan.MatKhau)
             {
                 MessageBox.Show("Đăng nhập thành công!", "Đăng Nhập", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 //Mở Form giao diện
-                if (loaiTaiKhoan_real == 0)
+                if (taiKhoan.LoaiTaiKhoan == 0)
                 {
-                    KhachHang kh = KhachHangDAO.Instance.layKH(tenTaiKhoan_real);
+                    KhachHang kh = KhachHangDAO.Instance.layKH(taiKhoan.SoDienThoai);
                     fDatVeXe f = new fDatVeXe(kh);
                     f.Show();
                     this.Dispose(false);
                 }
-                else if (loaiTaiKhoan_real == 1)
+                else if (taiKhoan.LoaiTaiKhoan == 1)
                 {
                     fQuanLyChuyenDi f = new fQuanLyChuyenDi();
                     f.Show();

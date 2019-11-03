@@ -23,16 +23,7 @@ CREATE TABLE ChuyenDi
 	diemDen NVARCHAR(20) ,
 	giaVe FLOAT NOT NULL,
 	bienSo VARCHAR(10),
-
 	FOREIGN KEY (bienSo) REFERENCES dbo.Xe (bienSo)
-)
-GO
---Tài khoản
-CREATE TABLE TaiKhoan
-(
-	tenDangNhap VARCHAR(10) PRIMARY KEY,
-	matKhau VARCHAR(20) NOT NULL,
-	loaiTaiKhoan INT NOT NULL	--tài khoản KH: 0, nhân viên: 1
 )
 GO
 --Khách hàng
@@ -44,8 +35,16 @@ CREATE TABLE KhachHang
 	gioiTinh NVARCHAR(10),
 	diaChi NVARCHAR(100),
 	email VARCHAR(50),
-	tenDangNhap VARCHAR(10) NOT NULL,
-	FOREIGN KEY (tenDangNhap) REFERENCES dbo.TaiKhoan (tenDangNhap)
+)
+GO
+--Tài khoản
+CREATE TABLE TaiKhoan
+(
+	tenDangNhap VARCHAR(10) PRIMARY KEY,
+	matKhau VARCHAR(20) NOT NULL,
+	loaiTaiKhoan INT NOT NULL,	--tài khoản KH: 0, nhân viên: 1
+	soDienThoai INT,
+	FOREIGN KEY (soDienThoai) REFERENCES KhachHang (soDienThoai)
 )
 GO
 --Khách hàng đặt vé xe
@@ -80,11 +79,11 @@ BEGIN
 END
 GO
 --Thêm khách hàng
-CREATE PROC themKH (@soDienThoai INT, @CMND int, @hoTen NVARCHAR(50), @gioiTinh NVARCHAR(10), @diaChi NVARCHAR(100), @email VARCHAR(50), @tenDangNhap VARCHAR(10) )
+CREATE PROC themKH (@soDienThoai INT, @CMND int, @hoTen NVARCHAR(50), @gioiTinh NVARCHAR(10), @diaChi NVARCHAR(100), @email VARCHAR(50))
 AS
 BEGIN
-	INSERT dbo.KhachHang(soDienThoai, CMND, hoTen, gioiTinh, diaChi, email, tenDangNhap)
-	VALUES (@soDienThoai, @CMND, @hoTen, @gioiTinh, @diaChi, @email, @tenDangNhap)
+	INSERT dbo.KhachHang(soDienThoai, CMND, hoTen, gioiTinh, diaChi, email)
+	VALUES (@soDienThoai, @CMND, @hoTen, @gioiTinh, @diaChi, @email)
 END
 GO
 --Thêm vé xe
@@ -124,19 +123,22 @@ themChuyenDi '9h00', '11-7-2013' , N'Đồng Nai', N'Bảo Lộc', 100000, '62L-
 GO
 themChuyenDi '10h00', '11-7-2013' , N'Đồng Nai', N'Đồng Tháp', 200000, '74L-98754' 
 GO
---Tài khoản
-INSERT INTO TaiKhoan (tenDangNhap, matKhau, loaiTaiKhoan) VALUES ( 'yen', '123', 0),( 'tu2909', '123', 1)
-GO
 --Khách hàng
-themKH 918236031, 251123456, N'Hoàng Yến', N'Nữ', 'tp.HCM', 'yen.th@gmail.com', 'yen'
+themKH 918236031, 251123456, N'Phan Anh Khoa', 'Nam', 'tp.HCM', 'khoa.pa@gmail.com'
 GO
-themKH 912839740, 251123456, N'Thanh Tú', 'Nam', 'tp.HCM', 'tu.nt@gmail.com', 'tu2909'
+themKH 123456789, 251123456, N'Hoàng Huy Nguyễn', 'Nam', 'tp.HCM', 'huy.nh@gmail.com'
+GO
+themKH 912839740, 251123456, N'Trịnh Hoàng Yến', N'Nũ', 'tp.HCM', 'yen.th@gmail.com'
+GO
+--Tài khoản nhân viên
+INSERT INTO TaiKhoan (tenDangNhap, matKhau, loaiTaiKhoan) VALUES( 'tu', '1', 1)
+GO
+--Tài khoản khách hàng
+INSERT INTO TaiKhoan (tenDangNhap, matKhau, loaiTaiKhoan, soDienThoai) VALUES ( 'yen', '1', 0, 912839740)
 GO
 --Vé xe
 dbo.themVeXe 918236031,102, 'A01', '10-24-2019'
 GO
 dbo.themVeXe 912839740,102, 'A02', '10-24-2019'
 GO
-
-
 

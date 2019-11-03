@@ -15,9 +15,8 @@ namespace DTO
         private string gioiTinh;
         private string diaChi;
         private string email;
-        private string tenDangNhap;
 
-        public KhachHang(int soDienThoai, int cMND, string hoTen, string gioiTinh, string diaChi, string email, string tenDangNhap)
+        public KhachHang(int soDienThoai, int cMND, string hoTen, string gioiTinh, string diaChi, string email)
         {
             this.SoDienThoai = soDienThoai;
             this.CMND = cMND;
@@ -25,7 +24,6 @@ namespace DTO
             this.GioiTinh = gioiTinh;
             this.DiaChi = diaChi;
             this.Email = email;
-            this.TenDangNhap = tenDangNhap;
         }
 
         public KhachHang(DataRow row)
@@ -36,7 +34,6 @@ namespace DTO
             this.GioiTinh = row["gioiTinh"].ToString();
             this.DiaChi = row["diaChi"].ToString();
             this.Email = row["email"].ToString();
-            this.TenDangNhap = row["tenDangNhap"].ToString();
         }
 
         public int SoDienThoai { get => soDienThoai; set => soDienThoai = value; }
@@ -45,6 +42,5 @@ namespace DTO
         public string GioiTinh { get => gioiTinh; set => gioiTinh = value; }
         public string DiaChi { get => diaChi; set => diaChi = value; }
         public string Email { get => email; set => email = value; }
-        public string TenDangNhap { get => tenDangNhap; set => tenDangNhap = value; }
     }
 }

@@ -11,15 +11,18 @@ namespace DTO
     {
         private string tenDangNhap, matKhau;
         private int loaiTaiKhoan;
+        private int soDienThoai;
         public TaiKhoan(DataRow row)
         {
             this.TenDangNhap = row["tenDangNhap"].ToString();
             this.MatKhau = row["matKhau"].ToString();
             this.LoaiTaiKhoan = (int)row["loaiTaiKhoan"];
+            this.SoDienThoai = (int)row["soDienThoai"];
         }
 
         public string TenDangNhap { get => tenDangNhap; set => tenDangNhap = value; }
         public string MatKhau { get => matKhau; set => matKhau = value; }
         public int LoaiTaiKhoan { get => loaiTaiKhoan; set => loaiTaiKhoan = value; }
+        public int SoDienThoai { get => soDienThoai; set => soDienThoai = value; }
     }
 }

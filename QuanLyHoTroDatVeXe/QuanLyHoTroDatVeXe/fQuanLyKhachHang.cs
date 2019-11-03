@@ -49,9 +49,6 @@ namespace QuanLyHoTroDatVeXe
 
             dgvKhachHang.Columns[5].HeaderText = "Email";
             dgvKhachHang.Columns[5].Width = 140;
-
-            dgvKhachHang.Columns[6].HeaderText = "Tên đăng nhập";
-            dgvKhachHang.Columns[6].Width = 100;
         }
         //tạo ràng buộc giữa datagridview với các ô text
         void taoRangBuoc()
@@ -62,7 +59,6 @@ namespace QuanLyHoTroDatVeXe
             txtGioiTinh.DataBindings.Add("text", dgvKhachHang.DataSource, "gioiTinh", true, DataSourceUpdateMode.Never);
             txtDiaChi.DataBindings.Add("text", dgvKhachHang.DataSource, "diaChi", true, DataSourceUpdateMode.Never);
             txtEmail.DataBindings.Add("text", dgvKhachHang.DataSource, "email", true, DataSourceUpdateMode.Never);
-            txtTenDN.DataBindings.Add("text", dgvKhachHang.DataSource, "tenDangNhap", true, DataSourceUpdateMode.Never);
         }
 
         void themDuLieu()
@@ -75,8 +71,7 @@ namespace QuanLyHoTroDatVeXe
                 string gt = txtGioiTinh.Text;
                 string dc = txtDiaChi.Text;
                 string email = txtEmail.Text;
-                string tdn = txtTenDN.Text;
-                if( ht == "" || gt == "" || dc == "" || email == "" || tdn == "")
+                if( ht == "" || gt == "" || dc == "" || email == "")
                     MessageBox.Show("Bạn phải nhập đủ thông tin!", "Thêm khách hàng", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 else
                 {
@@ -85,7 +80,7 @@ namespace QuanLyHoTroDatVeXe
                         MessageBox.Show("Lỗi!! Số điện thoại đã tồn tại", "Thêm khách hàng", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     else
                     {
-                        bool ketQua = KhachHangDAO.Instance.themKH(sdt, cmnd, ht, gt, dc, email, tdn);
+                        bool ketQua = KhachHangDAO.Instance.themKH(sdt, cmnd, ht, gt, dc, email);
                         if (ketQua)
                         {
                             MessageBox.Show("Thêm thành công!", "Thêm khách hàng", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -104,10 +99,6 @@ namespace QuanLyHoTroDatVeXe
         #endregion
 
         #region Events
-        private void BtDatVeXe_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Bạn không phải khách hàng", "Phân quyền", MessageBoxButtons.OK, MessageBoxIcon.Error);
-        }
         private void BtChuyenDi_Click(object sender, EventArgs e)
         {
             fQuanLyChuyenDi f = new fQuanLyChuyenDi();
@@ -144,8 +135,7 @@ namespace QuanLyHoTroDatVeXe
             string gt = txtGioiTinh.Text;
             string dc = txtDiaChi.Text;
             string email = txtEmail.Text;
-            string tdn = txtTenDN.Text;
-            bool ketQua = KhachHangDAO.Instance.suaKHBangSDT(sdt, cmnd, ht, gt, dc, email, tdn);
+            bool ketQua = KhachHangDAO.Instance.suaKHBangSDT(sdt, cmnd, ht, gt, dc, email);
             if (ketQua)
             {
                 MessageBox.Show("Sửa thành công!", "Sửa thông tin khách hàng", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -162,7 +152,7 @@ namespace QuanLyHoTroDatVeXe
                 MessageBox.Show("Bạn chưa chọn khách hàng", "Xóa khách hàng", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             else
             {
-                KhachHangDAO.Instance.xoaKHBangMa(sdt);
+                KhachHangDAO.Instance.xoaKHBangSDT(sdt);
                 hienThiDanhSach();
             }
         }
