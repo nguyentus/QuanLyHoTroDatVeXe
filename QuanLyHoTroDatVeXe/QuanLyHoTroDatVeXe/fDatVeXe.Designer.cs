@@ -505,14 +505,16 @@
             // 
             // btXacNhan
             // 
-            this.btXacNhan.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btXacNhan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
+            this.btXacNhan.BackColor = System.Drawing.Color.Orange;
+            this.btXacNhan.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btXacNhan.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btXacNhan.ForeColor = System.Drawing.Color.Black;
             this.btXacNhan.Location = new System.Drawing.Point(93, 423);
             this.btXacNhan.Name = "btXacNhan";
-            this.btXacNhan.Size = new System.Drawing.Size(105, 42);
+            this.btXacNhan.Size = new System.Drawing.Size(101, 40);
             this.btXacNhan.TabIndex = 4;
             this.btXacNhan.Text = "Xác Nhận";
-            this.btXacNhan.UseVisualStyleBackColor = true;
+            this.btXacNhan.UseVisualStyleBackColor = false;
             this.btXacNhan.Click += new System.EventHandler(this.btXacNhan_Click);
             // 
             // label3
@@ -634,7 +636,7 @@
             // 
             this.label10.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(70, 406);
+            this.label10.Location = new System.Drawing.Point(73, 369);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(131, 21);
             this.label10.TabIndex = 10;
@@ -645,7 +647,7 @@
             // 
             this.label4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(70, 351);
+            this.label4.Location = new System.Drawing.Point(73, 423);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(131, 21);
             this.label4.TabIndex = 10;
@@ -655,7 +657,7 @@
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Gray;
-            this.pictureBox3.Location = new System.Drawing.Point(214, 394);
+            this.pictureBox3.Location = new System.Drawing.Point(217, 357);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(54, 48);
             this.pictureBox3.TabIndex = 9;
@@ -663,8 +665,8 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Red;
-            this.pictureBox2.Location = new System.Drawing.Point(214, 339);
+            this.pictureBox2.BackColor = System.Drawing.Color.Orange;
+            this.pictureBox2.Location = new System.Drawing.Point(217, 411);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(54, 48);
             this.pictureBox2.TabIndex = 9;
@@ -672,14 +674,16 @@
             // 
             // btTimChuyen
             // 
-            this.btTimChuyen.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btTimChuyen.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
+            this.btTimChuyen.BackColor = System.Drawing.Color.Orange;
+            this.btTimChuyen.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btTimChuyen.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btTimChuyen.ForeColor = System.Drawing.Color.Black;
             this.btTimChuyen.Location = new System.Drawing.Point(163, 252);
             this.btTimChuyen.Name = "btTimChuyen";
-            this.btTimChuyen.Size = new System.Drawing.Size(105, 42);
+            this.btTimChuyen.Size = new System.Drawing.Size(101, 40);
             this.btTimChuyen.TabIndex = 8;
             this.btTimChuyen.Text = "Tìm chuyến";
-            this.btTimChuyen.UseVisualStyleBackColor = true;
+            this.btTimChuyen.UseVisualStyleBackColor = false;
             this.btTimChuyen.Click += new System.EventHandler(this.btTimChuyen_Click);
             // 
             // cbGio
@@ -705,14 +709,16 @@
             // 
             // btChon
             // 
-            this.btChon.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btChon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
+            this.btChon.BackColor = System.Drawing.Color.Orange;
+            this.btChon.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btChon.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btChon.ForeColor = System.Drawing.Color.Black;
             this.btChon.Location = new System.Drawing.Point(157, 394);
             this.btChon.Name = "btChon";
-            this.btChon.Size = new System.Drawing.Size(105, 42);
+            this.btChon.Size = new System.Drawing.Size(101, 40);
             this.btChon.TabIndex = 11;
             this.btChon.Text = "Chọn ghế";
-            this.btChon.UseVisualStyleBackColor = true;
+            this.btChon.UseVisualStyleBackColor = false;
             this.btChon.Click += new System.EventHandler(this.BtChon_Click);
             // 
             // grbGhe

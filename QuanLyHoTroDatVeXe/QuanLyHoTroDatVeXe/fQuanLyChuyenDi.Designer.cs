@@ -250,12 +250,15 @@
             // 
             // btThem
             // 
-            this.btThem.Location = new System.Drawing.Point(580, 445);
+            this.btThem.BackColor = System.Drawing.Color.Orange;
+            this.btThem.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btThem.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btThem.Location = new System.Drawing.Point(558, 437);
             this.btThem.Name = "btThem";
-            this.btThem.Size = new System.Drawing.Size(86, 34);
+            this.btThem.Size = new System.Drawing.Size(101, 40);
             this.btThem.TabIndex = 12;
             this.btThem.Text = "Thêm mới ";
-            this.btThem.UseVisualStyleBackColor = true;
+            this.btThem.UseVisualStyleBackColor = false;
             this.btThem.Click += new System.EventHandler(this.BtThem_Click);
             // 
             // panel1
@@ -416,32 +419,39 @@
             // 
             // btXoa
             // 
-            this.btXoa.Location = new System.Drawing.Point(782, 445);
+            this.btXoa.BackColor = System.Drawing.Color.Orange;
+            this.btXoa.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btXoa.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btXoa.Location = new System.Drawing.Point(772, 437);
             this.btXoa.Name = "btXoa";
-            this.btXoa.Size = new System.Drawing.Size(86, 34);
+            this.btXoa.Size = new System.Drawing.Size(101, 40);
             this.btXoa.TabIndex = 13;
             this.btXoa.Text = "Xoá chuyến đi";
-            this.btXoa.UseVisualStyleBackColor = true;
+            this.btXoa.UseVisualStyleBackColor = false;
             this.btXoa.Click += new System.EventHandler(this.BtXoa_Click);
             // 
             // btCapNhat
             // 
-            this.btCapNhat.Location = new System.Drawing.Point(682, 445);
+            this.btCapNhat.BackColor = System.Drawing.Color.Orange;
+            this.btCapNhat.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btCapNhat.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btCapNhat.Location = new System.Drawing.Point(665, 437);
             this.btCapNhat.Name = "btCapNhat";
-            this.btCapNhat.Size = new System.Drawing.Size(86, 34);
+            this.btCapNhat.Size = new System.Drawing.Size(101, 40);
             this.btCapNhat.TabIndex = 14;
             this.btCapNhat.Text = "Cập nhật ";
-            this.btCapNhat.UseVisualStyleBackColor = true;
+            this.btCapNhat.UseVisualStyleBackColor = false;
             this.btCapNhat.Click += new System.EventHandler(this.BtCapNhat_Click);
             // 
             // dgvChuyenDi
             // 
+            this.dgvChuyenDi.BackgroundColor = System.Drawing.Color.Lavender;
             this.dgvChuyenDi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvChuyenDi.Location = new System.Drawing.Point(8, 78);
+            this.dgvChuyenDi.Location = new System.Drawing.Point(8, 70);
             this.dgvChuyenDi.MultiSelect = false;
             this.dgvChuyenDi.Name = "dgvChuyenDi";
             this.dgvChuyenDi.RowHeadersWidth = 102;
-            this.dgvChuyenDi.Size = new System.Drawing.Size(860, 357);
+            this.dgvChuyenDi.Size = new System.Drawing.Size(860, 361);
             this.dgvChuyenDi.TabIndex = 7;
             // 
             // fQuanLyChuyenDi

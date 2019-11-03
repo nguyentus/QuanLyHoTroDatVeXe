@@ -132,7 +132,7 @@ namespace QuanLyHoTroDatVeXe
                 List<VeXe> dsVeDaDat = VeXeDAO.Instance.layDsVeXe(chuyenDangChon.MaCD);
                 foreach (VeXe ve in dsVeDaDat)
                 {
-                    ((PictureBox)grbGhe.Controls[ve.MaGhe]).BackColor = Color.Red;
+                    ((PictureBox)grbGhe.Controls[ve.MaGhe]).BackColor = Color.Orange;
                     ((PictureBox)grbGhe.Controls[ve.MaGhe]).Enabled = false;
                 }
             }

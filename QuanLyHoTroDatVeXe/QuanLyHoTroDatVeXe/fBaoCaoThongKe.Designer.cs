@@ -43,11 +43,11 @@
             this.btChuyenDi = new System.Windows.Forms.PictureBox();
             this.btDatVe = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pNoiDung = new System.Windows.Forms.Panel();
-            this.txtSDT = new System.Windows.Forms.TextBox();
-            this.btTim = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.dgvBaoCao = new System.Windows.Forms.DataGridView();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btTim = new System.Windows.Forms.Button();
+            this.txtSDT = new System.Windows.Forms.TextBox();
+            this.pNoiDung = new System.Windows.Forms.Panel();
             this.pMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btThoat)).BeginInit();
@@ -57,8 +57,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.btChuyenDi)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btDatVe)).BeginInit();
             this.panel1.SuspendLayout();
-            this.pNoiDung.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBaoCao)).BeginInit();
+            this.pNoiDung.SuspendLayout();
             this.SuspendLayout();
             // 
             // pMenu
@@ -232,30 +232,14 @@
             this.panel1.Size = new System.Drawing.Size(860, 473);
             this.panel1.TabIndex = 0;
             // 
-            // pNoiDung
+            // dgvBaoCao
             // 
-            this.pNoiDung.Controls.Add(this.panel1);
-            this.pNoiDung.Location = new System.Drawing.Point(3, 60);
-            this.pNoiDung.Name = "pNoiDung";
-            this.pNoiDung.Size = new System.Drawing.Size(876, 486);
-            this.pNoiDung.TabIndex = 9;
-            // 
-            // txtSDT
-            // 
-            this.txtSDT.Location = new System.Drawing.Point(575, 33);
-            this.txtSDT.Name = "txtSDT";
-            this.txtSDT.Size = new System.Drawing.Size(137, 20);
-            this.txtSDT.TabIndex = 2;
-            // 
-            // btTim
-            // 
-            this.btTim.Location = new System.Drawing.Point(733, 22);
-            this.btTim.Name = "btTim";
-            this.btTim.Size = new System.Drawing.Size(101, 40);
-            this.btTim.TabIndex = 9;
-            this.btTim.Text = "Tìm";
-            this.btTim.UseVisualStyleBackColor = true;
-            this.btTim.Click += new System.EventHandler(this.BtTim_Click);
+            this.dgvBaoCao.BackgroundColor = System.Drawing.Color.Lavender;
+            this.dgvBaoCao.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvBaoCao.Location = new System.Drawing.Point(13, 8);
+            this.dgvBaoCao.Name = "dgvBaoCao";
+            this.dgvBaoCao.Size = new System.Drawing.Size(497, 452);
+            this.dgvBaoCao.TabIndex = 12;
             // 
             // label1
             // 
@@ -266,14 +250,33 @@
             this.label1.TabIndex = 11;
             this.label1.Text = "SDT";
             // 
-            // dgvBaoCao
+            // btTim
             // 
-            this.dgvBaoCao.BackgroundColor = System.Drawing.Color.Lavender;
-            this.dgvBaoCao.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvBaoCao.Location = new System.Drawing.Point(13, 8);
-            this.dgvBaoCao.Name = "dgvBaoCao";
-            this.dgvBaoCao.Size = new System.Drawing.Size(497, 452);
-            this.dgvBaoCao.TabIndex = 12;
+            this.btTim.BackColor = System.Drawing.Color.Orange;
+            this.btTim.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btTim.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btTim.Location = new System.Drawing.Point(733, 22);
+            this.btTim.Name = "btTim";
+            this.btTim.Size = new System.Drawing.Size(101, 40);
+            this.btTim.TabIndex = 9;
+            this.btTim.Text = "Tìm";
+            this.btTim.UseVisualStyleBackColor = false;
+            this.btTim.Click += new System.EventHandler(this.BtTim_Click);
+            // 
+            // txtSDT
+            // 
+            this.txtSDT.Location = new System.Drawing.Point(575, 33);
+            this.txtSDT.Name = "txtSDT";
+            this.txtSDT.Size = new System.Drawing.Size(137, 20);
+            this.txtSDT.TabIndex = 2;
+            // 
+            // pNoiDung
+            // 
+            this.pNoiDung.Controls.Add(this.panel1);
+            this.pNoiDung.Location = new System.Drawing.Point(3, 60);
+            this.pNoiDung.Name = "pNoiDung";
+            this.pNoiDung.Size = new System.Drawing.Size(876, 486);
+            this.pNoiDung.TabIndex = 9;
             // 
             // fBaoCaoThongKe
             // 
@@ -296,8 +299,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.btDatVe)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.pNoiDung.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvBaoCao)).EndInit();
+            this.pNoiDung.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

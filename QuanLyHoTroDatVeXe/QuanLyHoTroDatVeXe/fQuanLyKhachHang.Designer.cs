@@ -63,6 +63,7 @@
             this.txtSDT = new System.Windows.Forms.TextBox();
             this.pMenu = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.btThoat)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btBaoCao)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btXe)).BeginInit();
@@ -74,12 +75,13 @@
             this.panel1.SuspendLayout();
             this.pMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // txtHoTen
             // 
             this.txtHoTen.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtHoTen.Location = new System.Drawing.Point(144, 78);
+            this.txtHoTen.Location = new System.Drawing.Point(112, 54);
             this.txtHoTen.Name = "txtHoTen";
             this.txtHoTen.Size = new System.Drawing.Size(157, 22);
             this.txtHoTen.TabIndex = 12;
@@ -88,7 +90,7 @@
             // 
             this.lb1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lb1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb1.Location = new System.Drawing.Point(70, 43);
+            this.lb1.Location = new System.Drawing.Point(39, 26);
             this.lb1.Name = "lb1";
             this.lb1.Size = new System.Drawing.Size(68, 22);
             this.lb1.TabIndex = 11;
@@ -110,7 +112,7 @@
             // 
             this.label2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(70, 114);
+            this.label2.Location = new System.Drawing.Point(311, 11);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(68, 22);
             this.label2.TabIndex = 11;
@@ -167,7 +169,7 @@
             // txtCMND
             // 
             this.txtCMND.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCMND.Location = new System.Drawing.Point(144, 113);
+            this.txtCMND.Location = new System.Drawing.Point(385, 12);
             this.txtCMND.Name = "txtCMND";
             this.txtCMND.Size = new System.Drawing.Size(157, 22);
             this.txtCMND.TabIndex = 12;
@@ -224,7 +226,7 @@
             // 
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(70, 78);
+            this.label1.Location = new System.Drawing.Point(38, 53);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(68, 22);
             this.label1.TabIndex = 11;
@@ -232,22 +234,29 @@
             // 
             // btXoa
             // 
-            this.btXoa.Location = new System.Drawing.Point(690, 114);
+            this.btXoa.BackColor = System.Drawing.Color.Orange;
+            this.btXoa.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btXoa.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btXoa.Location = new System.Drawing.Point(755, 8);
             this.btXoa.Name = "btXoa";
             this.btXoa.Size = new System.Drawing.Size(101, 40);
             this.btXoa.TabIndex = 6;
             this.btXoa.Text = "Xoá";
-            this.btXoa.UseVisualStyleBackColor = true;
+            this.btXoa.UseVisualStyleBackColor = false;
             this.btXoa.Click += new System.EventHandler(this.BtXoa_Click);
             // 
             // btSua
             // 
-            this.btSua.Location = new System.Drawing.Point(690, 68);
+            this.btSua.BackColor = System.Drawing.Color.Orange;
+            this.btSua.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btSua.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btSua.ForeColor = System.Drawing.Color.Black;
+            this.btSua.Location = new System.Drawing.Point(648, 8);
             this.btSua.Name = "btSua";
             this.btSua.Size = new System.Drawing.Size(101, 40);
             this.btSua.TabIndex = 6;
             this.btSua.Text = "Sửa";
-            this.btSua.UseVisualStyleBackColor = true;
+            this.btSua.UseVisualStyleBackColor = false;
             this.btSua.Click += new System.EventHandler(this.BtSua_Click);
             // 
             // btKhachHang
@@ -275,27 +284,33 @@
             // 
             // btThem
             // 
-            this.btThem.Location = new System.Drawing.Point(690, 24);
+            this.btThem.BackColor = System.Drawing.Color.Orange;
+            this.btThem.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btThem.FlatAppearance.BorderSize = 0;
+            this.btThem.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btThem.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btThem.Location = new System.Drawing.Point(541, 8);
             this.btThem.Name = "btThem";
             this.btThem.Size = new System.Drawing.Size(101, 40);
             this.btThem.TabIndex = 6;
             this.btThem.Text = "Thêm ";
-            this.btThem.UseVisualStyleBackColor = true;
+            this.btThem.UseVisualStyleBackColor = false;
             this.btThem.Click += new System.EventHandler(this.BtThem_Click);
             // 
             // dgvKhachHang
             // 
             this.dgvKhachHang.BackgroundColor = System.Drawing.Color.Lavender;
             this.dgvKhachHang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvKhachHang.Location = new System.Drawing.Point(20, 201);
+            this.dgvKhachHang.Location = new System.Drawing.Point(20, 122);
             this.dgvKhachHang.MultiSelect = false;
             this.dgvKhachHang.Name = "dgvKhachHang";
             this.dgvKhachHang.RowHeadersWidth = 102;
-            this.dgvKhachHang.Size = new System.Drawing.Size(835, 263);
+            this.dgvKhachHang.Size = new System.Drawing.Size(835, 288);
             this.dgvKhachHang.TabIndex = 2;
             // 
             // pNoiDung
             // 
+            this.pNoiDung.Controls.Add(this.panel2);
             this.pNoiDung.Controls.Add(this.dgvKhachHang);
             this.pNoiDung.Controls.Add(this.listView1);
             this.pNoiDung.Controls.Add(this.panel1);
@@ -307,9 +322,9 @@
             // listView1
             // 
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(8, 189);
+            this.listView1.Location = new System.Drawing.Point(8, 112);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(860, 285);
+            this.listView1.Size = new System.Drawing.Size(860, 308);
             this.listView1.TabIndex = 1;
             this.listView1.UseCompatibleStateImageBehavior = false;
             // 
@@ -329,18 +344,15 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.lb1);
-            this.panel1.Controls.Add(this.btXoa);
-            this.panel1.Controls.Add(this.btSua);
-            this.panel1.Controls.Add(this.btThem);
             this.panel1.Location = new System.Drawing.Point(8, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(860, 180);
+            this.panel1.Size = new System.Drawing.Size(860, 103);
             this.panel1.TabIndex = 0;
             // 
             // txtGioiTinh
             // 
             this.txtGioiTinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtGioiTinh.Location = new System.Drawing.Point(458, 31);
+            this.txtGioiTinh.Location = new System.Drawing.Point(385, 40);
             this.txtGioiTinh.Name = "txtGioiTinh";
             this.txtGioiTinh.Size = new System.Drawing.Size(157, 22);
             this.txtGioiTinh.TabIndex = 22;
@@ -348,7 +360,7 @@
             // txtTenDN
             // 
             this.txtTenDN.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTenDN.Location = new System.Drawing.Point(458, 129);
+            this.txtTenDN.Location = new System.Drawing.Point(659, 55);
             this.txtTenDN.Name = "txtTenDN";
             this.txtTenDN.Size = new System.Drawing.Size(157, 22);
             this.txtTenDN.TabIndex = 21;
@@ -357,7 +369,7 @@
             // 
             this.label11.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(375, 129);
+            this.label11.Location = new System.Drawing.Point(576, 55);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(77, 22);
             this.label11.TabIndex = 20;
@@ -366,7 +378,7 @@
             // txtEmail
             // 
             this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmail.Location = new System.Drawing.Point(458, 96);
+            this.txtEmail.Location = new System.Drawing.Point(659, 27);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(157, 22);
             this.txtEmail.TabIndex = 17;
@@ -374,7 +386,7 @@
             // txtDiaChi
             // 
             this.txtDiaChi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDiaChi.Location = new System.Drawing.Point(458, 66);
+            this.txtDiaChi.Location = new System.Drawing.Point(385, 68);
             this.txtDiaChi.Name = "txtDiaChi";
             this.txtDiaChi.Size = new System.Drawing.Size(157, 22);
             this.txtDiaChi.TabIndex = 18;
@@ -383,7 +395,7 @@
             // 
             this.label10.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(375, 31);
+            this.label10.Location = new System.Drawing.Point(302, 39);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(77, 22);
             this.label10.TabIndex = 13;
@@ -393,7 +405,7 @@
             // 
             this.label9.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(375, 95);
+            this.label9.Location = new System.Drawing.Point(576, 27);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(77, 22);
             this.label9.TabIndex = 14;
@@ -403,7 +415,7 @@
             // 
             this.label3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(375, 61);
+            this.label3.Location = new System.Drawing.Point(302, 67);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(77, 22);
             this.label3.TabIndex = 15;
@@ -412,7 +424,7 @@
             // txtSDT
             // 
             this.txtSDT.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSDT.Location = new System.Drawing.Point(144, 43);
+            this.txtSDT.Location = new System.Drawing.Point(112, 26);
             this.txtSDT.Name = "txtSDT";
             this.txtSDT.Size = new System.Drawing.Size(157, 22);
             this.txtSDT.TabIndex = 12;
@@ -446,6 +458,16 @@
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.btThem);
+            this.panel2.Controls.Add(this.btSua);
+            this.panel2.Controls.Add(this.btXoa);
+            this.panel2.Location = new System.Drawing.Point(8, 426);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(859, 57);
+            this.panel2.TabIndex = 3;
+            // 
             // fQuanLyKhachHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -470,6 +492,7 @@
             this.pMenu.ResumeLayout(false);
             this.pMenu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -510,5 +533,6 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox txtGioiTinh;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Panel panel2;
     }
 }
