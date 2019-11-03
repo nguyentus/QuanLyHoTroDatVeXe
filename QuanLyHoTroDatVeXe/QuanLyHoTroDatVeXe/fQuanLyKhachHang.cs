@@ -147,8 +147,8 @@ namespace QuanLyHoTroDatVeXe
 
         private void BtXoa_Click(object sender, EventArgs e)
         {
-            string sdt = txtSDT.Text;
-            if (sdt == "")
+            int sdt = int.Parse(txtSDT.Text);
+            if (sdt == 0)
                 MessageBox.Show("Bạn chưa chọn khách hàng", "Xóa khách hàng", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             else
             {

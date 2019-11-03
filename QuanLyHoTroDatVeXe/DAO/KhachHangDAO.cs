@@ -65,10 +65,11 @@ namespace DAO
             return result > 0;
         }
         //xóa khách hàng bằng số điện thoại
-        public void xoaKHBangSDT(string sdt)
+        public bool xoaKHBangSDT(int sdt)
         {
             string query = "DELETE dbo.KhachHang WHERE soDienThoai = " + sdt;
-            DataProvider.Instance.ExecuteNonQuery(query);
+            int result = DataProvider.Instance.ExecuteNonQuery(query);
+            return result > 0;
         }
     }
 }

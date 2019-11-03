@@ -52,6 +52,7 @@
   <ItemGroup>
     <Compile Include="TestQuanLyChuyenDi.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestQuanLyKhachHang.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
