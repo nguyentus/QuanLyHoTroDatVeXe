@@ -39,7 +39,7 @@ namespace QuanLyHoTroDatVeXe
             dgvChuyenDi.Columns[2].Width = 108;
             dgvChuyenDi.Columns[1].HeaderText = "Ngày đi";
             dgvChuyenDi.Columns[1].Width = 108;
-            dgvChuyenDi.Columns[3].HeaderText = "Nới xuất phát";
+            dgvChuyenDi.Columns[3].HeaderText = "Nơi xuất phát";
             dgvChuyenDi.Columns[3].Width = 108;
             dgvChuyenDi.Columns[4].HeaderText = "Điểm đến";
             dgvChuyenDi.Columns[4].Width = 108;

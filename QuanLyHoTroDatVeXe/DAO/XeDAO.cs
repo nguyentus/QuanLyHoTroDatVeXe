@@ -39,8 +39,8 @@ namespace DAO
         public bool themXe(string bienSo, string taiXe, int sdtTaiXe, string tenXe)
         {
             int result = DataProvider.Instance.ExecuteNonQuery("themXe '" + bienSo 
-                                                            + "', '" + taiXe + "' ,'" 
-                                                            + sdtTaiXe + "', '" + tenXe +"'");
+                                                            + "', N'" + taiXe + "' ,'" 
+                                                            + sdtTaiXe + "', N'" + tenXe +"'");
             return result > 0;
         }
 

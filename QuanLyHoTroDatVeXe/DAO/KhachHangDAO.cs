@@ -52,13 +52,13 @@ namespace DAO
         //thêm 1 khách hàng vô danh sách khách hàng
         public bool themKH(int sdt, int cnmd, string ht, string gt, string dc, string email)
         {
-            int result = DataProvider.Instance.ExecuteNonQuery("themKH " + sdt +", " + cnmd + ", N'" + ht + "', N'" + gt + "', N'" + dc + "', '" + email + "', '");
+            int result = DataProvider.Instance.ExecuteNonQuery("themKH " + sdt +", " + cnmd + ", N'" + ht + "', N'" + gt + "', N'" + dc + "', '" + email + "'");
             return result > 0;
         }
         //sửa thông tin khách hàng bằng số điện thoại
         public bool suaKHBangSDT(int sdt, int cmnd, string ht, string gt, string dc, string email)
         {
-            string query = "UPDATE dbo.KhachHang SET CMND =" + cmnd + ", hoTen =N'" + ht 
+            string query = "UPDATE dbo.KhachHang SET CMND =" + cmnd + ", hoTen = N'" + ht 
                     + "', gioiTinh = N'" + gt + "', diaChi = N'" + dc + "', email ='" + email 
                     + "' WHERE soDienThoai = " + sdt;
             int result = DataProvider.Instance.ExecuteNonQuery(query);

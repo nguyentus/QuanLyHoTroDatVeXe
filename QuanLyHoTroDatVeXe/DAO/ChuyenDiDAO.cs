@@ -51,7 +51,7 @@ namespace DAO
         //thêm chuyến đi vào danh sách
         public bool themChuyenDi(string gioDi, string ngayDi, string diemDi, string diemDen, double giaVe, string bienSo)
         {
-            int result = DataProvider.Instance.ExecuteNonQuery("themChuyenDi '" + gioDi + "', '" + ngayDi + "', '" + diemDi + "', '" + diemDen + "', " + giaVe + ", '" + bienSo + "'");
+            int result = DataProvider.Instance.ExecuteNonQuery("themChuyenDi '" + gioDi + "', '" + ngayDi + "', N'" + diemDi + "', N'" + diemDen + "', " + giaVe + ", '" + bienSo + "'");
             return result > 0;
         }
 
