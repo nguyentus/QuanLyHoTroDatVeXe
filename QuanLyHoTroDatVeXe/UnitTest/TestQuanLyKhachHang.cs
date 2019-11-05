@@ -59,7 +59,7 @@ namespace UnitTest
         public void TestCapNhatKhachHangVoiSoDienThoaiKhongTonTai()
         {
             bool expected = true;
-            bool actual = KhachHangDAO.Instance.suaKHBangSDT(886413978, 345543678, "Nguyễn Tẹo", "Nam", "Cần Giuộc", "nguyenteo123@gmail.com");
+            bool actual = KhachHangDAO.Instance.suaKHBangSDT(886413978, 345543678, "Nguyễn Tẹo", "Nữ", "Cần Giuộc", "nguyenteo123@gmail.com");
             Assert.AreEqual(expected, actual);
         }
     }
