@@ -131,7 +131,7 @@ GO
 themKH 912839740, 251123456, N'Trịnh Hoàng Yến', N'Nũ', 'tp.HCM', 'yen.th@gmail.com'
 GO
 --Tài khoản nhân viên
-INSERT INTO TaiKhoan (tenDangNhap, matKhau, loaiTaiKhoan, soDienThoai) ) VALUES( 'tu', '1', 1, 912839742)
+INSERT INTO TaiKhoan (tenDangNhap, matKhau, loaiTaiKhoan, soDienThoai) VALUES( 'tu', '1', 1, 912839742)
 GO
 --Tài khoản khách hàng
 INSERT INTO TaiKhoan (tenDangNhap, matKhau, loaiTaiKhoan, soDienThoai) VALUES ( 'yen', '1', 0, 912839740)
