@@ -19,3 +19,4 @@ E:\_STUDY\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\DTO\obj\Debug\DTO.csprojAssembly
 E:\_STUDY\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
 E:\_STUDY\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\DTO\obj\Debug\DTO.dll
 E:\_STUDY\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\DTO\obj\Debug\DTO.pdb
+D:\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\DTO\obj\Debug\DTO.csprojAssemblyReference.cache

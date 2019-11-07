@@ -55,25 +55,45 @@ namespace QuanLyHoTroDatVeXe
         }
         void hienThiDiemDi()
         {
-            List<ChuyenDi> dsDiemDi = ChuyenDiDAO.Instance.LayDsChuyenDi();
-
-            foreach (ChuyenDi item in dsDiemDi)
+            List<ChuyenDi> dsChuyen = ChuyenDiDAO.Instance.LayDsChuyenDi();
+            for (int i = 0; i < dsChuyen.Count-1; i++)
             {
+                for (int j = i+1; j < dsChuyen.Count; j++)
+                {
+                    if (dsChuyen.ElementAt(i).DiemDi.Contains(dsChuyen.ElementAt(j).DiemDi))
+                        dsChuyen.RemoveAt(j);
+                }
             }
 
-            cbDiemDi.DataSource = dsDiemDi;
+            cbDiemDi.DataSource = dsChuyen;
             cbDiemDi.DisplayMember = "diemDi";
         }
         void hienThiDiemDen()
         {
-            List<ChuyenDi> dsDiemDen = ChuyenDiDAO.Instance.LayDsChuyenDi();
-            cbDiemDen.DataSource = dsDiemDen;
+            List<ChuyenDi> dsChuyen = ChuyenDiDAO.Instance.LayDsChuyenDi();
+            for (int i = 0; i < dsChuyen.Count - 1; i++)
+            {
+                for (int j = i + 1; j < dsChuyen.Count; j++)
+                {
+                    if (dsChuyen.ElementAt(i).DiemDen.Contains(dsChuyen.ElementAt(j).DiemDen))
+                        dsChuyen.RemoveAt(j);
+                }
+            }
+            cbDiemDen.DataSource = dsChuyen;
             cbDiemDen.DisplayMember = "diemDen";
         }
         void hienThiGioDi()
         {
-            List<ChuyenDi> dsChuyenDi = ChuyenDiDAO.Instance.LayDsChuyenDi();
-            cbGio.DataSource = dsChuyenDi;
+            List<ChuyenDi> dsChuyen = ChuyenDiDAO.Instance.LayDsChuyenDi();
+            for (int i = 0; i < dsChuyen.Count - 1; i++)
+            {
+                for (int j = i + 1; j < dsChuyen.Count; j++)
+                {
+                    if (dsChuyen.ElementAt(i).GioDi == dsChuyen.ElementAt(j).GioDi )
+                        dsChuyen.RemoveAt(j);
+                }
+            }
+            cbGio.DataSource = dsChuyen;
             cbGio.DisplayMember = "gioDi";
         }
         #endregion

@@ -130,9 +130,10 @@ GO
 themKH 912839740, 251123456, N'Trịnh Hoàng Yến', N'Nũ', 'tp.HCM', 'yen.th@gmail.com'
 GO
 --Tài khoản nhân viên
-INSERT INTO TaiKhoan (tenDangNhap, matKhau, loaiTaiKhoan, soDienThoai) VALUES( 'tu', '1', 1, 912839742),
-																				( 'yen', '1', 0, 912839740)
+INSERT INTO TaiKhoan VALUES( 'tu', '1', 1, 912839742),
+							( 'yen', '1', 0, 912839740)
 GO
+
 --Vé xe
 dbo.themVeXe 918236031,102, 'A01', '10-24-2019'
 GO
