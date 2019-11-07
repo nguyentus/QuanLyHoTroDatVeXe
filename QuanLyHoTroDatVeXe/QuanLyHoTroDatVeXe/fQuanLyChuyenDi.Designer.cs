@@ -463,7 +463,7 @@
             this.Controls.Add(this.pNoiDung);
             this.Name = "fQuanLyChuyenDi";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "fQuanLyChuyenDi";
+            this.Text = "Quản lý chuyến đi";
             ((System.ComponentModel.ISupportInitialize)(this.btThoat)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btKhachHang)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btBaoCao)).EndInit();

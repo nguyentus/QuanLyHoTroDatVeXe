@@ -287,7 +287,7 @@
             this.Controls.Add(this.pNoiDung);
             this.Name = "fBaoCaoThongKe";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "fBaoCaoThongKe";
+            this.Text = "Báo cáo thống kê";
             this.pMenu.ResumeLayout(false);
             this.pMenu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

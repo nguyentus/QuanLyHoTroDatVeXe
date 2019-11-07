@@ -455,7 +455,7 @@
             this.Controls.Add(this.pMenu);
             this.Name = "fQuanLyKhachHang";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "fQuanLyKhachHang";
+            this.Text = "Quản lý khách hàng";
             ((System.ComponentModel.ISupportInitialize)(this.btThoat)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btBaoCao)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btXe)).EndInit();

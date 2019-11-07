@@ -43,6 +43,10 @@
             this.btChuyenDi = new System.Windows.Forms.PictureBox();
             this.btDatVe = new System.Windows.Forms.PictureBox();
             this.pNoiDung = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.btXoa = new System.Windows.Forms.Button();
+            this.btThem = new System.Windows.Forms.Button();
+            this.btSua = new System.Windows.Forms.Button();
             this.dgvXe = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.txtTenXe = new System.Windows.Forms.TextBox();
@@ -53,11 +57,7 @@
             this.txtBienSo = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.btXoa = new System.Windows.Forms.Button();
-            this.btSua = new System.Windows.Forms.Button();
-            this.btThem = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.pMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btThoat)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btKhachHang)).BeginInit();
@@ -66,10 +66,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.btChuyenDi)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btDatVe)).BeginInit();
             this.pNoiDung.SuspendLayout();
+            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvXe)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // listView1
@@ -242,6 +242,55 @@
             this.pNoiDung.Size = new System.Drawing.Size(876, 483);
             this.pNoiDung.TabIndex = 5;
             // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.btXoa);
+            this.panel2.Controls.Add(this.btThem);
+            this.panel2.Controls.Add(this.btSua);
+            this.panel2.Location = new System.Drawing.Point(8, 421);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(860, 50);
+            this.panel2.TabIndex = 3;
+            // 
+            // btXoa
+            // 
+            this.btXoa.BackColor = System.Drawing.Color.Orange;
+            this.btXoa.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btXoa.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btXoa.Location = new System.Drawing.Point(754, 5);
+            this.btXoa.Name = "btXoa";
+            this.btXoa.Size = new System.Drawing.Size(101, 40);
+            this.btXoa.TabIndex = 6;
+            this.btXoa.Text = "Xoá";
+            this.btXoa.UseVisualStyleBackColor = false;
+            this.btXoa.Click += new System.EventHandler(this.btXoa_Click);
+            // 
+            // btThem
+            // 
+            this.btThem.BackColor = System.Drawing.Color.Orange;
+            this.btThem.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btThem.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btThem.Location = new System.Drawing.Point(540, 5);
+            this.btThem.Name = "btThem";
+            this.btThem.Size = new System.Drawing.Size(101, 40);
+            this.btThem.TabIndex = 6;
+            this.btThem.Text = "Thêm ";
+            this.btThem.UseVisualStyleBackColor = false;
+            this.btThem.Click += new System.EventHandler(this.btThem_Click);
+            // 
+            // btSua
+            // 
+            this.btSua.BackColor = System.Drawing.Color.Orange;
+            this.btSua.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btSua.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btSua.Location = new System.Drawing.Point(647, 5);
+            this.btSua.Name = "btSua";
+            this.btSua.Size = new System.Drawing.Size(101, 40);
+            this.btSua.TabIndex = 6;
+            this.btSua.Text = "Sửa";
+            this.btSua.UseVisualStyleBackColor = false;
+            this.btSua.Click += new System.EventHandler(this.btSua_Click);
+            // 
             // dgvXe
             // 
             this.dgvXe.BackgroundColor = System.Drawing.Color.Lavender;
@@ -343,45 +392,6 @@
             this.label1.Text = "Biển số:";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // btXoa
-            // 
-            this.btXoa.BackColor = System.Drawing.Color.Orange;
-            this.btXoa.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btXoa.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btXoa.Location = new System.Drawing.Point(754, 5);
-            this.btXoa.Name = "btXoa";
-            this.btXoa.Size = new System.Drawing.Size(101, 40);
-            this.btXoa.TabIndex = 6;
-            this.btXoa.Text = "Xoá";
-            this.btXoa.UseVisualStyleBackColor = false;
-            this.btXoa.Click += new System.EventHandler(this.btXoa_Click);
-            // 
-            // btSua
-            // 
-            this.btSua.BackColor = System.Drawing.Color.Orange;
-            this.btSua.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btSua.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btSua.Location = new System.Drawing.Point(647, 5);
-            this.btSua.Name = "btSua";
-            this.btSua.Size = new System.Drawing.Size(101, 40);
-            this.btSua.TabIndex = 6;
-            this.btSua.Text = "Sửa";
-            this.btSua.UseVisualStyleBackColor = false;
-            this.btSua.Click += new System.EventHandler(this.btSua_Click);
-            // 
-            // btThem
-            // 
-            this.btThem.BackColor = System.Drawing.Color.Orange;
-            this.btThem.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btThem.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btThem.Location = new System.Drawing.Point(540, 5);
-            this.btThem.Name = "btThem";
-            this.btThem.Size = new System.Drawing.Size(101, 40);
-            this.btThem.TabIndex = 6;
-            this.btThem.Text = "Thêm ";
-            this.btThem.UseVisualStyleBackColor = false;
-            this.btThem.Click += new System.EventHandler(this.btThem_Click);
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -391,16 +401,6 @@
             this.pictureBox1.Size = new System.Drawing.Size(160, 5);
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.btXoa);
-            this.panel2.Controls.Add(this.btThem);
-            this.panel2.Controls.Add(this.btSua);
-            this.panel2.Location = new System.Drawing.Point(8, 421);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(860, 50);
-            this.panel2.TabIndex = 3;
             // 
             // fQuanLyXe
             // 
@@ -412,7 +412,7 @@
             this.Controls.Add(this.pNoiDung);
             this.Name = "fQuanLyXe";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "fQuanLyXe";
+            this.Text = "Quản lý xe";
             this.pMenu.ResumeLayout(false);
             this.pMenu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btThoat)).EndInit();
@@ -422,11 +422,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.btChuyenDi)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btDatVe)).EndInit();
             this.pNoiDung.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvXe)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
