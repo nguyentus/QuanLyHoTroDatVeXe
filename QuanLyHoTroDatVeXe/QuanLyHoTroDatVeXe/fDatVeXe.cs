@@ -56,6 +56,11 @@ namespace QuanLyHoTroDatVeXe
         void hienThiDiemDi()
         {
             List<ChuyenDi> dsDiemDi = ChuyenDiDAO.Instance.LayDsChuyenDi();
+
+            foreach (ChuyenDi item in dsDiemDi)
+            {
+            }
+
             cbDiemDi.DataSource = dsDiemDi;
             cbDiemDi.DisplayMember = "diemDi";
         }

@@ -43,8 +43,7 @@ CREATE TABLE TaiKhoan
 	tenDangNhap VARCHAR(10) PRIMARY KEY,
 	matKhau VARCHAR(20) NOT NULL,
 	loaiTaiKhoan INT NOT NULL,	--tài khoản KH: 0, nhân viên: 1
-	soDienThoai INT,
-	FOREIGN KEY (soDienThoai) REFERENCES KhachHang (soDienThoai)
+	soDienThoai INT
 )
 GO
 --Khách hàng đặt vé xe
@@ -131,14 +130,11 @@ GO
 themKH 912839740, 251123456, N'Trịnh Hoàng Yến', N'Nũ', 'tp.HCM', 'yen.th@gmail.com'
 GO
 --Tài khoản nhân viên
-INSERT INTO TaiKhoan (tenDangNhap, matKhau, loaiTaiKhoan, soDienThoai) VALUES( 'tu', '1', 1, 912839742)
-GO
---Tài khoản khách hàng
-INSERT INTO TaiKhoan (tenDangNhap, matKhau, loaiTaiKhoan, soDienThoai) VALUES ( 'yen', '1', 0, 912839740)
+INSERT INTO TaiKhoan (tenDangNhap, matKhau, loaiTaiKhoan, soDienThoai) VALUES( 'tu', '1', 1, 912839742),
+																				( 'yen', '1', 0, 912839740)
 GO
 --Vé xe
 dbo.themVeXe 918236031,102, 'A01', '10-24-2019'
 GO
 dbo.themVeXe 912839740,102, 'A02', '10-24-2019'
 GO
-
