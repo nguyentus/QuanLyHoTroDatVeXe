@@ -3,6 +3,8 @@ GO
 USE QuanLyHoTroDatVe
 GO
 
+SELECT * FROM dbo.ChuyenDi
+
 ---Table
 --Xe
 CREATE TABLE Xe

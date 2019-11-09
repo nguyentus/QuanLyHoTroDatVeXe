@@ -9,10 +9,13 @@ namespace DTO
 {
     public class ChuyenDi
     {
-        private int maCD;
-        private DateTime ngayDi;
-        private string gioDi, diemDi, diemDen, bienSo;
-        private double giaVe;
+        public int MaCD { get; set; }
+        public DateTime NgayDi { get; set; }
+        public string GioDi { get; set; }
+        public string DiemDi { get; set; }
+        public string DiemDen { get; set; }
+        public string BienSo { get; set; }
+        public double GiaVe { get; set; }
 
         public ChuyenDi() { }
         public ChuyenDi(DataRow row)
@@ -26,12 +29,5 @@ namespace DTO
             this.BienSo = row["bienSo"].ToString();
         }
 
-        public int MaCD { get => maCD; set => maCD = value; }
-        public DateTime NgayDi { get => ngayDi; set => ngayDi = value; }
-        public string GioDi { get => gioDi; set => gioDi = value; }
-        public string DiemDi { get => diemDi; set => diemDi = value; }
-        public string DiemDen { get => diemDen; set => diemDen = value; }
-        public string BienSo { get => bienSo; set => bienSo = value; }
-        public double GiaVe { get => giaVe; set => giaVe = value; }
     }
 }
