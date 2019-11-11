@@ -56,9 +56,10 @@ namespace DAO
         }
 
         //xóa xe bằng biển số
-        public void xoaXeBangBienSo(string bienSo)
+        public bool xoaXeBangBienSo(string bienSo)
         {
-            DataProvider.Instance.ExecuteNonQuery("DELETE dbo.Xe WHERE bienSo = '" + bienSo +"'");
+            int result = DataProvider.Instance.ExecuteNonQuery("DELETE dbo.Xe WHERE bienSo = '" + bienSo +"'");
+            return result > 0;
         }
 
         //sửa thông tin

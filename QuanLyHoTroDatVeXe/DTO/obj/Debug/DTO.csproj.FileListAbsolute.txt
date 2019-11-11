@@ -20,3 +20,8 @@ E:\_STUDY\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\DTO\obj\Debug\DTO.csproj.CoreCom
 E:\_STUDY\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\DTO\obj\Debug\DTO.dll
 E:\_STUDY\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\DTO\obj\Debug\DTO.pdb
 D:\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+C:\Users\Nguyen Tu\Desktop\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\DTO\bin\Debug\DTO.dll
+C:\Users\Nguyen Tu\Desktop\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\DTO\bin\Debug\DTO.pdb
+C:\Users\Nguyen Tu\Desktop\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+C:\Users\Nguyen Tu\Desktop\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\DTO\obj\Debug\DTO.dll
+C:\Users\Nguyen Tu\Desktop\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\DTO\obj\Debug\DTO.pdb
