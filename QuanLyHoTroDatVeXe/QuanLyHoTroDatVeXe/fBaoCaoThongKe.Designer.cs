@@ -223,7 +223,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Controls.Add(this.dgvBaoCao);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.btTim);
@@ -240,7 +240,7 @@
             this.dgvBaoCao.Location = new System.Drawing.Point(13, 8);
             this.dgvBaoCao.Name = "dgvBaoCao";
             this.dgvBaoCao.RowHeadersWidth = 72;
-            this.dgvBaoCao.Size = new System.Drawing.Size(497, 452);
+            this.dgvBaoCao.Size = new System.Drawing.Size(497, 436);
             this.dgvBaoCao.TabIndex = 12;
             // 
             // label1
@@ -254,12 +254,12 @@
             // 
             // btTim
             // 
-            this.btTim.BackColor = System.Drawing.Color.Orange;
+            this.btTim.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
             this.btTim.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btTim.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btTim.Location = new System.Drawing.Point(733, 22);
+            this.btTim.Location = new System.Drawing.Point(723, 27);
             this.btTim.Name = "btTim";
-            this.btTim.Size = new System.Drawing.Size(101, 40);
+            this.btTim.Size = new System.Drawing.Size(101, 31);
             this.btTim.TabIndex = 9;
             this.btTim.Text = "Tìm";
             this.btTim.UseVisualStyleBackColor = false;
@@ -274,20 +274,23 @@
             // 
             // pNoiDung
             // 
-            this.pNoiDung.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.pNoiDung.BackColor = System.Drawing.Color.Transparent;
             this.pNoiDung.Controls.Add(this.panel1);
             this.pNoiDung.Location = new System.Drawing.Point(3, 60);
             this.pNoiDung.Name = "pNoiDung";
-            this.pNoiDung.Size = new System.Drawing.Size(876, 497);
+            this.pNoiDung.Size = new System.Drawing.Size(879, 507);
             this.pNoiDung.TabIndex = 9;
             // 
             // fBaoCaoThongKe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(884, 561);
             this.Controls.Add(this.pMenu);
             this.Controls.Add(this.pNoiDung);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "fBaoCaoThongKe";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Báo cáo thống kê";
@@ -322,12 +325,12 @@
         private System.Windows.Forms.PictureBox btXe;
         private System.Windows.Forms.PictureBox btChuyenDi;
         private System.Windows.Forms.PictureBox btDatVe;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel pNoiDung;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox txtSDT;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.DataGridView dgvBaoCao;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btTim;
-        private System.Windows.Forms.DataGridView dgvBaoCao;
+        private System.Windows.Forms.TextBox txtSDT;
+        private System.Windows.Forms.Panel pNoiDung;
     }
 }

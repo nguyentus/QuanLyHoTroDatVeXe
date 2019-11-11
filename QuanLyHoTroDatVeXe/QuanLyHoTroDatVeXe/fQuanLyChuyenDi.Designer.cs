@@ -238,7 +238,7 @@
             // 
             // pNoiDung
             // 
-            this.pNoiDung.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.pNoiDung.BackColor = System.Drawing.Color.Transparent;
             this.pNoiDung.Controls.Add(this.dgvChuyenDi);
             this.pNoiDung.Controls.Add(this.btThem);
             this.pNoiDung.Controls.Add(this.panel1);
@@ -261,10 +261,10 @@
             // 
             // btThem
             // 
-            this.btThem.BackColor = System.Drawing.Color.Orange;
+            this.btThem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
             this.btThem.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btThem.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btThem.Location = new System.Drawing.Point(558, 443);
+            this.btThem.Location = new System.Drawing.Point(553, 443);
             this.btThem.Name = "btThem";
             this.btThem.Size = new System.Drawing.Size(101, 40);
             this.btThem.TabIndex = 12;
@@ -274,6 +274,7 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Controls.Add(this.txtDiemDen);
             this.panel1.Controls.Add(this.txtDiemDi);
             this.panel1.Controls.Add(this.txtGio);
@@ -430,10 +431,10 @@
             // 
             // btXoa
             // 
-            this.btXoa.BackColor = System.Drawing.Color.Orange;
+            this.btXoa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
             this.btXoa.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btXoa.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btXoa.Location = new System.Drawing.Point(772, 443);
+            this.btXoa.Location = new System.Drawing.Point(767, 443);
             this.btXoa.Name = "btXoa";
             this.btXoa.Size = new System.Drawing.Size(101, 40);
             this.btXoa.TabIndex = 13;
@@ -443,10 +444,10 @@
             // 
             // btCapNhat
             // 
-            this.btCapNhat.BackColor = System.Drawing.Color.Orange;
+            this.btCapNhat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
             this.btCapNhat.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btCapNhat.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btCapNhat.Location = new System.Drawing.Point(665, 443);
+            this.btCapNhat.Location = new System.Drawing.Point(660, 443);
             this.btCapNhat.Name = "btCapNhat";
             this.btCapNhat.Size = new System.Drawing.Size(101, 40);
             this.btCapNhat.TabIndex = 14;
@@ -458,9 +459,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(884, 561);
             this.Controls.Add(this.pMenu);
             this.Controls.Add(this.pNoiDung);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "fQuanLyChuyenDi";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản lý chuyến đi";

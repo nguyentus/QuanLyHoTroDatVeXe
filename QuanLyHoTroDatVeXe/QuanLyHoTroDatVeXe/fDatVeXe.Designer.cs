@@ -390,6 +390,7 @@
             // 
             // pNoiDung
             // 
+            this.pNoiDung.BackColor = System.Drawing.Color.Transparent;
             this.pNoiDung.Controls.Add(this.panel3);
             this.pNoiDung.Controls.Add(this.panel2);
             this.pNoiDung.Controls.Add(this.pGhe);
@@ -400,7 +401,7 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panel3.BackColor = System.Drawing.Color.Transparent;
             this.panel3.Controls.Add(this.lbGia);
             this.panel3.Controls.Add(this.lbSoLuong);
             this.panel3.Controls.Add(this.lbGheDaChon);
@@ -505,7 +506,7 @@
             // 
             // btXacNhan
             // 
-            this.btXacNhan.BackColor = System.Drawing.Color.Orange;
+            this.btXacNhan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
             this.btXacNhan.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btXacNhan.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btXacNhan.ForeColor = System.Drawing.Color.Black;
@@ -612,7 +613,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panel2.BackColor = System.Drawing.Color.Transparent;
             this.panel2.Controls.Add(this.label10);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.pictureBox3);
@@ -665,7 +666,7 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Orange;
+            this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
             this.pictureBox2.Location = new System.Drawing.Point(217, 411);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(54, 48);
@@ -674,7 +675,7 @@
             // 
             // btTimChuyen
             // 
-            this.btTimChuyen.BackColor = System.Drawing.Color.Orange;
+            this.btTimChuyen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
             this.btTimChuyen.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btTimChuyen.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btTimChuyen.ForeColor = System.Drawing.Color.Black;
@@ -696,7 +697,7 @@
             // 
             // pGhe
             // 
-            this.pGhe.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.pGhe.BackColor = System.Drawing.Color.Transparent;
             this.pGhe.Controls.Add(this.btChon);
             this.pGhe.Controls.Add(this.grbGhe);
             this.pGhe.Controls.Add(this.lbGheDangChon);
@@ -709,7 +710,7 @@
             // 
             // btChon
             // 
-            this.btChon.BackColor = System.Drawing.Color.Orange;
+            this.btChon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
             this.btChon.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btChon.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btChon.ForeColor = System.Drawing.Color.Black;
@@ -918,16 +919,19 @@
             this.lbGheDangChon.ItemHeight = 20;
             this.lbGheDangChon.Location = new System.Drawing.Point(17, 375);
             this.lbGheDangChon.Name = "lbGheDangChon";
-            this.lbGheDangChon.Size = new System.Drawing.Size(115, 84);
+            this.lbGheDangChon.Size = new System.Drawing.Size(115, 64);
             this.lbGheDangChon.TabIndex = 9;
             // 
             // fDatVeXe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(884, 561);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(884, 547);
             this.Controls.Add(this.pMenu);
             this.Controls.Add(this.pNoiDung);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "fDatVeXe";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đặt vé xe";

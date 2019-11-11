@@ -231,10 +231,10 @@
             // 
             // btXoa
             // 
-            this.btXoa.BackColor = System.Drawing.Color.Orange;
+            this.btXoa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
             this.btXoa.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btXoa.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btXoa.Location = new System.Drawing.Point(755, 3);
+            this.btXoa.Location = new System.Drawing.Point(755, 12);
             this.btXoa.Name = "btXoa";
             this.btXoa.Size = new System.Drawing.Size(101, 40);
             this.btXoa.TabIndex = 6;
@@ -244,11 +244,11 @@
             // 
             // btSua
             // 
-            this.btSua.BackColor = System.Drawing.Color.Orange;
+            this.btSua.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
             this.btSua.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btSua.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btSua.ForeColor = System.Drawing.Color.Black;
-            this.btSua.Location = new System.Drawing.Point(648, 3);
+            this.btSua.Location = new System.Drawing.Point(648, 12);
             this.btSua.Name = "btSua";
             this.btSua.Size = new System.Drawing.Size(101, 40);
             this.btSua.TabIndex = 6;
@@ -280,12 +280,12 @@
             // 
             // btThem
             // 
-            this.btThem.BackColor = System.Drawing.Color.Orange;
+            this.btThem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
             this.btThem.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btThem.FlatAppearance.BorderSize = 0;
             this.btThem.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btThem.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btThem.Location = new System.Drawing.Point(541, 3);
+            this.btThem.Location = new System.Drawing.Point(541, 12);
             this.btThem.Name = "btThem";
             this.btThem.Size = new System.Drawing.Size(101, 40);
             this.btThem.TabIndex = 6;
@@ -306,7 +306,7 @@
             // 
             // pNoiDung
             // 
-            this.pNoiDung.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.pNoiDung.BackColor = System.Drawing.Color.Transparent;
             this.pNoiDung.Controls.Add(this.panel2);
             this.pNoiDung.Controls.Add(this.dgvKhachHang);
             this.pNoiDung.Controls.Add(this.panel1);
@@ -317,16 +317,18 @@
             // 
             // panel2
             // 
+            this.panel2.BackColor = System.Drawing.Color.Transparent;
             this.panel2.Controls.Add(this.btThem);
             this.panel2.Controls.Add(this.btSua);
             this.panel2.Controls.Add(this.btXoa);
             this.panel2.Location = new System.Drawing.Point(8, 437);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(859, 46);
+            this.panel2.Size = new System.Drawing.Size(859, 58);
             this.panel2.TabIndex = 3;
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Controls.Add(this.txtGioiTinh);
             this.panel1.Controls.Add(this.txtEmail);
             this.panel1.Controls.Add(this.txtDiaChi);
@@ -439,10 +441,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(884, 561);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pNoiDung);
             this.Controls.Add(this.pMenu);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "fQuanLyKhachHang";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản lý khách hàng";
