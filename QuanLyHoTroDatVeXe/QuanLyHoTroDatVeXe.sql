@@ -3,6 +3,8 @@ GO
 USE QuanLyHoTroDatVe
 GO
 
+SELECT * FROM dbo.ChuyenDi
+
 ---Table
 --Xe
 CREATE TABLE Xe
@@ -110,17 +112,17 @@ GO
 themXe '74L-98754', N'nguyễn Kim Thiện', 971528030, N'Toyota'
 GO
 --Chuyến đi
-themChuyenDi '5h00', '12-06-2019' , N'Đồng Nai', 'LongAn', 180000, '39F-81792' 
+themChuyenDi '5h00', '11-19-2019' , N'Đồng Nai', 'LongAn', 180000, '39F-81792' 
 GO
-themChuyenDi '6h00', '11-5-2019' , N'tp.Hồ Chí Minh', 'LongAn', 125000, '62M-53012' 
+themChuyenDi '6h00', '11-19-2019' , N'tp.HCM', 'LongAn', 125000, '62M-53012' 
 GO
-themChuyenDi '7h00', '11-3-2019' , N'tp.Hồ Chí Minh', N'Đồng Tháp', 125000, '48K-10054' 
+themChuyenDi '7h00', '11-20-2019' , N'Long An', N'Đồng Tháp', 125000, '48K-10054' 
 GO
-themChuyenDi '8h00', '11-7-2013' , N'tp.Hồ Chí Minh', N'Bảo Lộc', 250000, '66T-10054' 
+themChuyenDi '8h00', '11-20-2019' , N'Đồng Tháp', N'Bảo Lộc', 250000, '66T-10054' 
 GO
-themChuyenDi '9h00', '11-7-2013' , N'Đồng Nai', N'Bảo Lộc', 100000, '62L-10054' 
+themChuyenDi '14h00', '11-18-2019' , N'Long An', N'Bảo Lộc', 100000, '62L-10054' 
 GO
-themChuyenDi '10h00', '11-7-2013' , N'Đồng Nai', N'Đồng Tháp', 200000, '74L-98754' 
+themChuyenDi '15h00', '11-18-2019' , N'Bảo Lộc', N'Đồng Tháp', 200000, '74L-98754' 
 GO
 --Khách hàng
 themKH 918236031, 251123456, N'Phan Anh Khoa', 'Nam', 'tp.HCM', 'khoa.pa@gmail.com'
@@ -135,7 +137,11 @@ INSERT INTO TaiKhoan VALUES( 'tu', '1', 1, 912839742),
 GO
 
 --Vé xe
-dbo.themVeXe 918236031,102, 'A01', '10-24-2019'
+dbo.themVeXe 918236031, 102, 'A01', '11-17-2019'
 GO
-dbo.themVeXe 912839740,102, 'A02', '10-24-2019'
+dbo.themVeXe 912839740, 102, 'A02', '11-17-2019'
+GO
+dbo.themVeXe 123456789, 103, 'A07', '11-17-2019'
+GO
+dbo.themVeXe 918236031, 103, 'A12', '11-17-2019'
 GO

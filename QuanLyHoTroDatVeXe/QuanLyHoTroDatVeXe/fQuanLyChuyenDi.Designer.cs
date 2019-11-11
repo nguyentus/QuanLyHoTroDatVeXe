@@ -238,11 +238,11 @@
             // 
             // pNoiDung
             // 
+            this.pNoiDung.Controls.Add(this.dgvChuyenDi);
             this.pNoiDung.Controls.Add(this.btThem);
             this.pNoiDung.Controls.Add(this.panel1);
             this.pNoiDung.Controls.Add(this.btXoa);
             this.pNoiDung.Controls.Add(this.btCapNhat);
-            this.pNoiDung.Controls.Add(this.dgvChuyenDi);
             this.pNoiDung.Location = new System.Drawing.Point(3, 66);
             this.pNoiDung.Name = "pNoiDung";
             this.pNoiDung.Size = new System.Drawing.Size(876, 480);
@@ -448,11 +448,9 @@
             this.dgvChuyenDi.BackgroundColor = System.Drawing.Color.Lavender;
             this.dgvChuyenDi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvChuyenDi.Location = new System.Drawing.Point(8, 70);
-            this.dgvChuyenDi.MultiSelect = false;
             this.dgvChuyenDi.Name = "dgvChuyenDi";
-            this.dgvChuyenDi.RowHeadersWidth = 102;
             this.dgvChuyenDi.Size = new System.Drawing.Size(860, 361);
-            this.dgvChuyenDi.TabIndex = 7;
+            this.dgvChuyenDi.TabIndex = 15;
             // 
             // fQuanLyChuyenDi
             // 
@@ -496,7 +494,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.PictureBox btChuyenDi;
         private System.Windows.Forms.Panel pNoiDung;
-        private System.Windows.Forms.DataGridView dgvChuyenDi;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox txtMa;
         private System.Windows.Forms.Label label12;
@@ -516,5 +513,6 @@
         private System.Windows.Forms.TextBox txtDiemDi;
         private System.Windows.Forms.TextBox txtGio;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.DataGridView dgvChuyenDi;
     }
 }

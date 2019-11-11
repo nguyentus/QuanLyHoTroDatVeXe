@@ -9,13 +9,12 @@ namespace DTO
 {
     public class KhachHang
     {
-        private int soDienThoai;
-        private int cmnd;
-        private string hoTen;
-        private string gioiTinh;
-        private string diaChi;
-        private string email;
-
+        public int SoDienThoai { get; set; }
+        public int CMND { get; set; }
+        public string HoTen { get; set; }
+        public string GioiTinh { get; set; }
+        public string DiaChi { get; set; }
+        public string Email { get; set; }
         public KhachHang(int soDienThoai, int cMND, string hoTen, string gioiTinh, string diaChi, string email)
         {
             this.SoDienThoai = soDienThoai;
@@ -36,11 +35,5 @@ namespace DTO
             this.Email = row["email"].ToString();
         }
 
-        public int SoDienThoai { get => soDienThoai; set => soDienThoai = value; }
-        public int CMND { get => cmnd; set => cmnd = value; }
-        public string HoTen { get => hoTen; set => hoTen = value; }
-        public string GioiTinh { get => gioiTinh; set => gioiTinh = value; }
-        public string DiaChi { get => diaChi; set => diaChi = value; }
-        public string Email { get => email; set => email = value; }
     }
 }

@@ -35,6 +35,7 @@ namespace QuanLyHoTroDatVeXe
             dsChuyenDi.DataSource = ChuyenDiDAO.Instance.LayDsChuyenDi();
             dgvChuyenDi.Columns[0].HeaderText = "Mã Chuyến đi";
             dgvChuyenDi.Columns[0].Width = 108;
+
             dgvChuyenDi.Columns[2].HeaderText = "Giờ đi";
             dgvChuyenDi.Columns[2].Width = 108;
             dgvChuyenDi.Columns[1].HeaderText = "Ngày đi";
@@ -67,7 +68,7 @@ namespace QuanLyHoTroDatVeXe
             #endregion
 
             #region Events
-            private void BtThem_Click(object sender, EventArgs e)
+        private void BtThem_Click(object sender, EventArgs e)
         {
             try
             {
@@ -82,14 +83,27 @@ namespace QuanLyHoTroDatVeXe
                     MessageBox.Show("Bạn phải nhập đủ!", "Thêm chuyến đi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 else
                 {
-                    bool ketQua = ChuyenDiDAO.Instance.themChuyenDi(gioDi, ngayDi, diemDi, diemDen, giaVe, bienSo);
-                    if (ketQua)
-                    {
-                        MessageBox.Show("Thêm thành công!", "Thêm xe", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        hienThiDanhSachChuyenDi();
-                    }
-                    else
-                        MessageBox.Show("Thêm không thành công!", "Thêm chuyến đi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    int gio = int.Parse(gioDi.Substring(0, 1));
+                    int phut = int.Parse(gioDi.Substring(2));
+                    if( gio < 0 || gio > 24 || phut < 0 || phut > 60)
+                        MessageBox.Show("Giờ khởi hành không hợp lệ! Vui lòng kiểm tra lại", "Thêm chuyến đi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    else if(dtpNgay.Value < DateTime.Now)
+                            MessageBox.Show("Ngày đi không hợp lệ! Vui lòng kiểm tra lại", "Thêm chuyến đi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        else if( diemDi == diemDen)
+                                MessageBox.Show("Điểm đi và điểm đến không được trùng nhau! Vui lòng kiểm tra lại", "Thêm chuyến đi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            else if(giaVe <= 0)
+                                    MessageBox.Show("Giá vé không hợp lệ! Vui lòng kiểm tra lại", "Thêm chuyến đi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                else
+                                {
+                                    bool ketQua = ChuyenDiDAO.Instance.themChuyenDi(gioDi, ngayDi, diemDi, diemDen, giaVe, bienSo);
+                                    if (ketQua)
+                                    {
+                                        MessageBox.Show("Thêm thành công!", "Thêm xe", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                        hienThiDanhSachChuyenDi();
+                                    }
+                                    else
+                                        MessageBox.Show("Thêm không thành công!", "Thêm chuyến đi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                }
                 }
             }
             catch (Exception)
@@ -100,20 +114,45 @@ namespace QuanLyHoTroDatVeXe
 
         private void BtCapNhat_Click(object sender, EventArgs e)
         {
-            string gioDi = txtGio.Text;
-            string ngayDi = dtpNgay.Value.Month + "-" + dtpNgay.Value.Day + "-" + dtpNgay.Value.Year;
-            string diemDi = txtDiemDi.Text;
-            string bienSo = this.cbBienSo.GetItemText(this.cbBienSo.SelectedItem);
-            string diemDen = txtDiemDen.Text;
-            double giaVe = double.Parse(txtGiaVe.Text);
-            bool ketQua = ChuyenDiDAO.Instance.suaThongTinChuyenDi(int.Parse(txtMa.Text), gioDi, ngayDi, diemDi, diemDen, giaVe, bienSo);
-            if (ketQua)
+            try
             {
-                MessageBox.Show("Sửa thành công!", "Sửa thông tin chuyến đi", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                hienThiDanhSachChuyenDi();
+                string gioDi = txtGio.Text;
+                string ngayDi = dtpNgay.Value.Month + "-" + dtpNgay.Value.Day + "-" + dtpNgay.Value.Year;
+                string diemDi = txtDiemDi.Text;
+                string bienSo = this.cbBienSo.GetItemText(this.cbBienSo.SelectedItem);
+                string diemDen = txtDiemDen.Text;
+                double giaVe = double.Parse(txtGiaVe.Text);
+                if (gioDi == "" || ngayDi == "" || diemDi == "" || diemDen == "" || giaVe == 0 || bienSo == "")
+                    MessageBox.Show("Bạn phải nhập đủ!", "Sửa thông tin chuyến đi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                else
+                {
+                    int gio = int.Parse(gioDi.Substring(0, 1));
+                    int phut = int.Parse(gioDi.Substring(2));
+                    if (gio < 0 || gio > 24 || phut < 0 || phut > 60)
+                        MessageBox.Show("Giờ khởi hành không hợp lệ! Vui lòng kiểm tra lại", "Sửa thông tin chuyến đi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    else if (dtpNgay.Value < DateTime.Now)
+                        MessageBox.Show("Ngày đi không hợp lệ! Vui lòng kiểm tra lại", "Sửa thông tin chuyến đi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    else if (diemDi == diemDen)
+                        MessageBox.Show("Điểm đi và điểm đến không được trùng nhau! Vui lòng kiểm tra lại", "Sửa thông tin chuyến đi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    else if (giaVe <= 0)
+                        MessageBox.Show("Giá vé không hợp lệ! Vui lòng kiểm tra lại", "Sửa thông tin chuyến đi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    else
+                    {
+                        bool ketQua = ChuyenDiDAO.Instance.suaThongTinChuyenDi(int.Parse(txtMa.Text), gioDi, ngayDi, diemDi, diemDen, giaVe, bienSo);
+                        if (ketQua)
+                        {
+                            MessageBox.Show("Sửa thành công!", "Sửa thông tin chuyến đi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            hienThiDanhSachChuyenDi();
+                        }
+                        else
+                            MessageBox.Show("Sửa không thành công!", "Sửa thông tin chuyến đi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
             }
-            else
-                MessageBox.Show("Sửa không thành công!", "Sửa thông tin chuyến đi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            catch(Exception)
+            {
+                MessageBox.Show("Lỗi định dạng nhập! Vui lòng kiểm tra lại", "Sửa thông tin chuyến đi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
         private void BtXoa_Click(object sender, EventArgs e)
         {

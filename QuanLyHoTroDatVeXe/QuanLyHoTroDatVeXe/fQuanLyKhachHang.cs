@@ -129,20 +129,27 @@ namespace QuanLyHoTroDatVeXe
 
         private void BtSua_Click(object sender, EventArgs e)
         {
-            int sdt = int.Parse(txtSDT.Text);
-            int cmnd = int.Parse(txtCMND.Text);
-            string ht = txtHoTen.Text;
-            string gt = txtGioiTinh.Text;
-            string dc = txtDiaChi.Text;
-            string email = txtEmail.Text;
-            bool ketQua = KhachHangDAO.Instance.suaKHBangSDT(sdt, cmnd, ht, gt, dc, email);
-            if (ketQua)
+            try
             {
-                MessageBox.Show("Sửa thành công!", "Sửa thông tin khách hàng", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                hienThiDanhSach();
+                int sdt = int.Parse(txtSDT.Text);
+                int cmnd = int.Parse(txtCMND.Text);
+                string ht = txtHoTen.Text;
+                string gt = txtGioiTinh.Text;
+                string dc = txtDiaChi.Text;
+                string email = txtEmail.Text;
+                bool ketQua = KhachHangDAO.Instance.suaKHBangSDT(sdt, cmnd, ht, gt, dc, email);
+                if (ketQua)
+                {
+                    MessageBox.Show("Sửa thành công!", "Sửa thông tin khách hàng", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    hienThiDanhSach();
+                }
+                else
+                    MessageBox.Show("Sửa không thành công!", "Sửa thông tin khách hàng", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            else
-                MessageBox.Show("Sửa không thành công!", "Sửa thông tin khách hàng", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            catch(Exception)
+            {
+                MessageBox.Show("Lỗi định dạng nhập! Vui lòng kiểm tra lại", "Sửa thông tin khách hàng", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void BtXoa_Click(object sender, EventArgs e)
