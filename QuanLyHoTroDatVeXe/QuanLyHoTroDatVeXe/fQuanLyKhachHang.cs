@@ -33,13 +33,13 @@ namespace QuanLyHoTroDatVeXe
             dsKhachHang.DataSource = KhachHangDAO.Instance.layDsKhachHang();
 
             dgvKhachHang.Columns[0].HeaderText = "Số điện thoại";
-            dgvKhachHang.Columns[0].Width = 90;
+            dgvKhachHang.Columns[0].Width = 120;
 
             dgvKhachHang.Columns[1].HeaderText = "CMND";
-            dgvKhachHang.Columns[1].Width = 70;
+            dgvKhachHang.Columns[1].Width = 100;
 
             dgvKhachHang.Columns[2].HeaderText = "Họ tên";
-            dgvKhachHang.Columns[2].Width = 150;
+            dgvKhachHang.Columns[2].Width = 165;
 
             dgvKhachHang.Columns[3].HeaderText = "Giới tính";
             dgvKhachHang.Columns[3].Width = 70;
@@ -48,7 +48,7 @@ namespace QuanLyHoTroDatVeXe
             dgvKhachHang.Columns[4].Width = 120;
 
             dgvKhachHang.Columns[5].HeaderText = "Email";
-            dgvKhachHang.Columns[5].Width = 140;
+            dgvKhachHang.Columns[5].Width = 180;
         }
         //tạo ràng buộc giữa datagridview với các ô text
         void taoRangBuoc()
@@ -120,7 +120,11 @@ namespace QuanLyHoTroDatVeXe
         private void BtThoat_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Bạn muốn rời khỏi phần mềm?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-                this.Close();
+            {
+                fDangNhap f = new fDangNhap();
+                f.Show();
+                this.Dispose(false);
+            }
         }
         private void BtThem_Click(object sender, EventArgs e)
         {

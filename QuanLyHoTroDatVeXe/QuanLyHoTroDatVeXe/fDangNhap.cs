@@ -47,10 +47,16 @@ namespace QuanLyHoTroDatVeXe
                 else
                     MessageBox.Show("Đăng nhập không thành công! Sai tên đăng nhập hoặc mật khẩu", "Đăng Nhập", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            catch(Exception)
+            catch (Exception)
             {
                 MessageBox.Show("Đăng nhập không thành công! Sai tên đăng nhập hoặc mật khẩu", "Đăng Nhập", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void txtMatKhau_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+                login.PerformClick();
         }
     }
 }

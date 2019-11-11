@@ -223,6 +223,7 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.SystemColors.ControlLight;
             this.panel1.Controls.Add(this.dgvBaoCao);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.btTim);
@@ -234,10 +235,11 @@
             // 
             // dgvBaoCao
             // 
-            this.dgvBaoCao.BackgroundColor = System.Drawing.Color.Lavender;
+            this.dgvBaoCao.BackgroundColor = System.Drawing.Color.White;
             this.dgvBaoCao.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvBaoCao.Location = new System.Drawing.Point(13, 8);
             this.dgvBaoCao.Name = "dgvBaoCao";
+            this.dgvBaoCao.RowHeadersWidth = 72;
             this.dgvBaoCao.Size = new System.Drawing.Size(497, 452);
             this.dgvBaoCao.TabIndex = 12;
             // 
@@ -272,17 +274,18 @@
             // 
             // pNoiDung
             // 
+            this.pNoiDung.BackColor = System.Drawing.SystemColors.ControlLight;
             this.pNoiDung.Controls.Add(this.panel1);
             this.pNoiDung.Location = new System.Drawing.Point(3, 60);
             this.pNoiDung.Name = "pNoiDung";
-            this.pNoiDung.Size = new System.Drawing.Size(876, 486);
+            this.pNoiDung.Size = new System.Drawing.Size(876, 497);
             this.pNoiDung.TabIndex = 9;
             // 
             // fBaoCaoThongKe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(884, 546);
+            this.ClientSize = new System.Drawing.Size(884, 561);
             this.Controls.Add(this.pMenu);
             this.Controls.Add(this.pNoiDung);
             this.Name = "fBaoCaoThongKe";

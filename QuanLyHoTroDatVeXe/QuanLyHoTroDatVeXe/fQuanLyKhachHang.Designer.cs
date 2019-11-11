@@ -51,7 +51,6 @@
             this.dgvKhachHang = new System.Windows.Forms.DataGridView();
             this.pNoiDung = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.listView1 = new System.Windows.Forms.ListView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.txtGioiTinh = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
@@ -235,7 +234,7 @@
             this.btXoa.BackColor = System.Drawing.Color.Orange;
             this.btXoa.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btXoa.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btXoa.Location = new System.Drawing.Point(755, 8);
+            this.btXoa.Location = new System.Drawing.Point(755, 3);
             this.btXoa.Name = "btXoa";
             this.btXoa.Size = new System.Drawing.Size(101, 40);
             this.btXoa.TabIndex = 6;
@@ -249,7 +248,7 @@
             this.btSua.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btSua.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btSua.ForeColor = System.Drawing.Color.Black;
-            this.btSua.Location = new System.Drawing.Point(648, 8);
+            this.btSua.Location = new System.Drawing.Point(648, 3);
             this.btSua.Name = "btSua";
             this.btSua.Size = new System.Drawing.Size(101, 40);
             this.btSua.TabIndex = 6;
@@ -286,7 +285,7 @@
             this.btThem.FlatAppearance.BorderSize = 0;
             this.btThem.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btThem.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btThem.Location = new System.Drawing.Point(541, 8);
+            this.btThem.Location = new System.Drawing.Point(541, 3);
             this.btThem.Name = "btThem";
             this.btThem.Size = new System.Drawing.Size(101, 40);
             this.btThem.TabIndex = 6;
@@ -296,24 +295,24 @@
             // 
             // dgvKhachHang
             // 
-            this.dgvKhachHang.BackgroundColor = System.Drawing.Color.Lavender;
+            this.dgvKhachHang.BackgroundColor = System.Drawing.Color.White;
             this.dgvKhachHang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvKhachHang.Location = new System.Drawing.Point(20, 96);
+            this.dgvKhachHang.Location = new System.Drawing.Point(8, 71);
             this.dgvKhachHang.MultiSelect = false;
             this.dgvKhachHang.Name = "dgvKhachHang";
             this.dgvKhachHang.RowHeadersWidth = 102;
-            this.dgvKhachHang.Size = new System.Drawing.Size(835, 314);
+            this.dgvKhachHang.Size = new System.Drawing.Size(860, 360);
             this.dgvKhachHang.TabIndex = 2;
             // 
             // pNoiDung
             // 
+            this.pNoiDung.BackColor = System.Drawing.SystemColors.ControlLight;
             this.pNoiDung.Controls.Add(this.panel2);
             this.pNoiDung.Controls.Add(this.dgvKhachHang);
-            this.pNoiDung.Controls.Add(this.listView1);
             this.pNoiDung.Controls.Add(this.panel1);
             this.pNoiDung.Location = new System.Drawing.Point(3, 60);
             this.pNoiDung.Name = "pNoiDung";
-            this.pNoiDung.Size = new System.Drawing.Size(876, 486);
+            this.pNoiDung.Size = new System.Drawing.Size(876, 498);
             this.pNoiDung.TabIndex = 7;
             // 
             // panel2
@@ -321,19 +320,10 @@
             this.panel2.Controls.Add(this.btThem);
             this.panel2.Controls.Add(this.btSua);
             this.panel2.Controls.Add(this.btXoa);
-            this.panel2.Location = new System.Drawing.Point(8, 426);
+            this.panel2.Location = new System.Drawing.Point(8, 437);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(859, 57);
+            this.panel2.Size = new System.Drawing.Size(859, 46);
             this.panel2.TabIndex = 3;
-            // 
-            // listView1
-            // 
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(8, 85);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(860, 335);
-            this.listView1.TabIndex = 1;
-            this.listView1.UseCompatibleStateImageBehavior = false;
             // 
             // panel1
             // 
@@ -351,7 +341,7 @@
             this.panel1.Controls.Add(this.lb1);
             this.panel1.Location = new System.Drawing.Point(8, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(860, 76);
+            this.panel1.Size = new System.Drawing.Size(860, 66);
             this.panel1.TabIndex = 0;
             // 
             // txtGioiTinh
@@ -449,7 +439,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(884, 546);
+            this.ClientSize = new System.Drawing.Size(884, 561);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pNoiDung);
             this.Controls.Add(this.pMenu);
@@ -497,7 +487,6 @@
         private System.Windows.Forms.Button btThem;
         private System.Windows.Forms.DataGridView dgvKhachHang;
         private System.Windows.Forms.Panel pNoiDung;
-        private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox txtSDT;
         private System.Windows.Forms.Panel pMenu;

@@ -140,7 +140,11 @@ namespace QuanLyHoTroDatVeXe
         private void BtThoat_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Bạn muốn rời khỏi phần mềm?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-                this.Close();
+            {
+                fDangNhap f = new fDangNhap();
+                f.Show();
+                this.Dispose(false);
+            }
         }
         private void btTimChuyen_Click(object sender, EventArgs e)
         {

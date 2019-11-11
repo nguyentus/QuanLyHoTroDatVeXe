@@ -19,23 +19,3 @@ E:\_STUDY\KiemThuPhanMem\_BaiTapLon\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\UnitTe
 E:\_STUDY\KiemThuPhanMem\_BaiTapLon\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\UnitTest\obj\Debug\UnitTest.csproj.CopyComplete
 E:\_STUDY\KiemThuPhanMem\_BaiTapLon\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\UnitTest\obj\Debug\UnitTest.dll
 E:\_STUDY\KiemThuPhanMem\_BaiTapLon\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\UnitTest\obj\Debug\UnitTest.pdb
-C:\Users\Nguyen Tu\Desktop\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
-C:\Users\Nguyen Tu\Desktop\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
-C:\Users\Nguyen Tu\Desktop\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
-C:\Users\Nguyen Tu\Desktop\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\UnitTest\bin\Debug\UnitTest.dll
-C:\Users\Nguyen Tu\Desktop\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\UnitTest\bin\Debug\UnitTest.pdb
-C:\Users\Nguyen Tu\Desktop\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\UnitTest\bin\Debug\DAO.dll
-C:\Users\Nguyen Tu\Desktop\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\UnitTest\bin\Debug\DTO.dll
-C:\Users\Nguyen Tu\Desktop\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
-C:\Users\Nguyen Tu\Desktop\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
-C:\Users\Nguyen Tu\Desktop\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\UnitTest\bin\Debug\QuanLyHoTroDatVeXe.exe
-C:\Users\Nguyen Tu\Desktop\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\UnitTest\bin\Debug\DAO.pdb
-C:\Users\Nguyen Tu\Desktop\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\UnitTest\bin\Debug\DTO.pdb
-C:\Users\Nguyen Tu\Desktop\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\UnitTest\bin\Debug\QuanLyHoTroDatVeXe.pdb
-C:\Users\Nguyen Tu\Desktop\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\UnitTest\bin\Debug\QuanLyHoTroDatVeXe.exe.config
-C:\Users\Nguyen Tu\Desktop\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
-C:\Users\Nguyen Tu\Desktop\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
-C:\Users\Nguyen Tu\Desktop\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\UnitTest\obj\Debug\UnitTest.csprojAssemblyReference.cache
-C:\Users\Nguyen Tu\Desktop\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\UnitTest\obj\Debug\UnitTest.csproj.CopyComplete
-C:\Users\Nguyen Tu\Desktop\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\UnitTest\obj\Debug\UnitTest.dll
-C:\Users\Nguyen Tu\Desktop\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\UnitTest\obj\Debug\UnitTest.pdb

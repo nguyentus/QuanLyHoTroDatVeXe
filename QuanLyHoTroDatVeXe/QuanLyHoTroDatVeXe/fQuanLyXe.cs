@@ -36,7 +36,7 @@ namespace QuanLyHoTroDatVeXe
             dgvXe.Columns[0].Width = 200;
 
             dgvXe.Columns[1].HeaderText = "Tên tài xế";
-            dgvXe.Columns[1].Width = 237;
+            dgvXe.Columns[1].Width = 235;
 
             dgvXe.Columns[2].HeaderText = "Số điện thoại tài xế";
             dgvXe.Columns[2].Width = 150;
@@ -159,7 +159,11 @@ namespace QuanLyHoTroDatVeXe
         private void BtThoat_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Bạn muốn rời khỏi phần mềm?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-                this.Close();
+            {
+                fDangNhap f = new fDangNhap();
+                f.Show();
+                this.Dispose(false);
+            }
         }
         #endregion
     }

@@ -34,20 +34,20 @@ namespace QuanLyHoTroDatVeXe
         {
             dsChuyenDi.DataSource = ChuyenDiDAO.Instance.LayDsChuyenDi();
             dgvChuyenDi.Columns[0].HeaderText = "Mã Chuyến đi";
-            dgvChuyenDi.Columns[0].Width = 108;
+            dgvChuyenDi.Columns[0].Width = 112;
 
             dgvChuyenDi.Columns[2].HeaderText = "Giờ đi";
-            dgvChuyenDi.Columns[2].Width = 108;
+            dgvChuyenDi.Columns[2].Width = 112;
             dgvChuyenDi.Columns[1].HeaderText = "Ngày đi";
-            dgvChuyenDi.Columns[1].Width = 108;
+            dgvChuyenDi.Columns[1].Width = 112;
             dgvChuyenDi.Columns[3].HeaderText = "Nơi xuất phát";
-            dgvChuyenDi.Columns[3].Width = 108;
+            dgvChuyenDi.Columns[3].Width = 112;
             dgvChuyenDi.Columns[4].HeaderText = "Điểm đến";
-            dgvChuyenDi.Columns[4].Width = 108;
+            dgvChuyenDi.Columns[4].Width = 112;
             dgvChuyenDi.Columns[5].HeaderText = "Biển số";
-            dgvChuyenDi.Columns[5].Width = 108;
+            dgvChuyenDi.Columns[5].Width = 112;
             dgvChuyenDi.Columns[6].HeaderText = "Giá vé";
-            dgvChuyenDi.Columns[6].Width = 108;
+            dgvChuyenDi.Columns[6].Width = 112;
         }
         void hienThiBienSo()
         {
@@ -194,7 +194,11 @@ namespace QuanLyHoTroDatVeXe
         private void BtThoat_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Bạn muốn rời khỏi phần mềm?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-                this.Close();
+            {
+                fDangNhap f = new fDangNhap();
+                f.Show();
+                this.Dispose(false);
+            }
         }
         #endregion
     }

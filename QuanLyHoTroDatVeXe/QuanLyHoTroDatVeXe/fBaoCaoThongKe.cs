@@ -26,13 +26,13 @@ namespace QuanLyHoTroDatVeXe
             dgvBaoCao.DataSource = VeXeDAO.Instance.baoCao();
 
             dgvBaoCao.Columns[0].HeaderText = "Số điện thoại";
-            dgvBaoCao.Columns[0].Width = 100;
+            dgvBaoCao.Columns[0].Width = 120;
             dgvBaoCao.Columns[1].HeaderText = "Mã chuyến đi";
-            dgvBaoCao.Columns[1].Width = 150;
+            dgvBaoCao.Columns[1].Width = 92;
             dgvBaoCao.Columns[2].HeaderText = "Số ghế";
             dgvBaoCao.Columns[2].Width = 100;
             dgvBaoCao.Columns[3].HeaderText = "Ngày đặt";
-            dgvBaoCao.Columns[3].Width = 100;
+            dgvBaoCao.Columns[3].Width = 110;
         }
         void phanQuyen()
         {
@@ -65,7 +65,11 @@ namespace QuanLyHoTroDatVeXe
         private void BtThoat_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Bạn muốn rời khỏi phần mềm?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-                this.Close();
+            {
+                fDangNhap f = new fDangNhap();
+                f.Show();
+                this.Dispose(false);
+            }
         }
 
         private void BtTim_Click(object sender, EventArgs e)

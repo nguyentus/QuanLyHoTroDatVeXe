@@ -43,6 +43,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.btChuyenDi = new System.Windows.Forms.PictureBox();
             this.pNoiDung = new System.Windows.Forms.Panel();
+            this.dgvChuyenDi = new System.Windows.Forms.DataGridView();
             this.btThem = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.txtDiemDen = new System.Windows.Forms.TextBox();
@@ -61,7 +62,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btXoa = new System.Windows.Forms.Button();
             this.btCapNhat = new System.Windows.Forms.Button();
-            this.dgvChuyenDi = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.btThoat)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btKhachHang)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btBaoCao)).BeginInit();
@@ -71,8 +71,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btChuyenDi)).BeginInit();
             this.pNoiDung.SuspendLayout();
-            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvChuyenDi)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btThoat
@@ -238,6 +238,7 @@
             // 
             // pNoiDung
             // 
+            this.pNoiDung.BackColor = System.Drawing.SystemColors.ControlLight;
             this.pNoiDung.Controls.Add(this.dgvChuyenDi);
             this.pNoiDung.Controls.Add(this.btThem);
             this.pNoiDung.Controls.Add(this.panel1);
@@ -245,15 +246,25 @@
             this.pNoiDung.Controls.Add(this.btCapNhat);
             this.pNoiDung.Location = new System.Drawing.Point(3, 66);
             this.pNoiDung.Name = "pNoiDung";
-            this.pNoiDung.Size = new System.Drawing.Size(876, 480);
+            this.pNoiDung.Size = new System.Drawing.Size(876, 494);
             this.pNoiDung.TabIndex = 3;
+            // 
+            // dgvChuyenDi
+            // 
+            this.dgvChuyenDi.BackgroundColor = System.Drawing.Color.White;
+            this.dgvChuyenDi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvChuyenDi.Location = new System.Drawing.Point(8, 70);
+            this.dgvChuyenDi.Name = "dgvChuyenDi";
+            this.dgvChuyenDi.RowHeadersWidth = 72;
+            this.dgvChuyenDi.Size = new System.Drawing.Size(860, 361);
+            this.dgvChuyenDi.TabIndex = 15;
             // 
             // btThem
             // 
             this.btThem.BackColor = System.Drawing.Color.Orange;
             this.btThem.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btThem.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btThem.Location = new System.Drawing.Point(558, 437);
+            this.btThem.Location = new System.Drawing.Point(558, 443);
             this.btThem.Name = "btThem";
             this.btThem.Size = new System.Drawing.Size(101, 40);
             this.btThem.TabIndex = 12;
@@ -422,7 +433,7 @@
             this.btXoa.BackColor = System.Drawing.Color.Orange;
             this.btXoa.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btXoa.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btXoa.Location = new System.Drawing.Point(772, 437);
+            this.btXoa.Location = new System.Drawing.Point(772, 443);
             this.btXoa.Name = "btXoa";
             this.btXoa.Size = new System.Drawing.Size(101, 40);
             this.btXoa.TabIndex = 13;
@@ -435,7 +446,7 @@
             this.btCapNhat.BackColor = System.Drawing.Color.Orange;
             this.btCapNhat.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btCapNhat.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btCapNhat.Location = new System.Drawing.Point(665, 437);
+            this.btCapNhat.Location = new System.Drawing.Point(665, 443);
             this.btCapNhat.Name = "btCapNhat";
             this.btCapNhat.Size = new System.Drawing.Size(101, 40);
             this.btCapNhat.TabIndex = 14;
@@ -443,20 +454,11 @@
             this.btCapNhat.UseVisualStyleBackColor = false;
             this.btCapNhat.Click += new System.EventHandler(this.BtCapNhat_Click);
             // 
-            // dgvChuyenDi
-            // 
-            this.dgvChuyenDi.BackgroundColor = System.Drawing.Color.Lavender;
-            this.dgvChuyenDi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvChuyenDi.Location = new System.Drawing.Point(8, 70);
-            this.dgvChuyenDi.Name = "dgvChuyenDi";
-            this.dgvChuyenDi.Size = new System.Drawing.Size(860, 361);
-            this.dgvChuyenDi.TabIndex = 15;
-            // 
             // fQuanLyChuyenDi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(884, 546);
+            this.ClientSize = new System.Drawing.Size(884, 561);
             this.Controls.Add(this.pMenu);
             this.Controls.Add(this.pNoiDung);
             this.Name = "fQuanLyChuyenDi";
@@ -472,9 +474,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btChuyenDi)).EndInit();
             this.pNoiDung.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvChuyenDi)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvChuyenDi)).EndInit();
             this.ResumeLayout(false);
 
         }

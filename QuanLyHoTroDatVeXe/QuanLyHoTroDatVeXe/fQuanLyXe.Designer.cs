@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fQuanLyXe));
-            this.listView1 = new System.Windows.Forms.ListView();
             this.label5 = new System.Windows.Forms.Label();
             this.pMenu = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
@@ -71,15 +70,6 @@
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // listView1
-            // 
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(8, 92);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(860, 323);
-            this.listView1.TabIndex = 1;
-            this.listView1.UseCompatibleStateImageBehavior = false;
             // 
             // label5
             // 
@@ -233,13 +223,13 @@
             // 
             // pNoiDung
             // 
+            this.pNoiDung.BackColor = System.Drawing.SystemColors.ControlLight;
             this.pNoiDung.Controls.Add(this.panel2);
             this.pNoiDung.Controls.Add(this.dgvXe);
-            this.pNoiDung.Controls.Add(this.listView1);
             this.pNoiDung.Controls.Add(this.panel1);
             this.pNoiDung.Location = new System.Drawing.Point(3, 63);
             this.pNoiDung.Name = "pNoiDung";
-            this.pNoiDung.Size = new System.Drawing.Size(876, 483);
+            this.pNoiDung.Size = new System.Drawing.Size(876, 494);
             this.pNoiDung.TabIndex = 5;
             // 
             // panel2
@@ -247,7 +237,7 @@
             this.panel2.Controls.Add(this.btXoa);
             this.panel2.Controls.Add(this.btThem);
             this.panel2.Controls.Add(this.btSua);
-            this.panel2.Location = new System.Drawing.Point(8, 421);
+            this.panel2.Location = new System.Drawing.Point(8, 441);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(860, 50);
             this.panel2.TabIndex = 3;
@@ -293,12 +283,13 @@
             // 
             // dgvXe
             // 
-            this.dgvXe.BackgroundColor = System.Drawing.Color.Lavender;
+            this.dgvXe.BackgroundColor = System.Drawing.Color.White;
             this.dgvXe.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvXe.Location = new System.Drawing.Point(20, 102);
+            this.dgvXe.Location = new System.Drawing.Point(8, 81);
             this.dgvXe.MultiSelect = false;
             this.dgvXe.Name = "dgvXe";
-            this.dgvXe.Size = new System.Drawing.Size(835, 303);
+            this.dgvXe.RowHeadersWidth = 72;
+            this.dgvXe.Size = new System.Drawing.Size(860, 360);
             this.dgvXe.TabIndex = 2;
             // 
             // panel1
@@ -313,13 +304,13 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(8, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(860, 83);
+            this.panel1.Size = new System.Drawing.Size(860, 72);
             this.panel1.TabIndex = 0;
             // 
             // txtTenXe
             // 
             this.txtTenXe.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTenXe.Location = new System.Drawing.Point(256, 45);
+            this.txtTenXe.Location = new System.Drawing.Point(260, 40);
             this.txtTenXe.Name = "txtTenXe";
             this.txtTenXe.Size = new System.Drawing.Size(157, 22);
             this.txtTenXe.TabIndex = 16;
@@ -328,7 +319,7 @@
             // 
             this.label9.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(182, 44);
+            this.label9.Location = new System.Drawing.Point(186, 39);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(68, 22);
             this.label9.TabIndex = 15;
@@ -338,7 +329,7 @@
             // txtSDT
             // 
             this.txtSDT.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSDT.Location = new System.Drawing.Point(522, 45);
+            this.txtSDT.Location = new System.Drawing.Point(526, 40);
             this.txtSDT.Name = "txtSDT";
             this.txtSDT.Size = new System.Drawing.Size(157, 22);
             this.txtSDT.TabIndex = 14;
@@ -347,7 +338,7 @@
             // 
             this.label3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(448, 45);
+            this.label3.Location = new System.Drawing.Point(452, 40);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(68, 22);
             this.label3.TabIndex = 13;
@@ -357,7 +348,7 @@
             // txtTaiXe
             // 
             this.txtTaiXe.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTaiXe.Location = new System.Drawing.Point(522, 17);
+            this.txtTaiXe.Location = new System.Drawing.Point(526, 12);
             this.txtTaiXe.Name = "txtTaiXe";
             this.txtTaiXe.Size = new System.Drawing.Size(157, 22);
             this.txtTaiXe.TabIndex = 12;
@@ -365,7 +356,7 @@
             // txtBienSo
             // 
             this.txtBienSo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBienSo.Location = new System.Drawing.Point(256, 16);
+            this.txtBienSo.Location = new System.Drawing.Point(260, 11);
             this.txtBienSo.Name = "txtBienSo";
             this.txtBienSo.Size = new System.Drawing.Size(157, 22);
             this.txtBienSo.TabIndex = 12;
@@ -374,7 +365,7 @@
             // 
             this.label2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(448, 17);
+            this.label2.Location = new System.Drawing.Point(452, 12);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(68, 22);
             this.label2.TabIndex = 11;
@@ -385,7 +376,7 @@
             // 
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(182, 16);
+            this.label1.Location = new System.Drawing.Point(186, 11);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(68, 22);
             this.label1.TabIndex = 11;
@@ -406,7 +397,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(884, 546);
+            this.ClientSize = new System.Drawing.Size(884, 561);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pMenu);
             this.Controls.Add(this.pNoiDung);
@@ -432,8 +423,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel pMenu;
         private System.Windows.Forms.Label label6;
