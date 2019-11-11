@@ -110,18 +110,25 @@ namespace QuanLyHoTroDatVeXe
 
         private void btSua_Click(object sender, EventArgs e)
         {
-            string bienSo = txtBienSo.Text;
-            string taiXe = txtTaiXe.Text;
-            int sdt = int.Parse(txtSDT.Text);
-            string tenXe = txtTenXe.Text;
-            bool ketQua = XeDAO.Instance.suaThongTinXe(bienSo, taiXe, sdt, tenXe);
-            if (ketQua)
+            try
             {
-                MessageBox.Show("Sửa thành công!", "Sửa thông tin xe", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                hienThiDanhSachXe();
+                string bienSo = txtBienSo.Text;
+                string taiXe = txtTaiXe.Text;
+                int sdt = int.Parse(txtSDT.Text);
+                string tenXe = txtTenXe.Text;
+                bool ketQua = XeDAO.Instance.suaThongTinXe(bienSo, taiXe, sdt, tenXe);
+                if (ketQua)
+                {
+                    MessageBox.Show("Sửa thành công!", "Sửa thông tin xe", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    hienThiDanhSachXe();
+                }
+                else
+                    MessageBox.Show("Sửa không thành công!", "Sửa thông tin xe", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            else
-                MessageBox.Show("Sửa không thành công!", "Sửa thông tin xe", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            catch(Exception)
+            {
+                MessageBox.Show("Lỗi định dạng nhập! Vui lòng kiểm tra lại", "Sửa thông tin xe", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
         private void BtDatVeXe_Click(object sender, EventArgs e)
         {

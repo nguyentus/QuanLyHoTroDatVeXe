@@ -68,13 +68,20 @@ namespace QuanLyHoTroDatVeXe
                 this.Close();
         }
 
-        #endregion
-
         private void BtTim_Click(object sender, EventArgs e)
         {
-            int sdt = int.Parse(txtSDT.Text);
-            List<VeXe> ds = VeXeDAO.Instance.timVeKH(sdt);
-            dgvBaoCao.DataSource = ds;
+            try
+            {
+                int sdt = int.Parse(txtSDT.Text);
+                List<VeXe> ds = VeXeDAO.Instance.timVeKH(sdt);
+                dgvBaoCao.DataSource = ds;
+            }
+            catch(Exception)
+            {
+                MessageBox.Show("Lỗi định dạng nhập! Vui lòng kiểm tra lại", "Tìm khách hàng", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
+
+        #endregion
     }
 }

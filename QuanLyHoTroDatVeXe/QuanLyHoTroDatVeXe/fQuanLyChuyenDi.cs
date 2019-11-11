@@ -101,20 +101,27 @@ namespace QuanLyHoTroDatVeXe
 
         private void BtCapNhat_Click(object sender, EventArgs e)
         {
-            string gioDi = txtGio.Text;
-            string ngayDi = dtpNgay.Value.Month + "-" + dtpNgay.Value.Day + "-" + dtpNgay.Value.Year;
-            string diemDi = txtDiemDi.Text;
-            string bienSo = this.cbBienSo.GetItemText(this.cbBienSo.SelectedItem);
-            string diemDen = txtDiemDen.Text;
-            double giaVe = double.Parse(txtGiaVe.Text);
-            bool ketQua = ChuyenDiDAO.Instance.suaThongTinChuyenDi(int.Parse(txtMa.Text), gioDi, ngayDi, diemDi, diemDen, giaVe, bienSo);
-            if (ketQua)
+            try
             {
-                MessageBox.Show("Sửa thành công!", "Sửa thông tin chuyến đi", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                hienThiDanhSachChuyenDi();
+                string gioDi = txtGio.Text;
+                string ngayDi = dtpNgay.Value.Month + "-" + dtpNgay.Value.Day + "-" + dtpNgay.Value.Year;
+                string diemDi = txtDiemDi.Text;
+                string bienSo = this.cbBienSo.GetItemText(this.cbBienSo.SelectedItem);
+                string diemDen = txtDiemDen.Text;
+                double giaVe = double.Parse(txtGiaVe.Text);
+                bool ketQua = ChuyenDiDAO.Instance.suaThongTinChuyenDi(int.Parse(txtMa.Text), gioDi, ngayDi, diemDi, diemDen, giaVe, bienSo);
+                if (ketQua)
+                {
+                    MessageBox.Show("Sửa thành công!", "Sửa thông tin chuyến đi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    hienThiDanhSachChuyenDi();
+                }
+                else
+                    MessageBox.Show("Sửa không thành công!", "Sửa thông tin chuyến đi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            else
-                MessageBox.Show("Sửa không thành công!", "Sửa thông tin chuyến đi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            catch(Exception)
+            {
+                MessageBox.Show("Lỗi định dạng nhập! Vui lòng kiểm tra lại", "Sửa thông tin chuyến đi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
         private void BtXoa_Click(object sender, EventArgs e)
         {
