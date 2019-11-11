@@ -32,3 +32,11 @@ E:\_STUDY\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\DAO\obj\Debug\DAO.csproj.CoreCom
 E:\_STUDY\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\DAO\obj\Debug\DAO.csproj.CopyComplete
 E:\_STUDY\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\DAO\obj\Debug\DAO.dll
 E:\_STUDY\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\DAO\obj\Debug\DAO.pdb
+C:\Users\Nguyen Tu\Desktop\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\DAO\bin\Debug\DAO.dll
+C:\Users\Nguyen Tu\Desktop\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\DAO\bin\Debug\DAO.pdb
+C:\Users\Nguyen Tu\Desktop\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\DAO\bin\Debug\DTO.dll
+C:\Users\Nguyen Tu\Desktop\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\DAO\bin\Debug\DTO.pdb
+C:\Users\Nguyen Tu\Desktop\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\DAO\obj\Debug\DAO.csprojAssemblyReference.cache
+C:\Users\Nguyen Tu\Desktop\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\DAO\obj\Debug\DAO.csproj.CopyComplete
+C:\Users\Nguyen Tu\Desktop\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\DAO\obj\Debug\DAO.dll
+C:\Users\Nguyen Tu\Desktop\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\DAO\obj\Debug\DAO.pdb

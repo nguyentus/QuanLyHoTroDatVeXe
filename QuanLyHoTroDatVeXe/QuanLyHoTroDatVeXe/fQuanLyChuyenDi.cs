@@ -35,7 +35,6 @@ namespace QuanLyHoTroDatVeXe
             dsChuyenDi.DataSource = ChuyenDiDAO.Instance.LayDsChuyenDi();
             dgvChuyenDi.Columns[0].HeaderText = "Mã Chuyến đi";
             dgvChuyenDi.Columns[0].Width = 112;
-
             dgvChuyenDi.Columns[2].HeaderText = "Giờ đi";
             dgvChuyenDi.Columns[2].Width = 112;
             dgvChuyenDi.Columns[1].HeaderText = "Ngày đi";

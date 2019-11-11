@@ -76,3 +76,22 @@ E:\_STUDY\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\obj\Debug\Qua
 E:\_STUDY\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\obj\Debug\QuanLyHoTroDatVeXe.exe
 E:\_STUDY\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\obj\Debug\QuanLyHoTroDatVeXe.pdb
 C:\Users\HP\Desktop\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\obj\Debug\QuanLyHoTroDatVeXe.fDangNhap.resources
+C:\Users\Nguyen Tu\Desktop\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\bin\Debug\QuanLyHoTroDatVeXe.exe.config
+C:\Users\Nguyen Tu\Desktop\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\bin\Debug\QuanLyHoTroDatVeXe.exe
+C:\Users\Nguyen Tu\Desktop\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\bin\Debug\QuanLyHoTroDatVeXe.pdb
+C:\Users\Nguyen Tu\Desktop\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\bin\Debug\DAO.dll
+C:\Users\Nguyen Tu\Desktop\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\bin\Debug\DTO.dll
+C:\Users\Nguyen Tu\Desktop\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\bin\Debug\DAO.pdb
+C:\Users\Nguyen Tu\Desktop\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\bin\Debug\DTO.pdb
+C:\Users\Nguyen Tu\Desktop\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\obj\Debug\QuanLyHoTroDatVeXe.csprojAssemblyReference.cache
+C:\Users\Nguyen Tu\Desktop\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\obj\Debug\QuanLyHoTroDatVeXe.fBaoCaoThongKe.resources
+C:\Users\Nguyen Tu\Desktop\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\obj\Debug\QuanLyHoTroDatVeXe.fDangNhap.resources
+C:\Users\Nguyen Tu\Desktop\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\obj\Debug\QuanLyHoTroDatVeXe.fDatVeXe.resources
+C:\Users\Nguyen Tu\Desktop\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\obj\Debug\QuanLyHoTroDatVeXe.fQuanLyChuyenDi.resources
+C:\Users\Nguyen Tu\Desktop\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\obj\Debug\QuanLyHoTroDatVeXe.fQuanLyKhachHang.resources
+C:\Users\Nguyen Tu\Desktop\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\obj\Debug\QuanLyHoTroDatVeXe.fQuanLyXe.resources
+C:\Users\Nguyen Tu\Desktop\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\obj\Debug\QuanLyHoTroDatVeXe.Properties.Resources.resources
+C:\Users\Nguyen Tu\Desktop\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\obj\Debug\QuanLyHoTroDatVeXe.csproj.GenerateResource.cache
+C:\Users\Nguyen Tu\Desktop\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\obj\Debug\QuanLyHoTroDatVeXe.csproj.CopyComplete
+C:\Users\Nguyen Tu\Desktop\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\obj\Debug\QuanLyHoTroDatVeXe.exe
+C:\Users\Nguyen Tu\Desktop\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\obj\Debug\QuanLyHoTroDatVeXe.pdb
