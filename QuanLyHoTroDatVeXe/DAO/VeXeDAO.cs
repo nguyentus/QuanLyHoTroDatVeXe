@@ -36,10 +36,15 @@ namespace DAO
 
         public bool datVe(int sdt, int maCD, string maGhe)
         {
-            DateTime tg = DateTime.Now;
-            string query = "themVeXe " + sdt + ", " + maCD + ", '" + maGhe + "', '" + tg + "'";
-            int result = DataProvider.Instance.ExecuteNonQuery(query);
-            return result > 0;
+            int stt = int.Parse(maGhe.Substring(1));
+            if (stt <= 15 && stt > 0)
+            {
+                DateTime tg = DateTime.Now;
+                string query = "themVeXe " + sdt + ", " + maCD + ", '" + maGhe + "', '" + tg + "'";
+                int result = DataProvider.Instance.ExecuteNonQuery(query);
+                return result > 0;
+            }
+            return false;
         }
 
         public List<VeXe> baoCao()

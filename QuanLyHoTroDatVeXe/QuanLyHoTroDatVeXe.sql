@@ -3,9 +3,27 @@ GO
 USE QuanLyHoTroDatVe
 GO
 
-SELECT * FROM dbo.ChuyenDi
-
 ---Table
+--Khách hàng
+CREATE TABLE KhachHang
+(
+	soDienThoai INT PRIMARY KEY,
+	CMND INT NOT NULL,
+	hoTen NVARCHAR(50) NOT NULL,
+	gioiTinh NVARCHAR(10),
+	diaChi NVARCHAR(100),
+	email VARCHAR(50),
+)
+GO
+--Tài khoản
+CREATE TABLE TaiKhoan
+(
+	tenDangNhap VARCHAR(10) PRIMARY KEY,
+	matKhau VARCHAR(20) NOT NULL,
+	loaiTaiKhoan INT NOT NULL,	--tài khoản KH: 0, nhân viên: 1
+	soDienThoai INT
+)
+GO
 --Xe
 CREATE TABLE Xe
 (
@@ -26,26 +44,6 @@ CREATE TABLE ChuyenDi
 	giaVe FLOAT NOT NULL,
 	bienSo VARCHAR(10),
 	FOREIGN KEY (bienSo) REFERENCES dbo.Xe (bienSo)
-)
-GO
---Khách hàng
-CREATE TABLE KhachHang
-(
-	soDienThoai INT PRIMARY KEY,
-	CMND INT NOT NULL,
-	hoTen NVARCHAR(50) NOT NULL,
-	gioiTinh NVARCHAR(10),
-	diaChi NVARCHAR(100),
-	email VARCHAR(50),
-)
-GO
---Tài khoản
-CREATE TABLE TaiKhoan
-(
-	tenDangNhap VARCHAR(10) PRIMARY KEY,
-	matKhau VARCHAR(20) NOT NULL,
-	loaiTaiKhoan INT NOT NULL,	--tài khoản KH: 0, nhân viên: 1
-	soDienThoai INT
 )
 GO
 --Khách hàng đặt vé xe

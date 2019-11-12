@@ -51,6 +51,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="TestDangNhap.cs" />
+    <Compile Include="TestDatVeXe.cs" />
     <Compile Include="TestQuanLyChuyenDi.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TestQuanLyKhachHang.cs" />

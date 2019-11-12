@@ -13,7 +13,7 @@ namespace UnitTest
         public void TestLayDSChuyenDi()
         {
             List<ChuyenDi> cd = ChuyenDiDAO.Instance.LayDsChuyenDi();
-            int expected = 11;
+            int expected = 6;
             int actual = cd.Count;
             Assert.AreEqual(expected, actual);
         }
