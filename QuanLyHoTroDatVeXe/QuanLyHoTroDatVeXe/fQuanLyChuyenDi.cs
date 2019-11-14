@@ -125,8 +125,10 @@ namespace QuanLyHoTroDatVeXe
                     MessageBox.Show("Bạn phải nhập đủ!", "Sửa thông tin chuyến đi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 else
                 {
-                    int gio = int.Parse(gioDi.Substring(0, 1));
-                    int phut = int.Parse(gioDi.Substring(2));
+                    string gio_input = gioDi.ToString();
+                    int vitri_h = gio_input.IndexOf("h");
+                    int gio = int.Parse(gioDi.Substring(0, vitri_h));
+                    int phut = int.Parse(gioDi.Substring(vitri_h + 1));
                     if (gio < 0 || gio > 24 || phut < 0 || phut > 60)
                         MessageBox.Show("Giờ khởi hành không hợp lệ! Vui lòng kiểm tra lại", "Sửa thông tin chuyến đi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     else if (dtpNgay.Value < DateTime.Now)
@@ -150,7 +152,7 @@ namespace QuanLyHoTroDatVeXe
             }
             catch(Exception)
             {
-                MessageBox.Show("Lỗi định dạng nhập! Vui lòng kiểm tra lại", "Sửa thông tin chuyến đi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Lỗi định dạng nhập.! Vui lòng kiểm tra lại", "Sửa thông tin chuyến đi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         private void BtXoa_Click(object sender, EventArgs e)
@@ -200,5 +202,12 @@ namespace QuanLyHoTroDatVeXe
             }
         }
         #endregion
+
+        private void txtGio_MouseHover(object sender, EventArgs e)
+        {
+            //Tooltip
+            ttDinhDangNhap.ShowAlways = true;
+            ttDinhDangNhap.SetToolTip(txtGio, "Định dạng: 00h00, 0h00 hoặc 0h0");
+        }
     }
 }
