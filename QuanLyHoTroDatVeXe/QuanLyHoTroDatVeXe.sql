@@ -143,3 +143,5 @@ dbo.themVeXe 123456789, 103, 'A07', '11-17-2019'
 GO
 dbo.themVeXe 918236031, 103, 'A12', '11-17-2019'
 GO
+
+SELECT * FROM dbo.ChuyenDi
