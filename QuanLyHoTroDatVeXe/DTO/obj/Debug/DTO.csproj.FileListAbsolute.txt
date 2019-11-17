@@ -3,10 +3,6 @@ C:\Users\HP\Desktop\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\DTO\bin\Debug\DTO.pdb
 C:\Users\HP\Desktop\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
 C:\Users\HP\Desktop\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\DTO\obj\Debug\DTO.dll
 C:\Users\HP\Desktop\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\DTO\obj\Debug\DTO.pdb
-D:\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\DTO\bin\Debug\DTO.dll
-D:\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\DTO\bin\Debug\DTO.pdb
-D:\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\DTO\obj\Debug\DTO.dll
-D:\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\DTO\obj\Debug\DTO.pdb
 E:\_STUDY\KiemThuPhanMem\_BaiTapLon\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\DTO\bin\Debug\DTO.dll
 E:\_STUDY\KiemThuPhanMem\_BaiTapLon\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\DTO\bin\Debug\DTO.pdb
 E:\_STUDY\KiemThuPhanMem\_BaiTapLon\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
@@ -19,4 +15,3 @@ E:\_STUDY\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\DTO\obj\Debug\DTO.csprojAssembly
 E:\_STUDY\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
 E:\_STUDY\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\DTO\obj\Debug\DTO.dll
 E:\_STUDY\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\DTO\obj\Debug\DTO.pdb
-D:\QuanLyHoTroDatVeXe\QuanLyHoTroDatVeXe\DTO\obj\Debug\DTO.csprojAssemblyReference.cache

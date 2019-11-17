@@ -3,6 +3,8 @@ GO
 USE QuanLyHoTroDatVe
 GO
 
+SELECT * FROM dbo.ChuyenDi
+
 ---Table
 --Khách hàng
 CREATE TABLE KhachHang
@@ -120,6 +122,14 @@ themChuyenDi '8h00', '11-20-2019' , N'Đồng Tháp', N'Bảo Lộc', 250000, '6
 GO
 themChuyenDi '14h00', '11-18-2019' , N'Long An', N'Bảo Lộc', 100000, '62L-10054' 
 GO
+themChuyenDi '14h00', '11-18-2019' , N'Bảo Lộc', N'Long An', 150000, '74L-98754' 
+GO
+themChuyenDi '8h00', '11-18-2019' , N'Bảo Lộc', N'tp.HCM', 170000, '74L-98754' 
+GO
+themChuyenDi '7h00', '11-18-2019' , N'Bảo Lộc', N'Đồng Nai', 180000, '74L-98754' 
+GO
+themChuyenDi '6h00', '11-18-2019' , N'Bảo Lộc', N'Đồng Tháp', 250000, '74L-98754' 
+GO
 themChuyenDi '15h00', '11-18-2019' , N'Bảo Lộc', N'Đồng Tháp', 200000, '74L-98754' 
 GO
 --Khách hàng
@@ -127,11 +137,27 @@ themKH 918236031, 251123456, N'Phan Anh Khoa', 'Nam', 'tp.HCM', 'khoa.pa@gmail.c
 GO
 themKH 123456789, 251123456, N'Hoàng Huy Nguyễn', 'Nam', 'tp.HCM', 'huy.nh@gmail.com'
 GO
-themKH 912839740, 251123456, N'Trịnh Hoàng Yến', N'Nũ', 'tp.HCM', 'yen.th@gmail.com'
+themKH 912839740, 251123456, N'Trịnh Hoàng Yến', N'Nữ', 'tp.HCM', 'yen.th@gmail.com'
 GO
+themKH 328893485, 251234501, N'Trần Hoàng Yến', N'Nữ', N'Đồng Nai', 'yen.th@gmail.com'
+GO
+themKH 985354980, 251234521, N'Đỗ Nguyên Thanh Tùng', N'Nam', N'Gò Vấp', 'tung.dnt@gmail.com'
+GO
+themKH 1662788541, 251123456, N'Trần Kim Phượng', N'Nữ', 'LA', 'phuong.tk@gmail.com'
+GO
+themKH 1217784103, 278591258, N'Dương Trần Tử Minh', N'Nam', N'Quận 7', 'minh.dtt@gmail.com'
+GO
+themKH 912839743, 251234599, N'Lê Thu Trang', N'Nữ', N'Đà Lạt', 'trang.lt@gmail.com'
+GO
+themKH 985657082, 251234579, N'Đỗ Trọng Nghĩa', N'Nam', N'Phan Thiết', 'nghia.dt@gmail.com'
+GO
+themKH 897254831, 251234578, N'Trần Thị Hoài Thu', N'Nữ', N'Bảo Lộc', 'thu.tth@gmail.com'
+GO
+
 --Tài khoản nhân viên
 INSERT INTO TaiKhoan VALUES( 'tu', '1', 1, 912839742),
-							( 'yen', '1', 0, 912839740)
+							( 'yen', '1', 0, 912839740),
+							( 'minh', 'shiki', 1, 912839742)
 GO
 
 --Vé xe
@@ -143,3 +169,14 @@ dbo.themVeXe 123456789, 103, 'A07', '11-17-2019'
 GO
 dbo.themVeXe 918236031, 103, 'A12', '11-17-2019'
 GO
+dbo.themVeXe 912839740, 107, 'A01', '11-17-2019'
+GO
+dbo.themVeXe 985354980, 107, 'A05', '11-17-2019'
+GO
+dbo.themVeXe 985354980, 107, 'A06', '11-17-2019'
+GO
+dbo.themVeXe 912839743, 107, 'A10', '11-17-2019'
+GO
+dbo.themVeXe 985657082, 107, 'A11', '11-17-2019'
+GO
+
