@@ -35,10 +35,13 @@ namespace QuanLyHoTroDatVeXe
             dsChuyenDi.DataSource = ChuyenDiDAO.Instance.LayDsChuyenDi();
             dgvChuyenDi.Columns[0].HeaderText = "Mã Chuyến đi";
             dgvChuyenDi.Columns[0].Width = 112;
+
             dgvChuyenDi.Columns[2].HeaderText = "Giờ đi";
             dgvChuyenDi.Columns[2].Width = 112;
+
             dgvChuyenDi.Columns[1].HeaderText = "Ngày đi";
             dgvChuyenDi.Columns[1].Width = 112;
+
             dgvChuyenDi.Columns[3].HeaderText = "Nơi xuất phát";
             dgvChuyenDi.Columns[3].Width = 112;
             dgvChuyenDi.Columns[4].HeaderText = "Điểm đến";
@@ -66,7 +69,7 @@ namespace QuanLyHoTroDatVeXe
         }
             #endregion
 
-            #region Events
+        #region Events
         private void BtThem_Click(object sender, EventArgs e)
         {
             try

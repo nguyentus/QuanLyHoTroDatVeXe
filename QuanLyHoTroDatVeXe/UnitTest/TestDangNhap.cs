@@ -29,6 +29,7 @@ namespace UnitTest
             string actual = tk.TenDangNhap;
             Assert.AreEqual(expected, actual);
         }
+
         [TestMethod]
         public void TestTenDangNhapRong()
         {
@@ -51,6 +52,15 @@ namespace UnitTest
         public void TestTenDangNhapKhongHopLe2()
         {
             string expected = "      tu";
+            TaiKhoan tk = TaiKhoanDAO.Instance.layTaiKhoan("tu");
+            string actual = tk.TenDangNhap;
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void TestTenDangNhapKhongHopLe3()
+        {
+            string expected = "@*#";
             TaiKhoan tk = TaiKhoanDAO.Instance.layTaiKhoan("tu");
             string actual = tk.TenDangNhap;
             Assert.AreEqual(expected, actual);

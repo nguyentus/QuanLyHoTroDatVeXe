@@ -167,7 +167,7 @@ namespace QuanLyHoTroDatVeXe
                 }
             }
             else
-                MessageBox.Show("Nhà xe chưa có chuyến này rồi!! Bạn vui lòng tìm chuyến khác nhé", "Tìm chuyến", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Nhà xe chưa có chuyến này!! Bạn vui lòng tìm chuyến khác nhé", "Tìm chuyến", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
         private void BtChon_Click(object sender, EventArgs e)
         {
